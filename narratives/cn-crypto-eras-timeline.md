@@ -17,7 +17,7 @@ spine — deep dives live in sibling notes.
 ## 2013 — the 大妈 era
 **大妈** (dàmā, "auntie/middle-aged lady") entered global finance vocabulary when
 Chinese retail aunties bought the 2013 gold dip; by late 2013 the press applied it
-to the Bitcoin run to ¥8,000 on 比特币中国 (BTC China). Era vocabulary: 炒币
+to the Bitcoin run to ¥8,000 (?) on 比特币中国 (BTC China). Era vocabulary: 炒币
 (chǎo bì, "stir-fry coins" = speculate), imported from 炒股/炒房 (stock/property
 speculation) — framing crypto as just another 炒 asset class. December 2013: the
 PBoC's first notice barring banks from Bitcoin business — the template for every
@@ -38,15 +38,17 @@ Bear-market innovation turned Ponzi. **模式币** (móshì bì, "model/scheme c
 **资金盘** (zījīn pán, "money plate") = pure Ponzi fund pool; **CX币** = 传销币
 (chuánxiāo bì, MLM coin), written CX to dodge censors. Flagship: PlusToken
 (~$2–3B, collapsed mid-2019, exit message "sorry we have run" became a meme).
-2019 also brought the Binance-led IEO revival (BTT's 14-minute sellout) and
-FCoin's 交易挖矿 ("trans-fee mining") rise and collapse. Vocabulary from this
+2019 also brought the Binance-led IEO revival (BTT's 14-minute sellout);
+FCoin's 交易挖矿 ("trans-fee mining") mania was a 2018 phenomenon, and the
+exchange's insolvency was only revealed in Feb 2020. Vocabulary from this
 era — 割韭菜 (harvest the chives), 跑路 (pǎolù, run away with funds), 崩盘
 (collapse) — is now baseline dialect.
 
 ## 2020–2021 — DeFi 挖矿, 519, and the exodus
 DeFi summer localized as 挖矿 (mining = yield farming) and 土矿 ("dirt mines,"
-degen farms). **519** (May 19, 2021): State Council reiterated the crackdown,
-BTC dropped ~30% in a day — the date joined 94 as numeric shorthand for
+degen farms). **519** (May 19, 2021): three state-backed financial associations
+reiterated the ban (May 18; the State Council's mining-and-trading crackdown
+call followed May 21), and BTC dropped ~30% in a day — the date joined 94 as numeric shorthand for
 "CN-policy nuke." Sept 24, 2021 (**924**) notice made all crypto trading
 "illegal financial activity" and expelled miners; hashrate and founders migrated
 (Singapore, Dubai). Result: "Chinese crypto" became a diaspora phenomenon —

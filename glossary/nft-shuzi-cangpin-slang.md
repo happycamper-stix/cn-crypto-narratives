@@ -29,7 +29,7 @@ word level — instead of camouflaging the word, the industry re-engineered the
 thing so the word no longer applied.
 
 ## Timeline of the compliance perimeter
-- **2021-06-23** — Alipay × Dunhuang Academy release 敦煌飞天/九色鹿 payment-code
+- **2021-06-23** — Alipay × 敦煌美术研究所 release 敦煌飞天/九色鹿 payment-code
   skins (16,000 copies, ¥9.9 + 10 Alipay points) on 蚂蚁链粉丝粒 (Mǎyǐliàn
   fěnsīlì, "AntChain fan grain") — the mainland's proto-NFT moment. Within a day
   listings on 闲鱼 (Xiányú, Alibaba's flea-market app) hit **¥1.5M**; on June 24
@@ -43,8 +43,8 @@ thing so the word no longer applied.
   compliance register in miniature. (NFR never caught on commercially.)
 - **2021-10-23** — Ant and Tencent simultaneously scrub every instance of "NFT"
   from their apps, replacing it with **数字藏品**. Ant defines holdings as
-  虚拟数字商品 ("virtual digital goods"), Tencent as 虚拟权益凭证 ("virtual
-  rights certificates") — two different legal hedges for the same JPEG.
+  虚拟数字商品 ("virtual digital goods"), Tencent as 虚拟权益证明 ("virtual
+  rights proofs") — two different legal hedges for the same JPEG.
 - **2021-12** — 粉丝粒 rebrands as **鲸探** (Jīngtàn, "Whale Explore"); Xinhua
   News Agency issues free "news digital collectibles" (Dec 24) — state media
   blessing the compliant form while state policy bans the offshore one.
@@ -64,7 +64,7 @@ thing so the word no longer applied.
 - **2022-11** — 20+ platforms post 清退公告 (wind-down notices), refunding
   5–30% of purchase price.
 - **2023-01-01** — 中国数字资产交易平台 ("China Digital Asset Trading
-  Platform," nicknamed 数交所) launches in Beijing — a state-built attempt at a
+  Platform," short-styled 中数交/CDEX) launches in Beijing — a state-built attempt at a
   "compliant secondary market" for digital collectibles/copyright. Little
   traction.
 - **2023** — 鲸探 quietly shortens 转赠 lockups: 180d→90d (Feb), then →24h
@@ -118,13 +118,13 @@ described entirely in the language of museum gift shops.
 | 发行 / 首发 | fāxíng / shǒufā | issue / first issue | replaces 铸造/mint; 发行方 = issuer (publisher register, not foundry register) |
 | 优先购 | yōuxiāngòu | priority purchase | the compliant whitelist: hold collection X → buy the next drop minutes early; guides literally gloss it as 白名单 |
 | 转赠 | zhuǎnzèng | transfer-gift | the sanctioned exit: "gifting" to a friend after a lockup (鲸探: 180 days, recipient 720 days) — the load-bearing euphemism the entire grey market ran through |
-| 寄售 | jìshòu | consignment | how wildcat platforms said "secondary market" — 寄售市场 with 4.5–10% platform fees |
+| 寄售 | jìshòu | consignment | how wildcat platforms said "secondary market" — 寄售市场 with platform fees of 4.5% (?) to 10% |
 | 合成 | héchéng | synthesize | burn N commons → 1 rare; supply sink + engagement loop, straight from gacha games |
 | 盲盒 / 隐藏款 | mánghé / yǐncángkuǎn | blind box / hidden edition | randomized drops; vocabulary imported wholesale from Popmart 潮玩 culture, giving 数藏 a ready-made native gambling idiom that needed no crypto words at all |
 | 空投 | kōngtóu | airdrop | the one crypto mechanic kept *with its name*: free drops as compliant marketing (no purchase = no 炒作 accusation) |
 | 确权 | quèquán | confirm rights | copyright-registration framing of what the chain is "for" |
 | 实名 / 人民币结算 | shímíng / rénmínbì jiésuàn | real-name / RMB settlement | the perimeter conditions: no pseudonymous wallets, no ETH/USDT pricing |
-| 理性收藏，拒绝炒作 | lǐxìng shōucáng, jùjué chǎozuò | collect rationally, refuse speculation | the boilerplate risk-warning liturgy on every drop page |
+| 理性收藏，拒绝炒作 | lǐxìng shōucáng, jùjué chǎozuò | collect rationally, refuse speculation | the boilerplate risk-warning liturgy on every drop page (exact stock wording varies: 理性消费/抵制炒作) (?) |
 | 清退 | qīngtuì | clear out and return | orderly wind-down with partial refunds — the era's exit word (platforms 清退 users; STEPN 清退 the mainland) |
 
 ## Register 3 — 数藏圈 street slang (inside the wall)
@@ -142,7 +142,7 @@ coinages for platform-specific mechanics.
 | 老鼠仓 | lǎoshǔcāng | rat warehouse | insider pre-loaded accounts | platform staff holding inventory across sock-puppet accounts before a 拉盘 |
 | 首发秒空 | shǒufā miǎokōng | first issue, emptied in seconds | instant sellout | the marketing metric; also 秒罄; manufactured via small supply + 老鼠仓 |
 | 野鸡平台 | yějī píngtái | pheasant platform | fly-by-night 数藏 platform | vs the 大厂 (big-tech) trio 鲸探/幻核/灵稀 (JD); the 野鸡s are precisely the ones that 开二级 — and then 跑路 |
-| 数藏维权 | shùcáng wéiquán | rights-defense | victim/refund groups | the era's terminal stage; QQ 维权群 in the hundreds per platform; iBox fraud complaints reached police case files in 2023 |
+| 数藏维权 | shùcáng wéiquán | rights-defense | victim/refund groups | the era's terminal stage; QQ 维权群 in the hundreds per platform (?); iBox fraud complaints reached police case files in 2023 (?) |
 | 00后的第一次理财 | línglínghòu de dìyīcì lǐcái | the post-00 generation's first investment | media tag for the student-heavy retail base | 数藏 was many mainland Gen-Z users' first speculative market — leek genealogy: their parents had A-shares, they got JPEGs ([[jiu-cai]]) |
 
 ## The tell, systematized

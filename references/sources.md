@@ -35,14 +35,14 @@ type: reference
 
 ## Archived retrievals (2026-08-21) — gaps closed
 - Quartz full term list retrieved via Wayback (snapshot 2018-10-12) → extracted in [[archived-glossaries]]
-- Xuehua page is dead in live web AND Wayback, but is a CN translation of the same Quartz piece; recovered via mirrors: [Sohu](https://www.sohu.com/a/231129607_507882) · [read01](https://read01.com/zh-cn/nx2xm3e.html) · [ChainNews](https://www.chainnews.com/articles/265479916039.htm) → also in [[archived-glossaries]]. No net-new terms vs Quartz.
+- Xuehua page is dead in live web AND Wayback, but is a CN translation of the same Quartz piece; recovered via mirrors: [Sohu](https://www.sohu.com/a/231129607_507882) · [read01](https://read01.com/zh-cn/nx2xm3e.html) · [ChainNews](https://www.chainnews.com/articles/265479916039.htm) *(domain now dead, no Wayback copy)* → also in [[archived-glossaries]]. No net-new terms vs Quartz.
 
 ## 民族币 / patriotic-scam-coin sourcing
 Not attested as a standalone slang term; it lives inside 传销币/民族资产解冻 fraud coverage. Best sources:
 - [TMTPost — 2018上半年100大传销币清单](https://www.tmtpost.com/3345238.html) (the canonical MLM-coin list)
-- 五行币 case (the archetypal "national/patriotic" coin scam, ¥9.2B): [ChinaNews](https://www.chinanews.com.cn/m/sh/2017/08-29/8316403.shtml) · [Baidu Baike 五行币](https://baike.baidu.com/item/%E4%BA%94%E8%A1%8C%E5%B8%81/20610187) · [Sina — 打着爱国幌子圈钱](https://cj.sina.com.cn/article/detail/5978795260/381363)
+- 五行币 case (the archetypal "national/patriotic" coin scam; ~¥2B for 五行币 itself, ~¥9.2B across the parent 云数贸 scheme series): [ChinaNews](https://www.chinanews.com.cn/m/sh/2017/08-29/8316403.shtml) · [Baidu Baike 五行币](https://baike.baidu.com/item/%E4%BA%94%E8%A1%8C%E5%B8%81/20610187) · [Sina — 打着爱国幌子圈钱](https://cj.sina.com.cn/article/detail/5978795260/381363)
 - [公安部点名"金砖数字货币"区块链传销 (Sina, 2019)](https://finance.sina.com.cn/blockchain/roll/2019-05-27/doc-ihvhiqay1665585.shtml)
-- [深圳金融办 — 8大套路看清传销币](https://jr.sz.gov.cn/sjrb/ztzl/djffjz/ffjzal/content/post_3170086.html)
+- [深圳金融办 — 8大套路看清传销币](https://jr.sz.gov.cn/sjrb/ztzl/djffjz/ffjzal/content/post_3170086.html) *(404s; no Wayback copy)* (?)
 - 民族资产解冻 scam framework: [公安部50个骗局项目名单 (xhby)](https://www.xhby.net/content/s671b0b42e4b0ac1d26c28272.html)
 
 ## 金狗 origin sourcing
@@ -53,7 +53,7 @@ Not attested as a standalone slang term; it lives inside 传销币/民族资产�
 ## Live media & monitoring
 See [[live-feeds]] for the full monitoring stack (Odaily, PANews, BlockBeats, ChainCatcher, Foresight, TechFlow, 吴说 + handles; KOL ranking lists; Four.meme/GMGN/DEX Screener).
 - [PANews — 15 Chinese Crypto/Web3 media worth watching](https://www.panewslab.com/en/articles/14nlp00et3a0)
-- [ChainCatcher — 2025 Web3 交易型 KOL 榜單](https://www.chaincatcher.com/zh-tw/article/2178739)
+- [ChainCatcher — 2025 Web3 交易型 KOL 榜單](https://www.chaincatcher.com/zh-tw/article/2178739) *(live URL now 410s; Wayback snapshot 2025-06-16 of /article/2178739 confirms title)*
 - [CSDN — 2025推特中文币圈10大KOL全景图鉴](https://blog.csdn.net/qukuaidaima/article/details/153840098)
 
 ## Additional glossaries found
@@ -67,9 +67,9 @@ Added 2026-08-21 for [[emoji-sticker-visual-codes]]:
 - Emoji censorship precedent: [CDT — Weibo 撤下蜡烛表情, 2012](https://chinadigitaltimes.net/chinese/228756.html)
 - Ban waves: [21财经 2018-08-21 公众号被屏蔽](https://m.21jingji.com/article/20180821/herald/9fdbed4d300b2f8ff26a2a7f57d1dd16.html) · [界面 — 微博封禁币圈大V, 2021-06-05](https://www.jiemian.com/article/6200616.html)
 - Emoji idiom import: [新浪财经 — 马斯克💎🙌与美国币圈黑话, 2021-05-20](https://finance.sina.com.cn/roll/2021-05-20/doc-ikmyaawc6452340.shtml)
-- Screenshot economy: [未央网 — 芥末圈](https://www.weiyangx.com/338244.html) · [网易 — 币圈幻影·带单老师](https://c.m.163.com/news/a/H2HH0RT50519DFFO.html) · [人民日报 — 晒收益截图套路](https://www.peopleapp.com/column/30037713289-500002744637)
+- Screenshot economy: [未央网 — 芥末圈](https://www.weiyangx.com/338244.html) *(paid 荐币/喊单 community exposé — no screenshot content)* · [网易 — 币圈幻影·带单老师](https://c.m.163.com/news/a/H2HH0RT50519DFFO.html) · [人民日报 — 晒收益截图套路](https://www.peopleapp.com/column/30037713289-500002744637) *(炒股群 scams, same playbook)*
 - 抽象话 emoji rebus: [萌娘百科](https://zh.moegirl.org.cn/抽象话) · [抽象话生成器报道, 2020-04-26](https://t.cj.sina.com.cn/articles/view/5836457170/15be144d201900qvs2)
-- Sticker packs: [金色财经 — 币圈韭菜必备表情包](https://www.jinse.com/blockchain/331424.html) *(dead link, title attested)* · [CSDN 炒币表情包, 2022-03](https://blog.csdn.net/xiqiao_ce/article/details/123568840)
+- Sticker packs: [金色财经 — 币圈韭菜必备表情包](https://www.jinse.com/blockchain/331424.html) *(dead link, title attested)* · [CSDN 炒币表情包, 2022-03](https://blog.csdn.net/xiqiao_ce/article/details/123568840) (?)
 
 ## Open gaps
 - (none currently — see [[research-methodology]] for the playbook when adding new terms)

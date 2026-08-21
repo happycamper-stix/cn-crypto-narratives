@@ -28,7 +28,7 @@ industry lobbyist, or a leek.
 | a token | 代币 dàibì "substitute-currency token" (echoes 代币票券, the banned merchant scrip of PBoC-law art. 20) | 通证 tōngzhèng "pass-token" (the 链圈's sanitized translation) | 币, 土狗 |
 | Bitcoin's legal nature | 特定的虚拟商品 tèdìng de xūnǐ shāngpǐn "a specific virtual commodity" (2013, still the operative civil-law hook) | — | 数字黄金 "digital gold" |
 | NFT | NFT金融化风险; sanctioned form renamed 数字藏品 shùzì cángpǐn "digital collectible" | 数字藏品 | NFT, 小图片 "little pictures" |
-| CBDC | 数字人民币 shùzì rénmínbì / 法定数字货币 "legal digital currency" (e-CNY) | — | 央行币 |
+| CBDC | 数字人民币 shùzì rénmínbì / 法定数字货币 "legal digital currency" (e-CNY) | — | DCEP |
 
 Key asymmetry: in the official register **数字货币 "digital currency" is
 reserved for the state's own e-CNY**; private crypto never gets 货币 without
@@ -70,7 +70,7 @@ go to prison.
 | 2021-09-24 | 银发〔2021〕237号《…防范和处置虚拟货币**交易炒作**风险的通知》("924") | 10 部门 (incl. 最高法、最高检、公安部) | 虚拟货币相关业务活动属于**非法金融活动**; offshore exchanges serving 境内居民 included; 损失由参与当事人**自行承担** |
 | 2021-09-24 | 发改运行〔2021〕1283号《关于整治虚拟货币"挖矿"活动的通知》 | 11 部门 | mining listed 淘汰类 (táotài lèi, "to-be-eliminated" industry class); 存量项目有序退出、严禁增量; 差别电价 punitive power pricing; 能耗双控 energy-quota accounting |
 | 2022-04 | 三协会《关于防范NFT相关金融风险的倡议》 | 3 协会 | 坚决遏制NFT金融化证券化倾向 — birth of the de-coined 数字藏品 lane |
-| 2024-08-29 | 上海徐汇《刑事诉讼涉案虚拟货币处置规范指引》 | district 检察院+公安 | 涉案虚拟货币 (shè'àn — "case-involved") = the judicial register for seized coins; disposal via offshore 变现 agents |
+| 2024-08-29 | 上海徐汇《涉刑事诉讼虚拟币处置规范指引》 | district 检察院+公安 | 涉案虚拟货币 (shè'àn — "case-involved") = the judicial register for seized coins; disposal via offshore 变现 agents |
 | 2026-02-06 | 银发〔2026〕42号《…防范和处置虚拟货币**等相关**风险的通知》 | 8 部门, **经国务院同意** | scope word 等 swallows 稳定币 + RWA: 未经…同意，境内外任何单位和个人不得在境外发行**挂钩人民币的稳定币**; RWA 原则禁止、经批准例外; company names may not contain "虚拟货币""虚拟资产""加密货币""加密资产""稳定币""现实世界资产代币化""RWA" |
 
 The nouns escalate: 虚拟商品 (2013, a thing you may own) → 违法犯罪活动 (2017,
@@ -97,7 +97,7 @@ protect stolen coins as property while civil courts void trading contracts as
 - **不法分子 (bùfǎ fènzǐ, "lawless elements") + 打着…旗号/借…之名 ("under
   the banner of / in the name of")**: the fraud-bulletin frame. Whatever noun
   follows 打着 is officially a scam vector this season (区块链 2018, 元宇宙
-  2022, 稳定币 2025 (?) — Shenzhen's mid-2025 alert on stablecoin-branded
+  2022, 稳定币 2025 — Shenzhen's July 2025 alert on stablecoin-branded
   非法集资).
 - **乱象 (luànxiàng, "chaotic phenomena")**: state-media word for the 币圈 as
   a genre of social disorder; a 乱象-survey article often precedes a 整治.
@@ -121,7 +121,7 @@ contraband part. Canon:
   currency") — 防止利用区块链发行虚拟货币、炒作空气币.
 - **[[wu-bi-qu-kuai-lian|无币区块链]]** (wúbì qūkuàiliàn, "coinless
   blockchain") — the only permitted on-chain lane: consortium chains (联盟链),
-  BSN, court/e-invoice chains. Community rejoinder: 太监链 ("eunuch chain").
+  BSN, court/e-invoice chains. Community rejoinder: 太监链 ("eunuch chain") (?).
 - **数字藏品** — NFTs admitted into the sanctioned lane by amputating the
   market: RMB pricing, real-name, no secondary trading, 转赠 (gifting) only.
   The renaming *is* the regulation.
@@ -168,7 +168,7 @@ why scam decks say 区块链项目 and 通证 while their WeChat groups say 币.
 | 帮信罪 | bāngxìn zuì | "assisting-information" crime | 帮助信息网络犯罪活动罪; what OTC sellers and card-lenders get charged with — the legal engine behind [[dong-ka]] |
 | 断卡行动 | duànkǎ xíngdòng | "card-breaking" operation | Oct 2020– campaign freezing mule bank cards/SIMs; why every OTC trade risks a frozen card |
 | 涉案虚拟货币 | shè'àn xūnǐ huòbì | case-involved virtual currency | seized/confiscated coins awaiting 司法处置 (judicial disposal), usually liquidated offshore via licensed agents — a growing, quietly pragmatic register |
-| 专项整治 | zhuānxiàng zhěngzhì | special rectification | campaign-mode governance; the 互联网金融风险专项整治 (2016–19) office (整治办) executed the 94 clean-up |
+| 专项整治 | zhuānxiàng zhěngzhì | special rectification | campaign-mode governance; the 互联网金融风险专项整治 (2016–20) office (整治办) executed the 94 clean-up |
 
 ## Sources
 - 银发〔2026〕42号 full text (CSRC mirror): https://www.csrc.gov.cn/csrc/c100028/c7614318/content.shtml (答记者问: https://www.csrc.gov.cn/csrc/c100028/c7614320/content.shtml)

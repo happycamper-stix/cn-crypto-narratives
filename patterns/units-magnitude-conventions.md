@@ -73,7 +73,7 @@ brags "翻到100万" the currency is whatever flatters the poster.
 **The 毛比特 re-denomination joke**: when BTC crossed $100k (Dec 5, 2024), CN
 posts re-priced BTC as if 1 BTC were ¥1: "1分钱价值1000刀，1毛钱价值1万刀，
 1块钱价值10万刀" — "a cent of bitcoin is $1,000, a dime is $10k, a kuai is
-$100k" — mock-affordability framing for late retail. The same instinct that
+$100k" (?) — mock-affordability framing for late retail. The same instinct that
 prices things in 聪 (below).
 
 ## Counters (量词) for coins and contracts
@@ -145,9 +145,11 @@ conclusion: the unit of account is villas per coin.
 
 ## The 一个亿 register: 小目标
 
-先定一个小目标，比如先挣它一个亿 (xiān dìng yī gè xiǎo mùbiāo — "first set a
-small goal, like making 100 million") — Wanda's 王健林 (Wang Jianlin) on
-《鲁豫有约》, aired Aug 26, 2016 (?); voted a top-10 internet phrase of 2016. In
+先定一个能达到的小目标，比方说我先挣它一个亿 (xiān dìng yī gè néng dádào de
+xiǎo mùbiāo, bǐfāng shuō wǒ xiān zhèng tā yī gè yì — "first set an achievable
+small goal — say, first make 100 million"; folk-shortened to 先定一个小目标，
+先挣它一个亿) — Wanda's 王健林 (Wang Jianlin) on 《鲁豫有约大咖一日行》, aired
+Aug 26, 2016; voted a top-10 internet phrase of 2016. In
 crypto chat **一个小目标 = ¥100M** (occasionally 1亿 U for the truly delusional),
 used with the same sincerity gradient as [[yi-bi-yi-bie-shu]]: bull-market goal,
 bear-market punchline. Note the grammar: 一个亿 (numeral + 个 + 亿) is the
@@ -189,7 +191,7 @@ colloquial form — 个 is not "one unit of coin" here, a small trap for parsers
 - w = 万 origin: https://news.qq.com/rain/a/20250315A07LJ200 · https://www.163.com/dy/article/JRJ0EV3B0511DFSC.html
 - 王健林 一个亿 小目标 (2016-08-26): https://www.guancha.cn/economy/2016_08_29_372783.shtml · https://baike.baidu.com/item/%E4%B8%80%E4%B8%AA%E4%BA%BF%E5%B0%8F%E7%9B%AE%E6%A0%87/19950313
 - BTC $100k, CN coverage (2024-12-05): http://www.news.cn/20241205/19d91d08e07f46b190365600b429514b/c.html (单枚价格首度冲上10万美元; 总市值接近2万亿美元) · https://www.guancha.cn/economy/2024_12_05_757791.shtml (美元/枚 headline) (?)
-- 毛比特 re-denomination joke: https://www.gobinance.cc/archives/1455
+- 毛比特 re-denomination joke: https://www.gobinance.cc/archives/1455 (link dead as of 2026-08-21) (?)
 - TW 兆 usage: https://ec.ltn.com.tw/article/breakingnews/3490516 (2021-04-06, 比特幣領頭 加密貨幣總市值破2兆美元) · https://udn.com/news/story/6811/8760454 (2025-05-22; link now 404) (?)
 - 百倍币/千倍币 warnings (2018): https://www.nbd.com.cn/articles/2018-07-24/1238272.html · https://www.jiemian.com/article/3420469.html
 - 万倍 土狗 (2023): https://www.36kr.com/p/2251412499181187

@@ -25,17 +25,18 @@ slots. Crypto inherited the template ready-made from the wider Chinese internet:
 コール, mainstreamed mid-2017), hold住 (hold-zhù, "hold-firm" = keep it
 together; viral Aug 2011 via TW variety-show line 整个场面我要hold住), 立flag
 (lì flag, "erect a flag" = jinx oneself by declaring a goal). 光明网 called
-these 混合词 — "mixed-blood words" — in a Feb 2019 column. Crypto just runs the
-machine at industrial speed.
+these 混合词 ("hybrid words") — the 混血儿, "mixed-blood children," of the
+lexicon — in a Feb 2019 column. Crypto just runs the machine at industrial
+speed.
 
 **Core thesis**: which language a term surfaces in dates it. Slang from the
 CEX/gambling era (pre-2021: 爆仓, 梭哈, 割韭菜, 拉盘/砸盘) is Chinese; slang
 from the on-chain era (NFT summer 2021 onward: mint, gas, rug, fomo, alpha,
 degen) embeds English — because the dApp buttons, Discords, and metas were
 English-first. The Nov 2021 wave of Zhihu explainers ("玩转海外加密世界，这22个
-行话你必须知道！") is the datable import moment: gm, wagmi, ape, rekt, fren
-were introduced to CN readers untranslated, as vocabulary to *use*, not
-translate. By Jan 13, 2025, KOL 小塞 (@EvanCrypto17) was posting a 《币圈英语
+行话你必须知道！") is the datable import moment: gm, dyor, fud, hodl — and, per
+the genre's standard list, wagmi, ape, rekt, fren (?) — were introduced to CN
+readers untranslated, as vocabulary to *use*, not translate. By Jan 13, 2025, KOL 小塞 (@EvanCrypto17) was posting a 《币圈英语
 黑话大全》 ("complete dictionary of crypto English black-speak") for Chinese
 newcomers — the community formally curating its own English layer.
 
@@ -126,8 +127,8 @@ calque (translate the metaphor), or transliteration. The winner is telling:
 | pump/dump | pump/dump | 拉盘/砸盘 (lāpán/zápán, "pull/smash the plate") | **native** — predates import era | see [[suffix-morphology]] for 盘 |
 | honeypot token | honeypot | 貔貅盘 (píxiū pán, "Pixiu scheme" — mythical beast that eats and never excretes: you can buy, never sell) | **native metaphor** — 貔貅盘 dominant | the best CN-side coinage in the ledger |
 | memecoin | Meme币 (Meme-bì) | 迷因币 (míyīnbì, transliteration) | **loan hybrid** on mainland; TW prefers 迷因幣 (BlockTempo, May 2024) | mainland also 土狗 for the degen tier |
-| alpha | alpha / 冲alpha | 内幕 "inside info" ≠ (carries illegality) | **loan** — alpha群 "alpha groups", 冲alpha "ape the alpha" | Binance Alpha (launched Dec 2024) hardened it into a proper noun; 2025's grind was 刷Alpha分 (shuā Alpha fēn, "grind Alpha points" — 腾讯新闻, Sept 2025) |
-| testnet | 撸testnet / testnet交互 | 测试网 (cèshìwǎng) | **both** — 撸测试网 and 撸testnet free-vary | 交互 (jiāohù, "interact") is itself a calque of "interactions" as an airdrop-farming unit |
+| alpha | alpha / 冲alpha | 内幕 "inside info" ≠ (carries illegality) | **loan** — alpha群 "alpha groups", 冲alpha "ape the alpha" | Binance Alpha (launched Dec 2024) hardened it into a proper noun; 2025's grind was 刷Alpha分 (shuā Alpha fēn, "grind Alpha points"; 腾讯新闻's Sept 2025 profile of the 刷分人 "point-grinders") |
+| testnet | 撸testnet / testnet交互 | 测试网 (cèshìwǎng) | **both** — 撸测试网 and 撸testnet free-vary (?) | 交互 (jiāohù, "interact") is itself a calque of "interactions" as an airdrop-farming unit |
 | whitelist | WL | 白名单 (báimíngdān) | **both** — 白名单 in prose, WL in chat | |
 | KYC | KYC | 身份验证 | **loan** — even TechFlow glosses it parenthetically | |
 
@@ -154,11 +155,13 @@ Every major coin has three names, and the choice is a register signal:
   Solana-degen CT native says SOL, not 索拉纳. Using 以太坊 in a trading chat
   marks you as a journalist or a 小白 (xiǎobái, "little white" = newbie).
 - **Sentiment channel**: the nickname layer, not the ticker, carries mood —
-  索拉纳 → 傻拉纳 (shǎlānà, "stupid-lana") when SOL dumps. Tickers are
+  索拉纳 → 傻拉纳 (shǎlānà, "stupid-lana") when SOL dumps (?). Tickers are
   emotionally flat; see [[transliteration-mechanics]] and [[coin-nicknames]].
 - **Reverse flow (2025–26)**: CN-native token names now go out *untranslated*
-  (币安人生 "Binance Life", minted from CZ's May 2025 reply 祝你币安人生), with
-  pinyin tickers — English CT doing the decoding for once. See
+  (币安人生 "Binance Life", minted on Four.meme within hours of Binance
+  co-founder 何一's Oct 4, 2025 X reply 祝你享币安人生, then amplified by CZ),
+  some with Chinese-character tickers — 币安人生 became Binance Alpha's first
+  Chinese-ticker listing — English CT doing the decoding for once. See
   [[launchpad-naming-meta]].
 
 ## Why the English survives untranslated

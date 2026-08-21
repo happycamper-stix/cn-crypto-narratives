@@ -54,13 +54,13 @@ different polarity rules:
    | Idiom | Pinyin | Literal | Actual meaning |
    |---|---|---|---|
    | 飘红 | piāohóng | floating red | in the green — prices up across the board |
-   | 翻红 | fānhóng | flip to red | turn positive intraday; standard CN crypto-newsflash formula ("BTC 短时翻红" = BTC briefly turned green) |
+   | 翻红 | fānhóng | flip to red | turn positive intraday; attested in CN crypto headlines; "BTC 短时翻红" (= BTC briefly turned green) as a standard newsflash formula (?) |
    | 收红 / 红盘 | shōuhóng / hóngpán | close red / red board | close up / an up day |
    | 开门红 | kāiménhóng | open-the-door red | strong start (year/session opener gain) |
    | 满屏绿 / 一片绿 / 全线飘绿 | mǎnpíng lǜ / yīpiàn lǜ / quánxiàn piāolǜ | screen full of green | bloodbath — everything down |
    | 绿了 | lǜ le | got greened | it dumped / I'm down — doubled by the 戴绿帽 (cuckold) pun: the market "cheated on you" |
    | 绿油油 | lǜyōuyōu | lush green | sardonic: portfolio verdant with losses |
-   | 大红大紫 vs 绿光罩顶 | — | — | riffs: red/purple = glory; "green light crowning the head" = cuckold-crash humiliation (?) |
+   | 大红大紫 vs 绿光罩顶 | — | — | riffs: red/purple = glory; "green light crowning the head" = cuckold-crash humiliation — attested in TW stock-media headlines (光通訊「綠光罩頂」…跌停) |
 
 2. **Chart-description layer — palette-dependent.** 红柱/绿柱 ("red/green
    bars"), or any sentence describing an actual screenshot, follows whatever
@@ -112,5 +112,6 @@ ambiguity disappears.
 - East Asia palette comparison (JP keeps red-up, KR red/blue): https://www.cnblogs.com/ls1519/p/14365084.html · https://www.163.com/dy/article/H3LF156B0516DPPV.html
 - K线/阳线/阴线 etymology (罫線 keisen → "K"): https://m.thepaper.cn/newsDetail_forward_16484951 · https://zh.wikipedia.org/zh-hans/K%E7%BA%BF
 - Exchange/app color-setting toggles (first link: Binance app K线 colors; second link: stock-app 红涨绿跌 how-to, not crypto): https://m.bimy.com.cn/zxdt/hydt/34867.html · https://licai.cofool.com/ask/qa_7324655.html
-- 股民 vs 币民 "绿了" split: https://www.bitget.com/zh-TC/wiki/1376801 (dead link as of 2026-08-21, no archive found)
+- 股民 vs 币民 "绿了" split: https://www.bitget.com/zh-TC/wiki/1376801 (dead link as of 2026-08-21, no archive found; live successor https://www.bitget.com/zh-TC/wiki/1458533 covers the TW-vs-US/crypto palette split but does not confirm the 绿了 claim)
+- 绿光罩顶 attested in TW stock media: https://tw.stock.yahoo.com/news/%E5%85%89%E9%80%9A%E8%A8%8A%E3%80%8C%E7%B6%A0%E5%85%89%E7%BD%A9%E9%A0%82%E3%80%8D%E8%81%AF%E4%BA%9E%E5%85%89%E8%81%96%E8%8F%AF%E6%98%9F%E5%85%89%E4%B8%80%E5%BA%A6%E8%B7%8C%E5%81%9C-%E6%B3%A2%E8%8B%A5%E5%A8%81%E4%B9%9F%E6%8C%AB9-025045966.html
 - Health-code red/green joke: https://cloud.kepuchina.cn/newSearch/imgText?id=6908526806471479296

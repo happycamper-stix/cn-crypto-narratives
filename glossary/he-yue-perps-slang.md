@@ -15,7 +15,7 @@ For mainland retail this is the default instrument, for structural reasons:
 the 94 (2017) and 924 (2021) bans killed fiat spot rails, so every yuan enters
 and exits through OTC with [[dong-ka]] risk — but USDT *already inside* Binance/OKX
 moves frictionlessly into the contract casino. Derivatives volume passed spot in
-Q4 2020; open interest grew from $3.5B to $17B (+385%) during 2020 alone, with
+Q4 2020 (?); open interest grew from $3.5B to $17B (+385%) during 2020 alone (?), with
 leverage offered up to 125x (Binance capped new users at 20x only in July 2021,
 weeks after state media — Xinhua, 2021-05-29 — ran 百倍杠杆 exposés). Industry
 figures quoted in CN press claim "99.5%–99.9% of retail eventually gets 爆仓'd"
@@ -62,7 +62,7 @@ specific to the leveraged-contract world.
 | 锁仓 | suǒcāng | lock the warehouse | open an equal opposite position to freeze a loss instead of realizing it — cope-hedging that pays double fees and funding to avoid admitting defeat |
 | 翻本 / 回本 | fānběn / huíběn | flip back / return the principal | win back losses — the gambler's engine; post-爆仓 ritual is redepositing at *higher* leverage to 翻本 in 一单 ("one trade") |
 | 晒单 | shài dān | sun-dry the order | post PnL screenshots; the recruiting fuel of every 带单群 — profit-screenshot generators are an actual cottage industry |
-| 实盘 | shípán | real plate | verified live positions — 币Coin and 合约帝 (Héyuēdì, "Contract Emperor," founded May 2019) built leaderboards where 大V traders' real Binance/OKX positions stream publicly, spawning 跟单 (gēndān, copy-trading) bots |
+| 实盘 | shípán | real plate | verified live positions — 币Coin and 合约帝 (Héyuēdì, "Contract Emperor," founded May 2019 (?)) built leaderboards where 大V traders' real Binance/OKX positions stream publicly, spawning 跟单 (gēndān, copy-trading) bots |
 | 带单 / 喊单 | dàidān / hǎndān | lead / shout orders | see [[dai-dan-lao-shi]] and [[kol-shilling-ecosystem]]; the perps economics run on 返佣 (fǎnyòng, fee kickbacks) — top KOL tiers reportedly rebate up to 85% of followers' trading fees (Jiemian investigation, 2021-03) |
 | 赌狗 | dǔgǒu | gambling dog | degen self-label, worn with pride; the 戒赌 ("quit gambling") register from Baidu's 戒赌吧 forum supplies the exit vocabulary — [[shang-an]] |
 | 合约一天，人间一年 | héyuē yī tiān, rénjiān yī nián | one day in contracts, one year on earth | perps variant of 币圈一天，人间一年 (popularized via the "3点钟无眠区块链" WeChat group, Spring Festival 2018) — leveraged time dilation |
@@ -91,7 +91,7 @@ in Feb 2021 amid exactly these complaints).
 | 精准插针 | jīngzhǔn chāzhēn | precision needle | aimed 插针; documented variant: bucket-shop KOLs could see followers' entries via referral dashboards and coordinate wicks to their exact liquidation prices (Jiemian, 2021) |
 | 拔网线 | bá wǎngxiàn | pull the network cable | exchange "goes down" precisely during violent moves so you can't close, add margin, or withdraw; quoted insider: "拔网线不是稀罕事…防止获利者套现." Canonical accusations: BitMEX's twin outages during 312 (2020), Binance's freezes during 519 (2021) and 10·11 (2025) |
 | 宕机 / 系统维护 | dàngjī / xìtǒng wéihù | system crash / maintenance | the official euphemisms for the above; "又双叒宕机" mockery whenever an exchange freezes at a top or bottom |
-| 吃客损 / 吃头寸 | chī kèsǔn / chī tóucùn | eat client losses / eat positions | B-book operation: the platform is your counterparty, so your loss is its revenue — "吃客损的收益比手续费挣钱多了" (insider quote, Jiemian); such a venue is a 对赌盘 (duìdǔ pán, "bet-against-you shop," bucket shop) |
+| 吃客损 / 吃头寸 | chī kèsǔn / chī tóucùn | eat client losses / eat positions | B-book operation: the platform is your counterparty, so your loss is its revenue — "吃客损的收益比赚交易手续费挣钱多了" (insider quote, Jiemian); such a venue is a 对赌盘 (duìdǔ pán, "bet-against-you shop," bucket shop) |
 | 貔貅盘 | píxiū pán | Pixiu shop | scam venue you can deposit into but never withdraw from — named for the mythical beast that eats gold and has no anus; overlaps [[pig-butchering-dark-lexicon]] |
 | 回滚 | huígǔn | roll back | exchange cancels/rewinds trades after the fact, always in its own favor ("回滚交易") |
 | 铁索连舟 | tiěsuǒ lián zhōu | iron chains linking the boats | Red Cliffs metaphor (Cao Cao chaining his fleet — one fire burns all) applied to unified-account/cross-collateral design: when collateral (USDe/wBETH/BNSOL) depegged on 10·11, chained accounts liquidated together; headline coinage from Wallstreetcn's post-mortem |
@@ -105,7 +105,7 @@ crypto contract losses 不受法律保护 ("not protected by law"), so pressure 
 publicity substitute for legal remedy. The word also names the *scam aftermarket*:
 fake 维权律师 harvest victims a second time (see [[pig-butchering-dark-lexicon]]).
 - Mar 2018: OKEx futures 维权ers reject the company's "切割徐明星" (severing
-  itself from founder Xu Mingxing) — "和他无关你信吗?" (People.cn coverage).
+  itself from founder Xu Mingxing) — "和他无关你信吗?" (People.cn coverage) (?).
 - 2018-09-10: after the 9·5 爆仓 (Sept 5 OKEx crash), losers physically 围堵
   徐明星 in Shanghai; protesters and founder end up at the same police station.
 - 2020-10-16: OKEx suspends all withdrawals (~200k BTC, ≈¥15B inside) because
@@ -125,8 +125,8 @@ fake 维权律师 harvest victims a second time (see [[pig-butchering-dark-lexic
 | 2019-06-05 | 惠轶 (Huì Yì), founder of 比特易 (BiTeYi), dies by suicide; reportedly 100x short BTC, losing ~2,000 BTC incl. client funds (details unconfirmed) (?) | the register's darkest cautionary tale; cited in every 珍爱生命，远离合约 sermon |
 | 2020-03-12 | 312 / 黑色星期四: BTC −~50% in two legs, ~$3B liquidated; BitMEX "DDoS" outages mid-cascade | 拔网线 goes mainstream; 312 joins [[number-slang]] date canon |
 | 2021-05-19 | 519: BTC −30% intraday, exchanges freeze; 凉兮 turns ¥1,000 into ¥10M+ shorting it | 519 date-name; birth of a folk hero |
-| 2021–2025 | 凉兮 (Liángxī) saga: serial 万倍 runs and blowups, ¥25M profit screenshot followed by −¥12.5M the next day, 8M USDT debt to an exchange, livestream vows to "用合约让交易所破产" and calling CZ "美联储的狗" ("the Fed's dog") | the archetype of 赌狗 livestream culture and weaponized 反指 fame |
-| 2025-10-11 | 10·11: $19.1B liquidated across 1.62M accounts in 24h (all-time record); USDe prints $0.65 on Binance; ADL fires on Binance/Bybit/BitMEX; market makers report −50% or bankruptcy | 自动减仓/ADL enters common speech; 铁索连舟; 1011 date-name ([[meme-season-aftermath]]) |
+| 2021–2025 | 凉兮 (Liángxī) saga: serial 万倍 runs and blowups, ¥25M profit screenshot followed by −¥12.5M the next day, 8M USDT debt to an exchange, livestream vows to "用合约让交易所破产" (?) and calling CZ "美联储的狗" ("the Fed's dog") | the archetype of 赌狗 livestream culture and weaponized 反指 fame |
+| 2025-10-11 | 10·11: $19B+ liquidated across 1.6M+ accounts in 24h (all-time record); USDe prints $0.65 on Binance; ADL fires on OKX and other major venues; market makers report −50% or bankruptcy | 自动减仓/ADL enters common speech; 铁索连舟; 1011 date-name ([[meme-season-aftermath]]) |
 
 ## Gallows humor: the 爆仓 cope register
 - **天台见** (tiāntái jiàn, "see you on the rooftop") — the liquidation suicide
@@ -134,7 +134,7 @@ fake 维权律师 harvest victims a second time (see [[pig-butchering-dark-lexic
   [[tian-tai-jian]].
 - **关灯吃面** — lights-off noodles after a loss (inherited from A-share forums;
   glossed in [[trading-slang]]); perps chats ritually ask 今晚吃肉还是吃面?
-- **重开** (chóngkāi, "restart") — gaming slang for rerolling a save file,
+- **重开** (chóngkāi, "restart") — gaming slang for restarting a match/run,
   applied to one's life after 爆仓: "下辈子重开" — nominally a suicide joke,
   functionally a sigh.
 - **珍爱生命，远离合约** (zhēn'ài shēngmìng, yuǎnlí héyuē) — "cherish life, stay

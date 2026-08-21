@@ -14,14 +14,15 @@ type: permanent
 happened next: the cool-down, the Jan 2026 second wave, and the current state.
 
 ## The cool-down (Nov–Dec 2025)
-The October wave (币安人生 peak ~$450M, touched Oct 20 2025 on its Binance
-futures listing, per Odaily) followed the classic 过山车
-(rollercoaster) profile: the Oct 10–11 2025 market-wide liquidation cascade
-(the "10·11"/1011 crash, instantly a numeric-date term alongside 519) gutted BSC
-meme liquidity; most 中文 tickers bled 80–95%. CN commentary pieces asked
-中文Meme为何后劲不足 ("why do Chinese memes lack staying power") (?) — diagnosis:
-purely emission-driven attention (CZ signal → mint rush → no second act), no
-Western buyer handoff, and launchpad extraction (dev/sniper 老鼠仓,
+The October wave (币安人生 peak ~$500M, touched Oct 8 2025, per PANews and
+TechFlow; its Binance futures listing followed Oct 20 2025, per Odaily) followed
+the classic 过山车 (rollercoaster) profile: the Oct 10–11 2025 market-wide
+liquidation cascade (the "10·11"/1011 crash, instantly a numeric-date term
+alongside 519) gutted BSC meme liquidity; most 中文 tickers bled 80–95%. CN
+commentary later asked 中文Meme为何后劲不足 ("why do Chinese memes lack staying
+power") (Odaily, Jan 12 2026, after the second wave fizzled) — diagnosis:
+purely emission-driven attention (CZ/He Yi signal → mint rush → no second act),
+no Western buyer handoff, and launchpad extraction (dev/sniper 老鼠仓,
 "rat positions").
 
 ## Second wave (Jan 2026)
@@ -35,7 +36,7 @@ republished via PANews, Jan 12 2026) as the "5 hottest BSC Chinese memes":
 - **人生K线** (rénshēng K-xiàn, "life K-line/candlestick chart") — your life as
   a chart; extends the ___人生 blessing-formula into chartist fatalism.
 - **川普** (Chuānpǔ) — short for 四川普通话 "Sichuan Mandarin", doubling as
-  Trump's Chinese name; peaked ~$2M.
+  Trump's Chinese name; sat ~$2M.
 - **超级周期** ("supercycle") — minted off a CZ "supercycle" post; briefly
   topped $4M.
 - Persona coins like **主理小妮** ("Manager Xiao Ni") minted alongside but
@@ -43,16 +44,18 @@ republished via PANews, Jan 12 2026) as the "5 hottest BSC Chinese memes":
 
 Then the same script: within days the leaders sat 25–60% off their highs
 (我踏马来了 $52M→$36M, 人生K线 $42M→$20M, 老子 ~$20M→$15M). Analysts
-describe BSC meme trading as 火山喷发式 ("volcanic-eruption style") (?) —
-extreme short bursts, fast decay, strong seasonality — versus Solana's more
-continuous meme flow.
+describe BSC meme trading as 火山喷发式 ("volcanic-eruption style", per Hotcoin
+Research via TechFlow) — extreme short bursts, fast decay, strong seasonality —
+versus Solana's more continuous meme flow.
 
 ## Current state (as of Aug 2026)
 - Four.meme remains the BSC schelling point, still trading on CZ-adjacency;
   pump.fun never captured the 中文 niche (CN media called it 缺席/absent from
-  the wave outright).
+  the wave outright (?)).
 - The 中文-ticker meta is now a recognized recurring *season*, not a one-off:
-  each CZ/He Yi signal or BNB ATH restarts a smaller echo wave.
+  each CZ/He Yi signal or BNB ATH restarts an echo wave — not always smaller:
+  币安人生 set a fresh ATH (~$0.90, ≈$900M mcap) on Jun 7 2026, roughly 2x its
+  Oct 2025 peak (per CoinMarketCap/CoinGecko).
 - Vocabulary consolidated: 龙头 (sector leader), 打狗 (meme sniping), 冲
   (chōng, "charge in"/ape), 接盘 (catch the falling bag) are the working verbs;
   the blessing-formula (___人生) and profane-swagger name families persist as

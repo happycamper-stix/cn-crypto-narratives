@@ -22,10 +22,10 @@ cultural context), not the literal translation.
 
 ## Patterns (decoding mechanics)
 - [[homophone-wordplay]] — 谐音梗, the master key (姨太 = ETH)
-- [[a-share-inheritance]] — the A股→币圈 lexical pipeline: 韭菜, 套牢, 打板, 老鼠仓, 妖币
+- [[a-share-inheritance]] — the A股→币圈 lexical pipeline: 韭菜, 套牢, 打板(?), 老鼠仓, 妖币
 - [[red-green-inversion]] — 红涨绿跌: why 飘红 means "in the green"
 - [[number-slang]] — 8=rich, 520=love, 94=the ban, CZ's inverted 4
-- [[units-magnitude-conventions]] — 万/亿 magnitude grammar, U/刀, 成仓, 百倍币, U本位
+- [[units-magnitude-conventions]] — 万/亿 magnitude grammar, U/刀, 几成仓, 百倍币, U本位
 - [[food-metaphors]] — leeks, flatbread, dirt dogs; food as censorship camouflage
 - [[censorship-evasion-coinage]] — how the 2017/2021 bans forged the lexicon
 - [[suffix-morphology]] — 币/盘/圈/党/侠(?)/神 productive suffixes
@@ -42,17 +42,35 @@ cultural context), not the literal translation.
 - [[emoji-sticker-visual-codes]] — 🥬🔪/🚀🌕, sticker packs, 截图 alpha: the image-borne layer
 
 ## Glossary
-- Tables: [[trading-slang]] · [[he-yue-perps-slang]] · [[k-line-ta-slang]] · [[coin-nicknames]] ·
-  [[community-roles]] · [[narrative-terms]] · [[bankuai-longtou-rotation-slang]] ·
-  [[official-state-register]] 官方话语 (how regulators name crypto) ·
-  [[nft-shuzi-cangpin-slang]] NFT时代 & 数字藏品 (the 2021–22 register split) ·
-  [[gamefi-dajin-slang]] GameFi/打金 & the MMO gold-farming lineage
-- Atomic terms: [[jiu-cai]] 韭菜 · [[ge-jiu-cai]] 割韭菜 · [[da-bing]] 大饼 ·
-  [[da-yi-tai]] 姨太 · [[shang-an]] 上岸 · [[dong-ka]] 冻卡 · [[ke-xue-jia]] 科学家 ·
-  [[nv-wu]] 女巫 · [[dai-dan-lao-shi]] 带单老师 · [[er-chi]] 二池 ·
-  [[sha-bi-de-gong-shi]] 傻逼的共识 · [[yi-bi-yi-bie-shu]] 一币一别墅 ·
-  [[hong-zhang-lv-die]] 红涨绿跌 · [[tian-tai-jian]] 天台见 ·
-  [[wu-bi-qu-kuai-lian]] 无币区块链
+
+### Term tables
+- [[trading-slang]] — 交易黑话: the verbs of the trade — 梭哈, 抄底, 套牢 — inherited from A-shares and HK gambling films
+- [[he-yue-perps-slang]] — 合约黑话: the perps/contract-gambler register, and why futures is *the* mainland instrument
+- [[k-line-ta-slang]] — K线黑话: chart-reading slang, the A-share chartism every 带单老师 narrates in
+- [[coin-nicknames]] — 币种绰号: food puns and homophones for coins, partly born as post-2017-ban censorship evasion
+- [[community-roles]] — 币圈众生: the cast of the harvest metaphor — leeks, farmers, whales, wool-pluckers
+- [[narrative-terms]] — 叙事黑话: how projects get categorized; the 盘 scam-taxonomy richer than anything English CT has
+- [[bankuai-longtou-rotation-slang]] — 板块/龙头: the A-share sector-rotation grammar — sectors and their dragon-heads, not "narratives"
+- [[official-state-register]] — 官方话语: how regulators name crypto, and how to read the state's language
+- [[nft-shuzi-cangpin-slang]] — NFT时代 & 数字藏品: the 2021–22 register split — one technology, two vocabularies
+- [[gamefi-dajin-slang]] — GameFi/打金: the MMO gold-farming industry that walked into crypto with its whole vocabulary
+
+### Atomic terms
+- [[jiu-cai]] — 韭菜 jiǔcài, lit. "leeks": retail investors as an endlessly re-growing harvestable class
+- [[ge-jiu-cai]] — 割韭菜 gē jiǔcài, lit. "cut leeks": dumping on retail; to 被割 is to be exit liquidity
+- [[da-bing]] — 大饼 dàbǐng, lit. "big flatbread": BTC — the round gold-coin logo as pancake, patriarch of the family
+- [[da-yi-tai]] — 姨太 yítài, lit. "concubine": ETH, via the 以太/姨太 homophone
+- [[shang-an]] — 上岸 shàng'àn, lit. "reach the shore": cash out even or ahead, convert to fiat, and quit the game
+- [[dong-ka]] — 冻卡 dòngkǎ, lit. "frozen card": bank card frozen after an OTC sale — the defining CN off-ramp fear
+- [[ke-xue-jia]] — 科学家 kēxuéjiā, lit. "scientist": bot writers, mint snipers, MEV searchers — the people who beat you to the block
+- [[nv-wu]] — 女巫 nǚwū, lit. "witch": a Sybil attacker, one person posing as many wallets to multiply an airdrop
+- [[dai-dan-lao-shi]] — 带单老师 dàidān lǎoshī, lit. "order-leading teacher": the scam guru who mentors followers into losing trades
+- [[er-chi]] — 二池 èrchí, lit. "second pool": DeFi Summer's own-token LP pool — highest APR, where the massacre happens
+- [[sha-bi-de-gong-shi]] — 傻逼的共识也是共识 shǎbī de gòngshí, lit. "the consensus of idiots is still consensus": the coin circle's most cynical theory of value
+- [[yi-bi-yi-bie-shu]] — 一币一别墅 yī bì yī biéshù, lit. "one coin, one villa": the moonboy prayer
+- [[hong-zhang-lv-die]] — 红涨绿跌 hóng zhǎng lǜ diē, lit. "red rises, green falls": the mainland chart-color convention, exact inverse of the West
+- [[tian-tai-jian]] — 天台见 tiāntái jiàn, lit. "see you on the rooftop": the post-liquidation suicide joke — almost never meant, always understood
+- [[wu-bi-qu-kuai-lian]] — 无币区块链 wúbì qūkuàiliàn, lit. "coinless blockchain": the only chain the state sanctions — "链 good, 币 bad"
 
 ## Narratives
 - [[cn-crypto-eras-timeline]] — the spine: 大妈 era → 94 → 模式币 → 519 → 铭文 → meme season

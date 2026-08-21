@@ -95,12 +95,12 @@ leading, majors flat) was itself read as a structural omen; see
 | 中国概念 / 国产公链 | 2017 | NEO 小蚁, QTUM 量子链, TRX 波场 | first "China concept" sector; NEO briefly top-12 globally; see [[cn-crypto-eras-timeline]] |
 | 动物币板块 (动物园行情, "zoo market") | Apr–May 2021 | DOGE 龙头 → SHIB 龙二 → PIG, AKITA, 竹子币… 补涨 | DOGE $0.01 (Jan 3) → $0.74 peak (May 8); SHIB +1,568% in the week to May 11; PIG +3,380% in a week, ~+1,000% overnight May 10; AKITA ~840x (?); the phase-name 猪狗升天 "pigs and dogs ascend to heaven" (?) |
 | 马斯克概念 | 2021→ | DOGE perennial 龙头; FLOKI, KM… | every Musk utterance mints followers: Nov 12 2024 Trump's "D.O.G.E." dept. announcement pumped DOGE ~19% in a day; Musk's X-handle change to "Kekius Maximus" (Dec 31 2024) sent $KM +11,200% |
-| 香港概念币 | Jan–Apr 2023 | CFX 龙头; ACH, KEY 跟风 | HK licensing pivot + CFX×China-Telecom BSIM deal: CFX $0.025 (mid-Jan) → ~$0.47 peak (Mar 18–19), ~20x, mcap rank 100+ → top-60; media framing 神秘的东方力量 "mysterious Eastern force" |
+| 香港概念币 | Jan–Apr 2023 | CFX 龙头; ACH, KEY 跟风 | HK licensing pivot + CFX×China-Telecom BSIM deal: CFX $0.025 (mid-Jan) → ~$0.47 peak (Mar 18–19), ~20x, mcap rank 100+ → top-60; media framing 神秘的东方力量 "mysterious Eastern force" (?) |
 | AI概念币 (ChatGPT wave) | Jan–Feb 2023 | AGIX, FET | AI 概念币 basket averaged ~+169% in Jan 2023 per CN media tallies (?) |
 | 铭文板块 | 2023 | ORDI 龙头 | the CN-retail-driven BRC-20 sector; see [[inscription-mania]] |
 | AI Agent板块 | Q4 2024–Jan 2025 | GOAT ignition → ai16z & Virtuals as 龙头双雄 ("dual dragon-heads") | by early Jan 2025 sector ~$16.9B (+22.7% w/w); VIRTUAL mcap >$5B, ai16z >$2.5B; Virtuals eco 33.3% of agent mindshare (Cookie.fun); ChainCatcher headline literally a leadership duel: "Virtual 与 AI16Z，谁能在 AI 浪潮中笑到最后？" |
 | DeepSeek概念 | Jan–Feb 2025 | none — pure 蹭热点 | R1 launch (Jan 20 2025) spawned ~75 fake "DeepSeek" tokens on ETH/Solana (Blockaid); "Seek" launched Jan 28, hit ~$48M mcap, then −99.9%; DeepSeek's official 声明: 从未发行任何虚拟货币 "we have never issued any virtual currency"; meanwhile R1 was a 叙事打击 (narrative strike) *on* the AI Agent 板块 — the incumbent AI coins dumped as their "expensive compute" story broke |
-| BSC 中东 meta | Mar 2025 | $Mubarak 龙一, $Mansa 龙二 | CZ-adjacency sector (he reposted Mubarak memes); textbook 龙一/龙二 usage in CN coverage |
+| BSC 中东 meta | Mar 2025 | $Mubarak 龙一, $Mansa 龙二 | CZ-adjacency sector (he reposted Mubarak memes (?)); textbook 龙一/龙二 usage in CN coverage |
 | 中文meme板块 | Oct 2025 / Jan 2026 | 币安人生 龙头 → 我踏马来了 新龙头 (?) | the fully sinicized endgame: sector, leader, rotation, and *tickers* all in Chinese; see [[launchpad-naming-meta]] and [[meme-season-aftermath]] |
 
 Pattern worth noticing: a 概念币 wave needs no consent from the concept. Neither

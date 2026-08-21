@@ -54,7 +54,7 @@ red-up chart.
 
 | Term | Pinyin | Literal | Actual meaning | Notes |
 |---|---|---|---|---|
-| 金叉 / 死叉 | jīnchā / sǐchā | golden fork / death fork | golden cross / death cross | any bullish/bearish line crossover (MACD, KDJ, MAs); 零轴下方金叉 = golden cross below the zero line — staple of Odaily guest analysis |
+| 金叉 / 死叉 | jīnchā / sǐchā | golden fork / death fork | golden cross / death cross | any bullish/bearish line crossover (MACD, KDJ, MAs); 零轴下方金叉 = golden cross below the zero line — staple of Odaily guest analysis (?) |
 | 顶背离 / 底背离 | dǐng bèilí / dǐ bèilí | top/bottom deviation | bearish/bullish divergence | price makes new high/low, indicator doesn't; the workhorse reversal argument in CN columns |
 | 红三兵 | hóng sān bīng | three red soldiers | three white soldiers (bullish) | "red" because CN up-candles are red — the pattern name itself encodes [[hong-zhang-lv-die]] |
 | 三只乌鸦 | sān zhī wūyā | three crows | three black crows (bearish) | three consecutive 阴线 at a top |
@@ -70,7 +70,7 @@ red-up chart.
 
 ## The price-analysis column register (levels and verbs)
 The formulaic vocabulary of every CN 行情分析 post — e.g. "交易时刻: BTC在8.8万和
-9万区间存在强支撑" (Odaily-syndicated column, 2026-01-12):
+9万区间存在强支撑" (PANews 交易时刻 column via 腾讯新闻, 2026-01-12):
 
 | Term | Pinyin | Literal | Actual meaning |
 |---|---|---|---|
@@ -173,11 +173,11 @@ fatalist idiom for narrating luck, the same slot 赌命 language occupies in
 - 21ic: 缠论技术分析及在数字资产上的应用 — https://www.21ic.com/article/800355.html
 - AICoin: 每一次暴涨前都会形成画门行情 (2019-05-16 (?)) — https://www.aicoin.com/en/article/25632
 - 澎湃: 数字货币K线交易常识与技术基础分析 — https://m.thepaper.cn/newsDetail_forward_11234852
-- Sina 金灵: 量价关系分析指南 (放量缩量、天量地量) — https://k.sina.cn/article_7879922977_1d5ae152101901dhta.html
-- Odaily guest analysis (momentum 金叉 usage), e.g. — https://www.odaily.news/en/post/5210225
-- 腾讯新闻: 交易时刻 — BTC在8.8万和9万区间存在强支撑 (2026-01-12) — https://news.qq.com/rain/a/20260112A046XS00
+- Sina 金灵: 量价关系分析指南 (放量缩量、天量地量) — https://k.sina.cn/article_7879922977_1d5ae152101901dhta.html (link dead as of 2026-08-21)
+- Odaily guest analysis (特邀分析) column, e.g. 比特币维持空头主基调 (2026-04-13) — https://www.odaily.news/post/5210225 (this example does not itself use 金叉 (?))
+- 腾讯新闻: 交易时刻 — BTC在8.8万和9万区间存在强支撑 (PANews column, 2026-01-12) — https://news.qq.com/rain/a/20260112A046XS00
 - 幣修學分 (TW): W底、M頭怎麼看 (2026-02-04) — https://bitssuecredit.com/2026/02/04/technical-analysis-chart-patterns-double-bottom/
-- CoinDesk (中文): 比特币月度MACD发出红色信号 (2025-12-01) — https://www.coindesk.com/markets/2025/12/01/bitcoin-s-monthly-macd-flashes-red-echoes-of-past-bear-markets
+- CoinDesk: Bitcoin's Monthly MACD Flashes Red, Echoes of Past Bear Markets (2025-12-01) (?) — https://www.coindesk.com/markets/2025/12/01/bitcoin-s-monthly-macd-flashes-red-echoes-of-past-bear-markets
 
 ## Related links
 - [[hong-zhang-lv-die]] — the red-up/green-down inversion (the analyst gotcha)

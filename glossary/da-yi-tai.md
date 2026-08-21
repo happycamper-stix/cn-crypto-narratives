@@ -14,13 +14,13 @@ type: permanent
 ## Mechanics
 Pure homophone: Ethereum transliterates as 以太坊 (yǐtàifáng), and 以太 (yǐtài,
 "ether") sounds like 姨太 (yítài, concubine). The joke deepened because ETH
-"follows but never leads" BTC — like a concubine in the household.
+"follows but never leads" BTC — like a concubine in the household. (?)
 
 ## Family
 The pun extends into a full polygamous household of forks:
 - 大姨太 — "first concubine": ETH
-- 二姨太 — "second concubine": ETC (Ethereum Classic)
-- further 姨太 numbering mocked the wave of ETH copycats/forks
+- 小姨太 — "little concubine": ETC (Ethereum Classic)
+- further 姨太 numbering mocked the wave of ETH copycats/forks (?)
 
 A textbook case of [[homophone-wordplay]]: untranslatable — the English reader sees
 "Ethereum," the Chinese reader sees a soap-opera harem drama about chain forks.

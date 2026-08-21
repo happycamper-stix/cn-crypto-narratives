@@ -43,7 +43,7 @@ milliseconds.
 | 某易 | mǒu yì | "a certain -Yi" | OKX 欧易 | post-Feb 2021 rebrand form |
 | 某火 | mǒu huǒ | "a certain Huo-" | Huobi 火币 / HTX | here the *first* char survives |
 | 某币 | mǒu bì | "a certain -coin" | context-dependent; seen for 火币 (?) | ambiguous, needs context |
-| 某大所 | mǒu dà suǒ | "a certain big exchange" | usually Binance (?) | 所 clipped from 交易所; sneer register: 某大所又拔网线了 "the big exchange pulled the network cable again" (went down mid-volatility) |
+| 某大所 | mǒu dà suǒ | "a certain big exchange" | usually Binance (?) | 所 clipped from 交易所; sneer register: 某大所又拔网线了 (?) "the big exchange pulled the network cable again" (went down mid-volatility) |
 | 某头部交易所 | mǒu tóubù jiāoyìsuǒ | "a certain head/top exchange" | any of the majors | media/formal register |
 | 三大所 | sān dà suǒ | "the three big exchanges" | 币安/火币/OK (pre-924 era) | collective form that avoids singling one out |
 
@@ -56,7 +56,7 @@ liquidations → Binance/OKX; 出金 problems → any; BSC memes → Binance) br
 The pattern is imported wholesale from the general Chinese internet, where
 platforms suppress rivals' names and ad/diversion rules punish brand mentions:
 某宝 = Taobao 淘宝, 某乎 = Zhihu 知乎, 某音 = Douyin 抖音, 某东 = JD 京东,
-某书 = Xiaohongshu 小红书, 某站 = Bilibili B站. Crypto users arrived already
+某书 = Xiaohongshu 小红书, 某站 = Bilibili B站 (?). Crypto users arrived already
 fluent in it.
 
 **How reflexive it has become**: an October 2024 legal-risk explainer on NetEase
@@ -136,7 +136,7 @@ concluded, from enforcement behavior, that naming platforms was dangerous.
   Baidu simply returned no matching pages). Writing 某安
   keeps the post up and the account alive.
 - **Libel & retaliation risk.** Justin Sun sued Sina over its 2019–2022
-  investigative reports and won in the Beijing Internet Court (ruled Dec 31,
+  reports and reposts and won in the Beijing Internet Court (ruled Dec 31,
   2024, reported Feb–Mar 2025): deletion of five articles, a 72-hour apology
   on the Sina Finance site, ¥20,000 damages plus ~¥11,000 fees. Binance
   sued the Wall Street Journal for defamation in March 2026. Both principals
@@ -146,7 +146,7 @@ concluded, from enforcement behavior, that naming platforms was dangerous.
   doctrine turns on identifiability (可识别性), and 某安 plus context is
   identifiable (?) — but it defeats the *practical* trigger: brand-name
   complaint sweeps and PR keyword monitoring.
-- **Commercial self-preservation.** CN KOL income is exchange 返佣 (fǎnyōng,
+- **Commercial self-preservation.** CN KOL income is exchange 返佣 (fǎnyòng,
   rebate/commission — see [[kol-shilling-ecosystem]]); naming your
   revenue-source exchange in a complaint risks the relationship. 某安 lets a KOL
   vent to insiders without surfacing in the exchange's brand-search dashboard.

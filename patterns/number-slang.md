@@ -24,10 +24,13 @@ phrases. Tickers, supply counts, and prices are often chosen for these meanings.
 - **250** — insult ("idiot"); occasionally used self-mockingly.
 
 ## Crypto-specific numbers
-- **94 / 九四事件** — Sept 4 2017, the PBoC ICO-ban date. A dated trauma-reference
-  every 老韭菜 knows; crashes get named like disasters (312 = Mar 2020, 519 = May 2021).
+- **94 / 九四事件** — Sept 4 2017, the seven-regulator (PBoC-led) ICO-ban date. A
+  dated trauma-reference
+  every 老韭菜 knows; crashes get named like disasters (312 = Mar 2020, 519 = May
+  2021).
 - **4 inverted** — despite 4≈death, CZ's numbered-tweet shorthand "4" (= "ignore
-  FUD") made 4 a bullish meme: hence the Four.meme launchpad and the $4 token.
+  FUD") made 4 a bullish meme: hence the $4 token and the Four.meme launchpad
+  (naming link unconfirmed) (?).
   See [[launchpad-naming-meta]].
 - **YYDS** (永远的神, "eternal god" = GOAT) and the pinyin-initialism family (NSDD,
   XSWL) — letters, not numbers, but same compression culture. 大饼yyds.
@@ -41,8 +44,9 @@ luck/affection to a Chinese audience — not a technical parameter.
   "to be fair"; 3Q = "thank you") — the number is read for its sound in either
   language. Details in [[pinyin-initialisms]].
 - **Trauma-date family extended**: alongside 94/312/519, communities also date
-  events like 924 (Sept 24 2021, the ten-agency 银发〔2021〕237号 notice declaring
-  all crypto transactions illegal — "924通知") and FTX's 11月 collapse (Nov 8–11
+  events like 924 (Sept 24 2021, public release of the ten-agency 银发〔2021〕237号
+  notice declaring virtual-currency business activities illegal financial
+  activity — "924通知") and FTX's 11月 collapse (Nov 8–11
   2022, no canonical digit string) (?); any month-day digit string in a CN crypto
   thread is a candidate event reference before it's a price level.
 - Numbered dates double as censorship-safe references to banned topics — the

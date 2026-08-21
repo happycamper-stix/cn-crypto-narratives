@@ -51,7 +51,7 @@ surface. Read them as vocabulary, not decoration.
 | 🚀 🌕 | 冲 (chōng, "charge") / 登月 (dēngyuè, "moon landing") | rocket + full moon | "to the moon", imported EN convention; 冲🚀 is the standard CN bullish reply |
 | 🐂 / 🐮 | 牛市 (niúshì, "bull market") | ox | bullish; also first half of the rebus 🐂🍺 = 牛逼 (niúbī, lit. "cow's genitals" = "awesome") |
 | 🐻 | 熊市 (xióngshì, "bear market") | bear | bearish |
-| 💎🙌 | 钻石手 (zuànshí shǒu, "diamond hands") | diamond + raised hands | hold through anything; entered CN discourse ~2021-05-20 when Sina Finance glossed Musk's "Tesla has 💎🙌" tweet for mainland readers, days after the 519 crash |
+| 💎🙌 | 钻石手 (zuànshí shǒu, "diamond hands") | diamond + raised hands | hold through anything; entered CN discourse ~2021-05-20 when Sina Finance glossed Musk's "Tesla has 💎🙌" tweet for mainland readers, the day after the 519 crash |
 | 🧻🙌 | 纸手 (zhǐshǒu, "paper hands") | toilet paper + hands | weak seller; the mocking antonym |
 | 🕯️ | 点蜡 (diǎnlà, "light a candle") | candle | mourning someone's liquidation (爆仓 bàocāng) or a token's 归零 (guīlíng, "return to zero"); inherited from 股吧 stock-forum mourning ritual. Precedent: Sina Weibo silently removed its candle emote before the June-4 anniversary in 2012 — proof platforms police emoji, which is why substitutes rotate |
 | 🪦 | 归零 / 死了 | gravestone | project dead; often 🪦 + ticker |
@@ -67,8 +67,9 @@ surface. Read them as vocabulary, not decoration.
 | 🅱️ | 币 (bì, "coin") (?) | B button | occasional visual swap in the same spirit as 出B/屯B letter-shielding — see [[homophone-wordplay]] |
 
 ## The emoji rebus register (抽象话)
-抽象话 (chōuxiànghuà, "abstract speech") — from 孙笑川 (Sūn Xiàochuān)'s
-"abstract studio" livestream culture — converts each syllable to a
+抽象话 (chōuxiànghuà, "abstract speech") — from the 抽象工作室 ("abstract
+studio") livestream culture, formed 2015 by 李赣 (Lǐ Gàn) with 孙笑川
+(Sūn Xiàochuān) as its eventual figurehead — converts each syllable to a
 homophone/pictograph emoji: 真的厉害 "truly impressive" → 针 (needle) 💧 (drop
 = 的/滴) 💪 (力) ⛵ (害/海). Web generators automated it (one-click converters
 covered by tech media 2020-04; open-source NMSL converter on GitHub), and the
@@ -85,7 +86,7 @@ the same decoding move as [[homophone-wordplay]], one modality over.
   割韭菜 travels where the typed phrase might trip filters, and re-encoding on
   each save/forward churns the MD5.
 - Dedicated crypto packs are a genre: 金色财经 ran "币圈新老韭菜必备表情包"
-  ("essential stickers for new and old leeks"); download-site compilations of
+  ("essential stickers for new and old leeks", 2019-03); download-site compilations of
   炒币专用微信表情包 ("WeChat stickers for coin speculation", e.g. 2021-10-25);
   a 2022-03 developer-shared 区块链暨炒币表情包 pack contained 60 stickers
   (38 with captions, 22 without). Standard templates are the 熊猫头
@@ -93,7 +94,7 @@ the same decoding move as [[homophone-wordplay]], one modality over.
   faces with captions like 梭哈 / 冲 / 稳住 / 心态崩了 (?)
 - Finance platforms mint their own bracket-emotes that become vocabulary:
   雪球 (Xueqiu) and moomoo expose custom emotes like [韭菜] and [惊恐]
-  ("terror") — a platform-native emoji layer invisible off-platform.
+  ("terror") (?) — a platform-native emoji layer invisible off-platform.
 - Telegram sticker culture loops back into WeChat: tutorials for batch-exporting
   TG stickers to WeChat (and building packs via @Stickers bot) circulate in CN
   channels, making stickers the lexicon's cross-platform carrier between the
@@ -141,7 +142,7 @@ images.**
 | 2012-06 (pre-June 4) | Sina Weibo removes candle emote, blocks 蜡烛 searches — emoji itself shown to be censorable |
 | 2017-09-04 | 九四 ICO/exchange ban: crypto talk becomes a filtered category — see [[censorship-evasion-coinage]] |
 | 2018-08-21 | First WeChat 公众号 purge: 金色财经, 深链财经, 火币资讯, 大炮评级, TokenClub, 币世界快讯 et al. banned overnight |
-| 2019-11 | Second wave: 深链Deepchain, 币圈邦德, 壹块硬币, 炒币学堂 banned; accounts respawn as 马甲 (mǎjiǎ, "vest" = sockpuppet) |
+| 2019-11-20 | Second wave: 深链Deepchain, 币圈邦德, 壹块硬币, 炒币学堂 banned; accounts respawn as 马甲 (mǎjiǎ, "vest" = sockpuppet) |
 | 2019-12-12 | Weibo bans 孙宇晨 (Justin Sun) and 币安一姐 何一 (He Yi) |
 | 2020-03-10 | 发哨子的人 ("The Whistle-Giver", 人物 magazine) censored in 3 hours; netizens relay it in emoji, Morse, seal script, Braille, even DNA-sequence encodings — the canonical demonstration of the image/encoding relay playbook crypto groups inherit |
 | 2021-05-19/20 | 519 crash; Musk's 💎🙌 tweet glossed into 钻石手 by mainland finance media — EN emoji idiom formally imported |
@@ -166,7 +167,7 @@ images.**
 - Citizen Lab — [(Can't) Picture This: image filtering on WeChat Moments (2018-08)](https://citizenlab.ca/2018/08/cant-picture-this-an-analysis-of-image-filtering-on-wechat-moments/) · [(Can't) Picture This 2: realtime image filtering in WeChat chats (2019-07)](https://citizenlab.ca/2019/07/cant-picture-this-2-an-analysis-of-wechats-realtime-image-filtering-in-chats/) · [OCR test corpus](https://github.com/citizenlab/chat-censorship/blob/master/wechat/image-filtering/ocr.html)
 - CDT — [六四周年临近 新浪微博悄然撤下"蜡烛"表情 (2012)](https://chinadigitaltimes.net/chinese/228756.html)
 - 界面 — [微博大规模封禁"币圈大V" (2021-06)](https://www.jiemian.com/article/6200616.html) · 腾讯新闻 [mirror](https://news.qq.com/rain/a/20210607A06QKP00)
-- 21财经 — [币圈微信公号被屏蔽 (2018-08-21)](https://m.21jingji.com/article/20180821/herald/9fdbed4d300b2f8ff26a2a7f57d1dd16.html) · 知乎 [当晚记录](https://zhuanlan.zhihu.com/p/42672941) · [2019年11月第二波](https://zhuanlan.zhihu.com/p/70193590) · 澎湃 [区块链媒体被封](https://m.thepaper.cn/newsDetail_forward_5034325)
+- 21财经 — [币圈微信公号被屏蔽 (2018-08-21)](https://m.21jingji.com/article/20180821/herald/9fdbed4d300b2f8ff26a2a7f57d1dd16.html) · 知乎 [当晚记录](https://zhuanlan.zhihu.com/p/42672941) · 新京报 [2019年11月第二波 (2019-11-20)](https://m.bjnews.com.cn/detail/157425923415788.html) · 澎湃 [区块链媒体被封](https://m.thepaper.cn/newsDetail_forward_5034325)
 - 新浪财经 — [马斯克发个表情为何让比特币大反弹？一文读懂美国币圈黑话 (2021-05-20)](https://finance.sina.com.cn/roll/2021-05-20/doc-ikmyaawc6452340.shtml)
 - 未央网 — [芥末圈："知识付费"面具下的币圈割韭菜大本营](https://www.weiyangx.com/338244.html)
 - 网易 — [币圈幻影（一）"带单老师"与交易所返佣](https://c.m.163.com/news/a/H2HH0RT50519DFFO.html) · 人民日报客户端 — [亲历炒股群套路：每天晒账户收益](https://www.peopleapp.com/column/30037713289-500002744637)

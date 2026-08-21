@@ -27,8 +27,8 @@ pre-crypto labor ancestry, and fills the 2021–22 GameFi gap in
 | Era | What happened | Vocabulary minted |
 |---|---|---|
 | 2001–04, 传奇 (*Legend of Mir*) | Studios mass-created free accounts, ran scripts (脚本) and offline bots to occupy low-level maps farming coins/gear — Chinese coverage calls this the 鼻祖 (ancestor) of 打金 practice | 打金, 工作室, 脚本, 挂机 (guàjī, AFK-botting) |
-| ~2002 | **5173.com** (Jinhua, Zhejiang) launches as the RMT marketplace; by 2008 held "90%以上" of the virtual-item trading-platform market | RMT (从业者 self-label), 交易平台 |
-| 2005–08, WoW 国服 era | Industrial 金农 farms: NYT Magazine's "The Life of the Chinese Gold Farmer" (Julian Dibbell, 2007-06-17) documents Nanjing workers at ~$0.30/hour on 12-hour shifts; academic estimates ran 100k–400k+ workers in China (Heeks 2008 ≈400k — First Monday later cautioned all such figures were extrapolated guesses); Mar 2007 ministry notice tried to regulate virtual-property trading | 金农 (jīnnóng, "gold peasant" — the EN "gold farmer" is its sibling calque), 打金者, 打金工作室 |
+| ~2002 | **5173.com** (Jinhua, Zhejiang) launches as the RMT marketplace; by 2008 trading platforms, with 5173 at the head, held "90%以上" of the virtual-item trading market | RMT (从业者 self-label), 交易平台 |
+| 2005–08, WoW 国服 era | Industrial 金农 farms: NYT Magazine's "The Life of the Chinese Gold Farmer" (Julian Dibbell, 2007-06-17) documents Nanjing workers at ~$0.30/hour on 12-hour shifts; academic estimates ran 100k–400k+ workers in China (Heeks 2008 ≈400k — First Monday later cautioned all such figures were extrapolated guesses); Feb 2007 14-ministry notice tried to regulate virtual-currency trading | 金农 (jīnnóng, "gold peasant" — the EN "gold farmer" is its sibling calque), 打金者, 打金工作室 |
 | 2011 | The Guardian reports Chinese prison-camp labor forced to farm WoW gold at night — 打金 as literal 劳改 (labor-camp) work | — |
 | 2008–2020, DNF / 梦幻西游 | 地下城与勇士 (DNF) becomes the 搬砖 mecca (multi-account map-running); NetEase's 梦幻西游 runs 藏宝阁, an *official* RMT auction house | 搬砖 (bānzhuān, "move bricks" — grind as menial labor), 搬砖党, 多开 (multi-boxing) |
 | 2010s, 打金服 | A genre of 传奇 private servers *marketed* as gold-farmable: "元宝可提现、装备回收" (ingots withdrawable to cash, gear bought back) — pre-crypto play-to-earn advertising, verbatim | 打金服 (dǎjīnfú, "gold-farming server"), 回收 (buyback) |
@@ -49,18 +49,18 @@ blockchain gaming the Trojan horse by which 打金者 invade traditional finance
 | 金农 | jīnnóng | gold peasant | the MMO-era word for gold farmer; in 链游 discourse invoked as the trade's ancestry |
 | 搬砖 | bānzhuān | move bricks | grinding as menial labor (DNF lineage). NB: in 币圈 proper, 搬砖 = cross-exchange arbitrage (2017 kimchi-premium sense); in 链游 context it reverts to the MMO grind sense — disambiguate by scene |
 | 链游 | liànyóu | chain game | blockchain game / GameFi (区块链游戏 formal; GameFi = Game + DeFi loanword). Stereotype phrase: 链游短命 "chain games die young" |
-| 边玩边赚 | biān wán biān zhuàn | play-while-earning | Play-to-Earn; compressed as 玩赚 (wánzhuàn). Bear-market parody: 边玩边亏 "play-to-lose" |
-| X to Earn | — | — | the 2022 umbrella: M2E 边跑边赚 "run-while-earning" (StepN), plus learn/sleep/eat/sing-to-earn clones — satirized as 万物皆可赚 "everything can earn" (?) |
+| 边玩边赚 | biān wán biān zhuàn | play-while-earning | Play-to-Earn; compressed as 玩赚 (wánzhuàn). Bear-market parody: 边玩边亏 "play-to-lose" (?) |
+| X to Earn | — | — | the 2022 umbrella: M2E 边跑边赚 "run-while-earning" (StepN), plus learn/sleep/eat/sing-to-earn clones — satirized as 万物皆可赚 "everything can earn" |
 | 阿蟹 | āxiè | Ah-Crab | Axie Infinity — "Axie" ≈ ā xiè, mapped to 蟹 (crab) with the affectionate 阿- prefix; see [[homophone-wordplay]]. Its SLP token = 爱情药水 (love potion, from "Smooth Love Potion"); grinding SLP was 打水 "farming potion" (?); breeding = 繁殖, spawning 崽 (cubs) |
 | 跑鞋 | pǎoxié | running shoes | StepN's NFT sneakers; 灰鞋 (gray shoe) = the base common tier; 铸鞋 = minting new shoes; the discourse rode existing 炒鞋 (sneaker-flipping) mania framing — "币圈炒鞋" headlines |
-| 回本周期 | huíběn zhōuqī | capital-return cycle | payback period — THE valuation metric of the era. Studios ranked games by 回本天数; StepN's pitch: a ¥1,229 gray shoe, ~39 days to 回本 at peak |
-| 双币模型 | shuāngbì móxíng | dual-coin model | governance token (治理币, capped: AXS/GMT) + emission token (产出币/打金币, unlimited: SLP/GST). One analyst gloss: 打金代币 is the nation's circulating currency, 治理代币 its sovereign wealth fund. The 产出币 dump-pool is where farms die — cf. [[er-chi]] |
+| 回本周期 | huíběn zhōuqī | capital-return cycle | payback period — THE valuation metric of the era. Studios ranked games by 回本天数; StepN's example: a ¥1,229 gray shoe, ~39 days to 回本 (its own calculator, Jun 2022) |
+| 双币模型 | shuāngbì móxíng | dual-coin model | governance token (治理币, capped: AXS/GMT) + emission token (产出币/打金币, unlimited: SLP/GST). One analyst gloss: 打金代币 is the nation's circulating currency, 治理代币 its sovereign wealth fund (?). The 产出币 dump-pool is where farms die — cf. [[er-chi]] |
 | 死亡螺旋 | sǐwáng luóxuán | death spiral | the standard autopsy: unlimited emissions → 产出币 price falls → 回本周期 lengthens → new players stop → old players dump → repeat. Canonized on GameFi (CryptoMines, StarSharks, Axie, StepN), made a household word by UST/LUNA (May 2022) |
 | 铲子 | chǎnzi | shovel | three senses: ① 卖铲子 — picks-and-shovels infrastructure plays ("in a gold rush, sell shovels"; sibling: 卖水人 water-sellers); ② the entry asset you must buy before you can 打金 (the Axie team, the shoe — your shovel into the mine); ③ 铲子季 "shovel season" (Nov 2023–Jan 2024): staking launchpad tokens (AUCTION, BAKE, 1CAT…) to farm partner-project allocations |
-| 学者 | xuézhě | scholar | a player renting guild NFTs under a 奖学金计划 (scholarship program) for a revenue split — YGG's canonical 70/20/10 (scholar/manager/guild); Avocado started 50/50; predatory private "managers" (经理) took 50%+ |
-| 氪金 → 打金 | kèjīn | krypton gold | 氪金 = pay-to-win spending (from Japanese 課金); GameFi's marketing inversion: 一改氪金为打金 — "the game pays you." Companion grind-verb: 肝 (gān, "liver" — 又肝又氪 = both grindy and pay-to-win) |
+| 学者 | xuézhě | scholar | a player renting guild NFTs under a 奖学金计划 (scholarship program) for a revenue split — YGG's canonical 70/20/10 (scholar/manager/guild); Avocado started 50/50; predatory private "managers" (经理) took 30–50% |
+| 氪金 → 打金 | kèjīn | krypton gold | 氪金 = pay-to-win spending (from Japanese 課金); GameFi's marketing inversion: 一改氪金为打金 (?) — "the game pays you." Companion grind-verb: 肝 (gān, "liver" — 又肝又氪 = both grindy and pay-to-win) |
 | 撸金 | lūjīn | stroke gold | hybrid of 撸毛 and 打金, common in tutorial titles (保姆级撸金教程 "nanny-level gold-farming tutorial") |
-| 清退 | qīngtuì | clear out and expel | mass removal of mainland users for compliance — the word Huobi used post-924, reused verbatim by StepN's 2022-05-27 announcement 清退大陆用户 |
+| 清退 | qīngtuì | clear out and expel | mass removal of mainland users for compliance — the word Huobi used post-924, reused verbatim in the headlines for StepN's 2022-05-27 announcement (清退大陆用户; StepN's own text said 清查 + 停止提供服务) |
 | 击鼓传花 | jī gǔ chuán huā | beat drum, pass flower | pass-the-parcel / greater-fool — with 旁氏/庞氏 (Ponzi) and 资金盘, the standard critical triad applied to every 链游 economy |
 
 ## The X-to-earn wave, dated
@@ -68,14 +68,14 @@ blockchain gaming the Trojan horse by which 打金者 invade traditional finance
 | Date | Event |
 |---|---|
 | 2020 | YGG founded in Manila (Dec 2020); Filipino players like Owen Cambuco earn $487 in 15 days of Axie during lockdown |
-| Apr–Jun 2021 | Axie migrates to Ronin sidechain (Apr 28); Sky Mavis $7.5M Series A; YGG announces $4M Series A (Jun 16) — YGG raises $21M+ within a year |
-| Jul–Aug 2021 | Axie summer: SLP peaks ~$0.34–0.40 (¥2.7); protocol revenue ~$364M in Aug (days above $17M); 3-Axie entry team ~$670 (early players had paid $20–30); 150,000+ Filipinos earning — ~50% of the user base; AXS ~$15, virtual land sells for $597k |
-| Aug–Dec 2021 | BSC 链游 wave: CryptoMines (ETERNAL, "飞船币" spaceship coin), StarSharks 星鲨 (Binance-backed), MetaverseMiner — ~300k combined users; CryptoMines death-spirals from a ~$800 ETERNAL peak (late Nov) to near-zero within weeks; mainland 打金工作室 that had pivoted from DNF/梦幻 absorb heavy losses |
+| Apr–Jun 2021 | Axie migrates to Ronin sidechain (Apr 28); Sky Mavis $7.5M Series A; YGG announces $4M Series A (Jun 16) — YGG raises ~$21M within a year |
+| Jul–Aug 2021 | Axie summer: SLP peaks ~$0.34–0.40 (¥2.7); protocol revenue ~$364M in Aug (days above $17M); 3-Axie entry team ~$670 (early players had paid $20–30 (?)); 150,000+ earning (PH & Venezuela) — PH ~40% of the user base; AXS ~$15 mid-Jul (→$83 by Aug 10), virtual land sells for $597k (?) |
+| Aug–Dec 2021 | BSC 链游 wave: CryptoMines (ETERNAL, "飞船币" spaceship coin), StarSharks 星鲨 (Binance-backed), MetaverseMiner — ~300k combined users (?); CryptoMines death-spirals from a ~$800 ETERNAL peak (late Nov) to near-zero within weeks; mainland 打金工作室 that had pivoted from DNF/梦幻 absorb heavy losses |
 | Nov 2021 | Axie DAU peaks 2.7M — but average scholar income falls below the Philippine minimum wage |
 | Dec 2021 | StepN launches on Solana (two Chinese-Australian founders, Yawn Rong & Jerry Huang, Adelaide; $5M seed led by Sequoia India, Jan 2022) |
-| Mar 2022 | Ronin bridge hack, ~$620M (attributed to North Korea's Lazarus Group) — two-thirds of stolen assets were player funds; SLP below $0.005 (¥0.07), Axie DAU down to ~760k |
+| Mar 2022 | Ronin bridge hack, ~$620M (attributed to North Korea's Lazarus Group) — two-thirds of stolen assets were player funds; SLP ~$0.02 (−95% from peak; below $0.005 by Jun 2022), Axie DAU slides toward ~760k (?) by mid-2022 |
 | Apr 2022 | StepN hits unicorn valuation 5 months after launch; ~800k DAU, ~3M MAU, $3–5M daily platform revenue by May |
-| May 2022 | LUNA/UST collapse (May 9–13) makes 死亡螺旋 the word of the season; May 22 StepN net withdrawals begin; **May 27**: StepN announces 清退 of mainland users (effective Jul 15) — GMT drops ~40% overnight ($1.30 → $0.80), level-9 shoes fall from ~18 SOL to <3 SOL within weeks. Mainland users were only ~5% of StepN — the crash priced the *narrative*, not the revenue |
+| May 2022 | LUNA/UST collapse (May 9–13) makes 死亡螺旋 the word of the season; May 22 StepN net withdrawals begin; **May 27**: StepN announces 清退 of mainland users (effective Jul 15) — GMT drops ~40% overnight ($1.30 → $0.80), level-9 shoes fall from ~18 SOL to <3 SOL within weeks. Mainland users were only ~5% of StepN (the founders' figure, disputed) — the crash priced the *narrative*, not the revenue |
 | 2022–23 | 链游已死 discourse; SLP −99%; guild tokens crater; studios pivot back to 撸毛, 打铭文, 打狗 — the swarm infrastructure survives the games ([[lumao-industrial-complex]]) |
 | Mar 2024 | Pixels revives Philippine 打金: PH players 80k (Nov 2023) → 830k+; PH ≈30% of global chain-game players; PH crypto volume $7.3B Nov–Dec 2023 |
 

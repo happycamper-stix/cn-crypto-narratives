@@ -36,10 +36,10 @@ cheaply.
 | [[da-bing\|大饼]] / 老大 / 大哥 | dàbǐng / lǎodà / dàgē | big flatbread / eldest / big brother | BTC | patriarch of the household; "老大-老二" hierarchy framing is explicit in CN explainers |
 | 二饼 / 二哥 | èrbǐng / èrgē | second flatbread / second brother | ETH | birth-order prefix = market-cap rank; 三饼/四饼 exist but never stabilized |
 | [[da-yi-tai\|姨太 / 大姨太]] | yítài / dà yítài | concubine / first concubine | ETH | homophone of 以太; affinal + female-coded = *not in BTC's bloodline*, joined the household "by marriage" |
-| 二姨太 / 小姨太 | èr yítài / xiǎo yítài | second / junior concubine | ETC | ETH's own fork ranks as a *junior concubine*, not a prince — forks inherit the parent's gender/legitimacy coding; both numberings attested |
+| 二姨太 / 小姨太 | èr yítài / xiǎo yítài | second / junior concubine | ETC | ETH's own fork ranks as a *junior concubine*, not a prince — forks inherit the parent's gender/legitimacy coding; both numberings attested (?) |
 | 太子 / 大太子 | tàizǐ / dà tàizǐ | crown prince | BCH | Aug 2017 fork of BTC = son of the patriarch with a succession claim ("the real Bitcoin") |
 | 二太子 / 小太子 | èr tàizǐ / xiǎo tàizǐ | second / junior prince | BSV | Nov 2018 fork *of the fork* = second in the line of succession; genealogy auto-generates the title |
-| 大姨妈 | dàyímā | eldest maternal aunt (slang: menstrual period) | IOTA | MIOTA ≈ sound of 大姨妈; maternal-line term = an in-law visitor, not household core; the period pun mocks its recurring crashes (?) |
+| 大姨妈 | dàyímā | eldest maternal aunt (slang: menstrual period) | IOTA (?) | MIOTA ≈ sound of 大姨妈 (?); maternal-line term = an in-law visitor, not household core; the period pun mocks its recurring crashes (?) |
 | 亲儿子 | qīn'érzi | biological son | exchange-built chain | BSC = 币安亲儿子; SOL was FTX's 亲儿子 (FTX picked Solana for Serum in July 2020, held ~55.8M SOL, >10% of supply); Base = Coinbase 亲儿子 (?) |
 | 干儿子 | gān'érzi | adopted/god-son | invested-in (not built) project | the 亲/干 blood-vs-adoption distinction maps build-vs-back relationships (?) |
 | 干爹 | gāndiē | godfather / sugar daddy | a project's powerful backer | "这项目有干爹" = it has an exchange/VC patron who won't let it die (?) |
@@ -61,12 +61,12 @@ market rank, and legitimacy politics simultaneously — a literal translation
 | 一姐 | yījiě | First Sister | 何一 (He Yi, Binance) | 币圈一姐 title dates to her OKCoin years (joined 2014, drove it to ~60% share) and followed her to Binance in 2017; pun on her given name 一; see [[binance-gravity-well]] |
 | 一哥 | yīgē | First Brother | category leader | productive template: 交易所一哥 = Binance, 公链一哥 = ETH; rank-1 sibling of any sector |
 | 孙哥 → 孙割 | Sūn-gē → Sūn-gē (identical sound) | Brother Sun → Sun the Cutter | Justin Sun 孙宇晨 | the signature move of the register: perfect-homophone swap 哥→割 (leek-cutting, [[ge-jiu-cai]]) flips honorific into indictment; catchphrase 孙割一笑，生死难料 ("when Sun the Cutter smiles, none can tell who lives or dies") |
-| 割总 | Gē zǒng | President Cut | any serial leek-cutter boss | same flip generalized onto the CEO honorific 总 |
-| 麻吉大哥 → 麻吉大割 | Májí dàgē → dàgē | Machi Big Brother → Machi Big Cutter | 黄立成 (Jeffrey Huang) | Taiwanese hip-hop OG (L.A. Boyz 1991, Machi group), 猴子教父 "monkey godfather" as top BAYC whale (~$24M of apes/APE in 2022); Blur airdrop-dump backfire Apr 2023; high-leverage Hyperliquid 归零 episode Nov 2025 sealed the 大割 rename |
+| 割总 | Gē zǒng | President Cut | any serial leek-cutter boss (?) | same flip generalized onto the CEO honorific 总 (?) |
+| 麻吉大哥 → 麻吉大割 | Májí dàgē → dàgē | Machi Big Brother → Machi Big Cutter | 黄立成 (Jeffrey Huang) | Taiwanese hip-hop OG (L.A. Boyz 1992, Machi group), 猴子教父 "monkey godfather" as top BAYC whale (~$24M of apes/APE in 2022); Blur airdrop-dump backfire Apr 2023; high-leverage Hyperliquid 归零 episode Nov 2025 sealed the 大割 rename |
 | 木头姐 | Mùtou jiě | Sister Wood | Cathie Wood (ARK) | surname calqued literally (Wood = 木头) + 姐; adopted as honorary clan elder sister after ARK's 2020 +100% year ("女版巴菲特") and her BTC price targets |
 | 大妈 | dàmā | big aunt / auntie | late-cycle retail entrant | from the April 2013 中国大妈 gold rush; 大妈进场 = cycle-top signal; names the whole first era in [[cn-crypto-eras-timeline]] |
-| 宝二爷 | Bǎo Èryé | Second Master Bao | 郭宏才 (Chandler Guo) | earliest self-styled household title: his late-2013 show 《宝二爷手把手教你玩转比特币》; 宝 from wife 金洋洋's nickname (she is 宝夫人), 二爷 borrowing the *Dream of the Red Chamber* address of Jia Baoyu — BTC evangelist as young master of a great house |
-| 老师 | lǎoshī | teacher | any KOL, sincerely or ironically | universal deference token on CN CT — real handles include 看不懂老师 (@DtDt666) and DaDa老师 (@0x99DaDa); weaponized in the [[dai-dan-lao-shi]] scam, where the honorific *is* the con |
+| 宝二爷 | Bǎo Èryé | Second Master Bao | 郭宏才 (Chandler Guo) | earliest self-styled household title: his late-2013 show 《宝二爷手把手教你玩转比特币》; 宝 from wife 金洋洋's nickname (she is 宝夫人) (?), 二爷 borrowing the *Dream of the Red Chamber* address of Jia Baoyu — BTC evangelist as young master of a great house |
+| 老师 | lǎoshī | teacher | any KOL, sincerely or ironically | universal deference token on CN CT — e.g. DaDa (@0x99DaDa) is addressed as "DaDa老师" by fellow KOLs; cf. 看不懂的sol (@DtDt666); weaponized in the [[dai-dan-lao-shi]] scam, where the honorific *is* the con |
 | 师父 / 收徒 | shīfu / shōutú | master / take disciples | guru-follower recruiting | 带单 operations run a full fictive household: 老师 at top, 助理 (assistants) recruiting, 学员 "students" below — the kinship-adjacent teacher-disciple bond does the trust work |
 | 大佬 | dàlǎo | big elder | OG, whale, boss | generic seniority address; the floor of the politeness system |
 | V神 | V shén | V-God | Vitalik | contrast case: where the CN community wants to rank someone *above* the family, it exits kinship into deification (神) — see [[community-roles]] |
@@ -82,12 +82,12 @@ hide inside the honorific's own sound.
 
 | Term | Pinyin | Literal | Actual | Notes |
 |---|---|---|---|---|
-| 家人们 | jiārénmen | "family members" | shill-group / livestream address for marks | imported from Kuaishou livestream-commerce culture (streamer 辛巴 addressing fans as 家人们); in crypto groups the "brother" running the room calls followers 家人们 while dumping on them — documented in 2020 韭菜局 exposés; ironic echo: 家人们谁懂啊 |
+| 家人们 | jiārénmen | "family members" | shill-group / livestream address for marks | imported from Kuaishou livestream-commerce culture (streamer 辛巴 addressing fans as 家人们); in crypto groups the "brother" running the room calls followers 家人们 while dumping on them — documented in 2020 韭菜局 exposés (?); ironic echo: 家人们谁懂啊 |
 | 兄弟们 | xiōngdìmen | brothers | hype address | 兄弟们冲 "brothers, charge!" — pairs with [[martial-military-metaphors]] |
 | 姐妹们 | jiěmèimen | sisters | female-coded community address | Xiaohongshu-accented investing talk |
 | 老铁 | lǎotiě | old iron (NE dialect) | "iron bro", trusted buddy | Kuaishou-origin; horizontal solidarity vs the vertical 老师 |
 | 舅舅党 | jiùjiudǎng | "uncle (maternal) party" | claimers of unverifiable insider info | from ACG leak culture ("my uncle works there"); applied to listing/unlock rumors (?); maternal-line uncle = the archetypal *unverifiable* relative |
-| 二舅币 | èrjiù bì | Second Uncle Coin (SUC) | Aug 2022 rug pull | minted days after the viral July 2022 Bilibili video 《回村三天，二舅治好了我的精神内耗》; ~US$1.3M taken; copycats 大舅币, 二舅妈币, 草根二舅币, 二爷币 — kinship terms as ticker-bait |
+| 二舅币 | èrjiù bì | Second Uncle Coin (SUC) | late-Jul 2022 rug pull (launched Jul 28, −99.7% by Jul 30) | minted days after the viral July 2022 Bilibili video 《回村三天，二舅治好了我的精神内耗》; ~US$1.3M taken; copycats 大舅币, 二舅妈币, 草根二舅币, 二爷币 — kinship terms as ticker-bait |
 
 The pattern: **manufactured kinship manufactures trust**, and every major CN
 crypto scam runs on it. The [[dai-dan-lao-shi]] group chat is a staged

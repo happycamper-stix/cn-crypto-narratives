@@ -29,11 +29,11 @@ circle, the "serious" tech side) and 矿圈 (mining circle).
 | V神 | V-shén | V God | Vitalik | deification suffix 神, coined early by CN community |
 | 孙割 | Sūn-gē | "Sun the Cutter" | Justin Sun | brutal pun: honorific 孙哥 "Brother Sun" → 孙割 "Sun who cuts (leeks)" — one homophone character flips respect into accusation |
 | 一姐 | yījiě | First Sister | He Yi (Binance) | pun on her name 一; CZ counterpart |
-| 麻吉大哥 | Májí dàgē | Machi Big Brother | Jeffrey Huang (黄立成) | 麻吉 = Taiwanese "buddy" (from "match"); famous public 归零 episodes |
+| 麻吉大哥 | Májí dàgē | Machi Big Brother | Jeffrey Huang (黄立成) | 麻吉 = Taiwanese "buddy" (likely from "match"); famous public 爆仓 (liquidation) episodes |
 | 币安 | Bì'ān | coin-safe | Binance | the brand itself is a pun (币 + 安全 safety) |
-| 韭菜盒子 | jiǔcài hézi | leek pastry | a container of doomed retail (portfolio or victim group chat) | extends the leek meme via the real snack |
+| 韭菜盒子 | jiǔcài hézi | leek pastry | a container of doomed retail (portfolio or victim group chat) (?) | extends the leek meme via the real snack |
 | [[dai-dan-lao-shi\|带单老师]] | dàidān lǎoshī | order-leading teacher | scam trading guru | see atomic note; operates 喊单群 signal groups |
-| 割总 | Gēzǒng | "President Cut" | any serial leek-cutter boss | 总 (CEO honorific) + 割; same flip as 孙割 — respect grammar weaponized into accusation |
+| 割总 | Gēzǒng | "President Cut" | serial leek-cutter boss; best attested as a nickname for Justin Sun | 总 (CEO honorific) + 割; same flip as 孙割 — respect grammar weaponized into accusation |
 | [[ke-xue-jia\|科学家]] | kēxuéjiā | scientist | on-chain bot/MEV/exploit operator | see atomic note; half insult, half awe |
 | [[nv-wu\|女巫]] | nǚwū | witch | Sybil attacker (multi-wallet airdrop farmer) | see atomic note; from "Sybil attack" via the novel *Sybil* |
 | U商 / 承兑商 | U-shāng / chéngduìshāng | U-merchant / acceptance dealer | OTC desks buying/selling USDT for CNY | the grey off-ramp layer; source of [[dong-ka]] risk |

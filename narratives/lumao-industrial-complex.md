@@ -23,28 +23,29 @@ media beat, and arms race.
 - **工作室** (gōngzuòshì, "studio") — the workshop: racks of phones/VMs,
   hundreds-to-thousands of wallets (号, "accounts" — same word as game-farming
   accounts), fingerprint browsers (指纹浏览器), proxy IPs, low-wage 点击手
-  operators. Coverage describes evolution from "hundreds of sweatshop studios"
+  operators (?). Coverage describes evolution from "hundreds of sweatshop studios" (?)
   to an oversaturated field, some studios ambushing projects for *years* before
   a token. Verbs: 刷 (shuā, "grind/spam" interactions), 养号 ("raising
   accounts" — aging wallets so they look human), 交互 (interactions as a
   countable farmed unit).
-- Economics ran on the 2021–23 precedents: UNI/ENS/ARB/APT drops turned $50 of
-  gas into thousands — 一鱼多吃 ("eat one fish many ways") multi-wallet style.
+- Economics ran on the 2020–23 precedents: UNI/ENS/ARB/APT drops turned $50 of
+  gas into thousands — 一鱼多吃 ("eat one fish many ways"): one capital base and
+  interaction trail farmed for several protocols' drops at once.
 
 ## The 女巫 hunts
 **女巫** (nǚwū, "witch") = Sybil, from "Sybil attack" — so anti-Sybil filtering
-is literally a **witch hunt** (反女巫, fǎn nǚwū). The 2023–24 arms race:
+is literally a **witch hunt** (反女巫, fǎn nǚwū). The 2022–24 arms race:
 - Projects (Hop, then LayerZero's mass "self-report or be slashed" purge,
   zkSync's criteria) cluster-analyze wallets; being flagged is 被女巫了
   ("got witched"), often forfeiting everything.
 - Studios counter with behavioral randomization; media described anti-witch
-  rules as increasingly 变态 ("perverse/extreme").
+  rules as increasingly 变态 ("perverse/extreme") (?).
 - Moral inversion in the discourse: farmers cast themselves as honest 打工人
   (laborers) doing the "work" projects asked for, and projects as the real
   winners renting fake traction for VC raises — TechFlow: "项目方才是撸毛游戏的
   最大赢家" (the project side is the game's biggest winner).
 
-## Decline into 点数 era and merge with meme meta
+## Decline into 积分 era and merge with meme meta
 2024–25 points systems (积分制) replaced surprise drops — farmable but
 discretionary, killing the risk-reward. Odaily's 2025 interviews conclude the
 golden age is over; studios pivoted to meme sniping (打狗), new-chain 打新, and

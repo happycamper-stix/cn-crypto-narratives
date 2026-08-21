@@ -22,7 +22,7 @@ deserving their own atomic notes are wikilinked.
 | [[ge-jiu-cai\|割韭菜]] | gē jiǔcài | cut leeks | dump on retail | see atomic note |
 | 梭哈 | suōhā | "show hand" | all-in | five-card stud via HK gambling films; 一把梭 = YOLO one trade |
 | 抄底 | chāodǐ | scoop the bottom | buy the dip | stock slang; 抄底抄在半山腰 = "bought the bottom halfway up the mountain" (knife-catch self-mockery) |
-| 拉盘 / 砸盘 | lāpán / zápán | pull / smash the plate | pump / dump | 盘 = the order book |
+| 拉盘 / 砸盘 | lāpán / zápán | pull / smash the plate | pump / dump | 盘 = the market/盘面 |
 | 出货 | chūhuò | ship goods | distribution — insiders offloading | 拉高出货 = pump-and-dump |
 | 埋伏 | máifú | ambush | position quietly pre-catalyst | military metaphor |
 | 冲 | chōng | charge! | ape in | 冲冲冲 chat spam; 冲就完事了 "just ape" |
@@ -37,7 +37,7 @@ deserving their own atomic notes are wikilinked.
 | 接盘 | jiēpán | catch the plate | be exit liquidity | 接盘侠 "plate-catching knight" = heroic bagholder |
 | 喊单 | hǎndān | shout orders | KOL shilling calls | usually precedes dumping on followers |
 | 跑路 | pǎolù | run away | rug pull | general scam slang; 卷款跑路 |
-| 躺平 / 佛系 | tǎngpíng / fóxì | lie flat / Buddha-style | zen HODL, giving up trading | mainland lifestyle memes |
+| 躺平 / 佛系 | tǎngpíng / fóxì | lie flat / Buddha-style | zen HODL, giving up trading | mainland lifestyle memes; 佛系 itself borrowed from a 2014 Japanese magazine's 佛系男子 |
 | 心态崩了 | xīntài bēng le | mentality collapsed | tilted, emotionally rekt | gaming slang |
 | 空军 / 多军 | kōngjūn / duōjūn | air force / bull army | shorts / longs | 空 (empty) = short, hence "air force" |
 | 插针 | chāzhēn | insert a needle | scam wick / stop hunt | candle wick as needle; exchanges accused of 插针 |
@@ -61,9 +61,9 @@ deserving their own atomic notes are wikilinked.
 | 瀑布 | pùbù | waterfall | cascade dump | the plunging candle chart looks like a waterfall; 又见瀑布 |
 | 天地针 | tiāndìzhēn | heaven-and-earth needle | full-range scam wick | extreme 插针: wicks both ways, liquidates longs AND shorts |
 | 开多 / 开空 | kāiduō / kāikōng | open long / open empty | go long / short (perps) | 合约 (contract) = futures/perps culture; 扛单 = refusing to close a losing leveraged position |
-| 打板 | dǎbǎn | hit the limit-board | chase a breakout candle | from A-share limit-up (涨停板) chasing; no limit-up in crypto but the verb migrated |
+| 打板 | dǎbǎn | hit the limit-board | chase a breakout candle | from A-share limit-up (涨停板) chasing; no limit-up in crypto but the verb migrated (?) |
 | 挂单 / 吃单 | guàdān / chīdān | hang / eat orders | maker / taker | 吃单 "eating" the book |
-| 出金 / 入金 | chūjīn / rùjīn | out-gold / in-gold | withdraw / deposit fiat | OTC-era vocabulary; 出金 is where [[dong-ka]] risk lives |
+| 出金 / 入金 | chūjīn / rùjīn | out-gold / in-gold | withdraw / deposit fiat | inherited from futures/forex platform vocabulary; in CN crypto it means the OTC fiat ramp — 出金 is where [[dong-ka]] risk lives |
 | [[dong-ka\|冻卡]] | dòngkǎ | frozen card | bank card frozen after OTC sale | see atomic note; the defining CN off-ramp fear |
 | 一夜暴富 | yīyè bàofù | rich overnight | the dream itself | standard toast/self-mockery: 祝你一夜暴富; opposite 一夜归零 |
 | 磨损 | mósǔn | wear and tear | fees/slippage bleed from grinding activity | airdrop-farmer accounting term: gas + spreads as "abrasion" |

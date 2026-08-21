@@ -20,7 +20,7 @@ to keep the technology while banning the asset. The canonical statement is the
 PBoC research line (徐忠, then head of the PBoC research bureau, with 邹传伟,
 Nov 2018 working paper "区块链能做什么、不能做什么" — "what blockchain can and
 cannot do"): the useful applications are permissioned, real-world-anchored,
-and do not need a speculative token. Exact first coiner of the four-character
+and do not need a speculative token. Exact first coiner of the five-character
 phrase unclear (?). Xi's Oct 24, 2019 Politburo speech elevating 区块链 to a
 national core technology — followed within days by People's Daily's
 "区块链技术创新不等于炒作虚拟货币" corrective — made 无币区块链 the official
@@ -37,9 +37,12 @@ investable reading of "the state supports blockchain."
   only. The renaming is the regulation.
 
 ## Community rejoinder
-The 币圈 mocks the concept as **太监链** (tàijiàn liàn, "eunuch chain") — a
-chain with its incentive organ removed: no token, no reason for anyone to run
-a node or care. The sneer encodes the 链圈/币圈 status war
+The 币圈 mocks the concept as a **太监** (tàijiàn, "eunuch") — the standing
+Weibo quip is "无币区块链=太监" (investor 赵乐天, 2018; echoed by 赵东), with
+"太监式" 无币区块链 as the adjectival form; the fused compound 太监链
+("eunuch chain") itself is only sporadically attested (?). A chain with its
+incentive organ removed: no token, no reason for anyone to run a node or
+care. The sneer encodes the 链圈/币圈 status war
 ([[suffix-morphology]]): 链圈 gets legitimacy without upside; 币圈 gets upside
 without legitimacy.
 

@@ -79,7 +79,7 @@ divergence ([[hk-tw-mainland-divergence]]).
 - A-share explainers were mainstream news in the 2015 crash summer (解放日报
   2015-07-27, reprinted by 文摘报 2015-08-01 and China Daily) — though the
   trigger was a domestic retail reader asking why the mainland inverts the
-  "international" convention, not confused foreigners. The walls-of-*green*
+  "international" convention, not confused foreigners (?). The walls-of-*green*
   千股跌停 screenshots of that summer still trip up Western readers primed to
   parse green as gains.
 
