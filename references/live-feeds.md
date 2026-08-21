@@ -36,6 +36,8 @@ Recurring names to seed a follow list (verify handles before citing): 0xSun (on-
 
 What to watch for: a term is *forming* when multiple mid-size CN accounts use it unglossed within 24–48h, and *formed* when BlockBeats/Odaily newsflashes use it in headlines.
 
+**Full account directory**: see [[cn-ct-kol-directory]] — 60+ named accounts across media / OG / trader / 撸毛 / research / meme-storyteller tiers, with handles, follower scale, and reliability flags.
+
 ## Telegram / WeChat propagation
 
 - **Telegram**: alpha-call channels and 打狗/冲土狗 groups are where launchpad tokens get named and pumped; media channels (above) then formalize the vocabulary. Search Telegram for 中文 + 土狗/金狗/内盘 to find the current crop — channels churn constantly, so track the *pattern* not specific channels.
