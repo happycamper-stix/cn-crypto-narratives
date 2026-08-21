@@ -33,11 +33,40 @@ type: reference
 - People: [Steemit — 币圈54位大佬](https://steemit.com/blockchain/@quomap/54) · [MyToken — 麻吉大哥"归零"记](https://mytokencap.com/news/539798.html) · [The Paper — 币圈一姐何一](https://m.thepaper.cn/baijiahao_11766431)
 - 铭文/BRC-20: [Hotcoin — 铭文和BRC-20](https://medium.com/@hotcoinglobalofficial/一文了解銘文和brc-20-熱點項目分析與展望-cca764004b02) · [BlockBeats — CBRC-20](https://www.theblockbeats.info/news/49094)
 
+## Archived retrievals (2026-08-21) — gaps closed
+- Quartz full term list retrieved via Wayback (snapshot 2018-10-12) → extracted in [[archived-glossaries]]
+- Xuehua page is dead in live web AND Wayback, but is a CN translation of the same Quartz piece; recovered via mirrors: [Sohu](https://www.sohu.com/a/231129607_507882) · [read01](https://read01.com/zh-cn/nx2xm3e.html) · [ChainNews](https://www.chainnews.com/articles/265479916039.htm) → also in [[archived-glossaries]]. No net-new terms vs Quartz.
+
+## 民族币 / patriotic-scam-coin sourcing
+Not attested as a standalone slang term; it lives inside 传销币/民族资产解冻 fraud coverage. Best sources:
+- [TMTPost — 2018上半年100大传销币清单](https://www.tmtpost.com/3345238.html) (the canonical MLM-coin list)
+- 五行币 case (the archetypal "national/patriotic" coin scam, ¥9.2B): [ChinaNews](https://www.chinanews.com.cn/m/sh/2017/08-29/8316403.shtml) · [Baidu Baike 五行币](https://baike.baidu.com/item/%E4%BA%94%E8%A1%8C%E5%B8%81/20610187) · [Sina — 打着爱国幌子圈钱](https://cj.sina.com.cn/article/detail/5978795260/381363)
+- [公安部点名"金砖数字货币"区块链传销 (Sina, 2019)](https://finance.sina.com.cn/blockchain/roll/2019-05-27/doc-ihvhiqay1665585.shtml)
+- [深圳金融办 — 8大套路看清传销币](https://jr.sz.gov.cn/sjrb/ztzl/djffjz/ffjzal/content/post_3170086.html)
+- 民族资产解冻 scam framework: [公安部50个骗局项目名单 (xhby)](https://www.xhby.net/content/s671b0b42e4b0ac1d26c28272.html)
+
+## 金狗 origin sourcing
+- Popularized during the May 2021 SHIB animal-meme wave as the antonym of 土狗; earliest located usage: [Zhihu 金金狗 gdoge post, July 2021](https://zhuanlan.zhihu.com/p/392524690)
+- Definitional: [BlockTempo — 為什麼迷因幣又分「土狗、金狗」](https://www.blocktempo.com/why-is-meme-coin-called-local-doge/) · [大链网 — 金狗项目是什么意思](https://www.tundai.com/Layer2/20927.html)
+- Modern usage: [BlockBeats — 以后的「金狗」起步都是10万美元FDV？](https://www.theblockbeats.info/news/54008) · [腾讯 — 如何挖掘潜在"金狗"](https://news.qq.com/rain/a/20241021A033XD00) · [36Kr — 币圈"土狗"万倍狂欢](https://www.36kr.com/p/2251412499181187)
+
+## Live media & monitoring
+See [[live-feeds]] for the full monitoring stack (Odaily, PANews, BlockBeats, ChainCatcher, Foresight, TechFlow, 吴说 + handles; KOL ranking lists; Four.meme/GMGN/DEX Screener).
+- [PANews — 15 Chinese Crypto/Web3 media worth watching](https://www.panewslab.com/en/articles/14nlp00et3a0)
+- [ChainCatcher — 2025 Web3 交易型 KOL 榜單](https://www.chaincatcher.com/zh-tw/article/2178739)
+- [CSDN — 2025推特中文币圈10大KOL全景图鉴](https://blog.csdn.net/qukuaidaima/article/details/153840098)
+
+## Additional glossaries found
+- [Gate Square — Decoding the Language of Chinese BTC Traders](https://www.gate.com/post/status/16943420)
+- [BlockBeats — 链上冲土狗必备常识与工具](https://www.theblockbeats.info/news/48878)
+- [Wikipedia — Chinese Internet slang](https://en.wikipedia.org/wiki/Chinese_Internet_slang) (general 网络语言 background for homophone/number patterns)
+
 ## Open gaps
-- 民族币 as an explicit standalone term (found only inside 传销币 scam coverage)
-- Canonical first-usage source for 金狗
-- Full Quartz + Xuehua lists via archive.org
+- (none currently — see [[research-methodology]] for the playbook when adding new terms)
 
 ## Related links
 - [[trading-slang]]
 - [[launchpad-naming-meta]]
+- [[archived-glossaries]]
+- [[live-feeds]]
+- [[research-methodology]]

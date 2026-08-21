@@ -44,8 +44,33 @@ notes are wikilinked.
 | 搬砖 | bānzhuān | move bricks | cross-exchange arbitrage | menial-labor metaphor |
 | 老鼠仓 | lǎoshǔcāng | rat warehouse | insider front-run position | fund-scandal slang |
 | 对敲 | duìqiāo | mutual knocking | wash trading | exchange fake-volume slang |
+| 定投 | dìngtóu | fixed investing | DCA | canonized by 李笑来's slogan 定投改变命运 "DCA changes your fate" |
+| 满仓 / 半仓 / 空仓 | mǎncāng / bàncāng / kōngcāng | full / half / empty warehouse | 100% / 50% / 0% invested | 仓 (position) as warehouse; 满仓干 = "full-position charge!" |
+| 建仓 / 加仓 / 减仓 | jiàncāng / jiācāng / jiǎncāng | build / add / trim warehouse | open / add to / reduce position | stock slang |
+| 补仓 | bǔcāng | patch the warehouse | average down | usually said while catching knives; 越跌越补 |
+| 浮盈 / 浮亏 | fúyíng / fúkuī | floating profit / loss | unrealized PnL | 浮盈加仓，一把亏光 "add on floating profit, lose it all at once" (proverb) |
+| 回本 | huíběn | return to principal | get back to breakeven | the leek's north star; 回本就跑 "the moment I'm even, I'm out" (never happens) |
+| [[shang-an\|上岸]] | shàng'àn | reach the shore | cash out even/ahead and quit | see atomic note; opposite 下海 xiàhǎi "go to sea" = enter the game |
+| 止盈 / 止损 | zhǐyíng / zhǐsǔn | stop profit / stop loss | take profit / stop loss | the discipline every leek preaches and skips |
+| 高抛低吸 | gāopāo dīxī | throw high, suck low | sell high buy low | said ironically: everyone's plan, nobody's result |
+| 追高 | zhuīgāo | chase the high | FOMO buy the top | 追高被套 = chased and trapped |
+| 接飞刀 | jiē fēidāo | catch the flying knife | buy a crashing coin | calque of "catching a falling knife" |
+| 横盘 | héngpán | horizontal plate | sideways chop | 横有多长，竖有多高 "the longer it ranges, the higher it goes" |
+| 阴跌 | yīndiē | yin-decline | slow grinding bleed | worse than a crash — it never lets you capitulate cleanly |
+| 瀑布 | pùbù | waterfall | cascade dump | the red candle chart looks like a waterfall; 又见瀑布 |
+| 天地针 | tiāndìzhēn | heaven-and-earth needle | full-range scam wick | extreme 插针: wicks both ways, liquidates longs AND shorts |
+| 开多 / 开空 | kāiduō / kāikōng | open long / open empty | go long / short (perps) | 合约 (contract) = futures/perps culture; 扛单 = refusing to close a losing leveraged position |
+| 打板 | dǎbǎn | hit the limit-board | chase a breakout candle | from A-share limit-up (涨停板) chasing; no limit-up in crypto but the verb migrated |
+| 挂单 / 吃单 | guàdān / chīdān | hang / eat orders | maker / taker | 吃单 "eating" the book |
+| 出金 / 入金 | chūjīn / rùjīn | out-gold / in-gold | withdraw / deposit fiat | OTC-era vocabulary; 出金 is where [[dong-ka]] risk lives |
+| [[dong-ka\|冻卡]] | dòngkǎ | frozen card | bank card frozen after OTC sale | see atomic note; the defining CN off-ramp fear |
+| 一夜暴富 | yīyè bàofù | rich overnight | the dream itself | standard toast/self-mockery: 祝你一夜暴富; opposite 一夜归零 |
+| 磨损 | mósǔn | wear and tear | fees/slippage bleed from grinding activity | airdrop-farmer accounting term: gas + spreads as "abrasion" |
+| 今晚吃肉还是吃面 | — | meat or noodles tonight? | did the trade win or lose | futures-chat meme: profit = feast on meat, rekt = cheap noodles; 关灯吃面 "eat noodles with the lights off" = quiet post-loss despair (from A-share forums) |
 
 ## Related links
+- [[shang-an]]
+- [[dong-ka]]
 - [[food-metaphors]]
 - [[coin-nicknames]]
 - [[community-roles]]

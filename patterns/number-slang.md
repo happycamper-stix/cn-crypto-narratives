@@ -36,6 +36,18 @@ phrases. Tickers, supply counts, and prices are often chosen for these meanings.
 A ticker, total supply, or price full of 8s/6s (or a 520/1314 date) is signaling
 luck/affection to a Chinese audience — not a technical parameter.
 
+## Additions (2026-08-21 research pass)
+- **U1S1-style hybrids**: digits embed inside pinyin initialisms (U1S1 = 有一说一
+  "to be fair"; 3Q = "thank you") — the number is read for its sound in either
+  language. Details in [[pinyin-initialisms]].
+- **Trauma-date family extended**: alongside 94/312/519, communities also date
+  events like 1124 and FTX's 11月 collapse; any four-digit month-day string in a
+  CN crypto thread is a candidate event reference before it's a price level.
+- Numbered dates double as censorship-safe references to banned topics — the
+  filter-evasion angle is covered in [[censorship-evasion-coinage]].
+
 ## Related links
 - [[homophone-wordplay]]
 - [[food-metaphors]]
+- [[pinyin-initialisms]]
+- [[censorship-evasion-coinage]]

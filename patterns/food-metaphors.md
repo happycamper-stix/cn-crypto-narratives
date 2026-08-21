@@ -30,6 +30,23 @@ operators are farmers/butchers, coins are food items.
 If a term names a food, crop, or animal, ask which market role it maps to in the
 harvest metaphor: who grows, who cuts, who gets eaten.
 
+## Additions (2026-08-21 research pass)
+- **Why food specifically**: the register hardened after the 2017 (九四) and 2021
+  crackdowns — food words (bread, chives, candy) are unfilterable on WeChat/Weibo,
+  so the harvest metaphor doubles as camouflage. See [[censorship-evasion-coinage]].
+- **糖果 (tángguǒ, "candy")** — free airdropped tokens from new projects; the
+  bait end of the harvest cycle (candy in, leeks out).
+- **杀猪盘 (shāzhūpán, "pig-butchering scheme")** — romance/investment scams that
+  "fatten the pig before slaughter"; the term crossed into English as
+  "pig butchering". Note the -盘 suffix — see [[suffix-morphology]].
+- **饼 extended series**: after 大饼/二饼, BNB is sometimes 三饼; 画饼 ("drawing
+  a flatbread" = making empty roadmap promises) puns the same character.
+- The self-mocking use of 韭菜 as identity (proudly "getting harvested") is
+  treated in [[irony-cope-register]].
+
 ## Related links
 - [[homophone-wordplay]]
 - [[jiu-cai]]
+- [[censorship-evasion-coinage]]
+- [[suffix-morphology]]
+- [[irony-cope-register]]

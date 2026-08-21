@@ -30,6 +30,19 @@ When a Chinese coin name seems random: (1) read it aloud in Mandarin pinyin,
 (2) look for a same-sounding common word or phrase, (3) check if it's an auspicious
 number/phrase — see [[number-slang]].
 
+## Additions (2026-08-21 research pass)
+- **Sentiment-tracking nicknames**: transliterations mutate by mood — 索拉纳
+  (Solana) becomes cute 索拉拉 when pumping and mocking 傻拉纳 ("dumb-lana",
+  傻 = stupid) when dumping. The homophone chosen tells you the chart direction.
+- **Letter-in-text shielding**: swapping 币 → B ("出B", "屯B") and USDT → U is
+  the minimal homophone move — same sound, different script — and is primarily a
+  keyword-filter dodge. See [[censorship-evasion-coinage]].
+- The initial-letter compression of whole phrases (YYDS etc.) is the systematic
+  extension of this pattern — split out into [[pinyin-initialisms]].
+
 ## Related links
 - [[number-slang]]
 - [[food-metaphors]]
+- [[pinyin-initialisms]]
+- [[censorship-evasion-coinage]]
+- [[transliteration-mechanics]]
