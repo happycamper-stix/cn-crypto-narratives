@@ -2,3 +2,5 @@
 .obsidian/cache
 .DS_Store
 .trash/
+bot/node_modules/
+bot/.env
