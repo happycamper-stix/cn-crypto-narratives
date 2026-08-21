@@ -44,4 +44,5 @@ censorship evasion after the 2017 mainland ban. See [[homophone-wordplay]] and
 ## Related links
 - [[homophone-wordplay]]
 - [[food-metaphors]]
+- [[kinship-family-metaphors]] — the household schema behind 太子/姨太/大姨妈/亲儿子
 - [[narrative-terms]]

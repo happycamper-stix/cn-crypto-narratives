@@ -53,6 +53,7 @@ DePIN box farming. The swarm infrastructure — thousands of coordinated wallets
 ([[inscription-mania]]) and launchpad mint rushes ([[meme-season-aftermath]]).
 
 ## Related links
+- [[gamefi-dajin-slang]] — the pre-crypto 打金 lineage of the same studios
 - [[inscription-mania]]
 - [[meme-season-aftermath]]
 - [[community-roles]]

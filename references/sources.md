@@ -61,6 +61,16 @@ See [[live-feeds]] for the full monitoring stack (Odaily, PANews, BlockBeats, Ch
 - [BlockBeats — 链上冲土狗必备常识与工具](https://www.theblockbeats.info/news/48878)
 - [Wikipedia — Chinese Internet slang](https://en.wikipedia.org/wiki/Chinese_Internet_slang) (general 网络语言 background for homophone/number patterns)
 
+## Visual-channel sourcing (emoji / stickers / screenshots)
+Added 2026-08-21 for [[emoji-sticker-visual-codes]]:
+- Citizen Lab on WeChat image filtering: [(Can't) Picture This, 2018](https://citizenlab.ca/2018/08/cant-picture-this-an-analysis-of-image-filtering-on-wechat-moments/) · [(Can't) Picture This 2, 2019](https://citizenlab.ca/2019/07/cant-picture-this-2-an-analysis-of-wechats-realtime-image-filtering-in-chats/)
+- Emoji censorship precedent: [CDT — Weibo 撤下蜡烛表情, 2012](https://chinadigitaltimes.net/chinese/228756.html)
+- Ban waves: [21财经 2018-08-21 公众号被屏蔽](https://m.21jingji.com/article/20180821/herald/9fdbed4d300b2f8ff26a2a7f57d1dd16.html) · [界面 — 微博封禁币圈大V, 2021-06-05](https://www.jiemian.com/article/6200616.html)
+- Emoji idiom import: [新浪财经 — 马斯克💎🙌与美国币圈黑话, 2021-05-20](https://finance.sina.com.cn/roll/2021-05-20/doc-ikmyaawc6452340.shtml)
+- Screenshot economy: [未央网 — 芥末圈](https://www.weiyangx.com/338244.html) · [网易 — 币圈幻影·带单老师](https://c.m.163.com/news/a/H2HH0RT50519DFFO.html) · [人民日报 — 晒收益截图套路](https://www.peopleapp.com/column/30037713289-500002744637)
+- 抽象话 emoji rebus: [萌娘百科](https://zh.moegirl.org.cn/抽象话) · [抽象话生成器报道, 2020-04-26](https://t.cj.sina.com.cn/articles/view/5836457170/15be144d201900qvs2)
+- Sticker packs: [金色财经 — 币圈韭菜必备表情包](https://www.jinse.com/blockchain/331424.html) *(dead link, title attested)* · [CSDN 炒币表情包, 2022-03](https://blog.csdn.net/xiqiao_ce/article/details/123568840)
+
 ## Open gaps
 - (none currently — see [[research-methodology]] for the playbook when adding new terms)
 

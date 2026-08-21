@@ -40,7 +40,10 @@ translation failure in this vault.
   and one breaks even", acknowledging the casino while re-entering it. See
   [[gambling-film-register]].
 - **币圈一天，人间一年** — "a day in crypto, a year on earth": mock-immortal
-  framing of volatility exhaustion.
+  framing of volatility exhaustion. Riffs on the celestial-time trope 天上一日，
+  地上一年; an intensified variant 币圈一天，人间十年 circulates just as widely,
+  and both forms are attested in the wild (2018–2026) with no single canonical
+  version.
 
 ## Decoding heuristic
 Default to irony: when a Chinese crypto post uses sincere-sounding finance or

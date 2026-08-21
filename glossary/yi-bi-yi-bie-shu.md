@@ -13,11 +13,16 @@ type: permanent
 that a single unit of the bag will someday buy a seaside mansion.
 
 ## Origin
-The full incantation is 一币一别墅，别墅靠大海 — "one coin one villa, villa by the
-sea." It crystallized around 2017–18 in communities of cheap, high-supply coins;
-BSV/BCH partisans and countless 山寨 telegram groups chanted it as both sincere hope
-and self-aware cope. The seaside detail is what makes it art: the dream is specific
-enough to be furnished, which is exactly how you know it's a dream.
+The chant crystallized in mainland **Bitcoin** circles during the 2017 bull run —
+by spring 2017 financial media were already describing it as the line suddenly
+everywhere in the 比特币圈, often paired as 一币一别墅，一币一宝马 ("one coin one
+villa, one coin one BMW") — and it spread from there through the wider 币圈 as both
+sincere hope and self-aware cope. The often-quoted "full incantation" 一币一别墅，
+别墅靠大海 — "one coin one villa, villa by the sea" — looks like a folk fusion: the
+seaside tail is lifted from the 2018 World Cup gambling meme 足球反着买，别墅靠大海,
+and direct attestation of the fused couplet is thin (?). The seaside detail is what
+makes it art: the dream is specific enough to be furnished, which is exactly how
+you know it's a dream.
 
 It spawned a whole mock-real-estate ladder for calibrating delusion: 一币一嫩模
 ("one coin, one model girlfriend" — the crasser variant), and deflationary rewrites

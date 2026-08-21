@@ -67,7 +67,7 @@ members English lacks words for.
 |---|---|---|---|
 | 牛市不言顶，熊市不言底 | niúshì bù yán dǐng | "in a bull don't call the top, in a bear don't call the bottom" | the trend-respect proverb, quoted before every blow-off top |
 | [[yi-bi-yi-bie-shu\|一币一别墅]] / 别墅靠大海 | yī bì yī biéshù | "one coin, one villa (by the sea)" | see atomic note; the canonical moonboy prayer |
-| 一顿操作猛如虎，一看战绩两块五 | yī dùn cāozuò měng rú hǔ | "operated fierce as a tiger; account shows ¥2.50" | self-mockery for overtrading into dust; imported from soccer/stock memes |
+| 一顿操作猛如虎，一看战绩两块五 | yī dùn cāozuò měng rú hǔ | "operated fierce as a tiger; account shows ¥2.50" | self-mockery for overtrading into dust; from LoL/MOBA streamer culture — original ending 一看战绩零杠五 "an 0-5 record", popularly associated with streamer 大司马; 两块五 is the later stock-forum variant (一看收益两块五) that crypto borrowed |
 | [[sha-bi-de-gong-shi\|傻逼的共识也是共识]] | shǎbī de gòngshí yě shì gòngshí | "the consensus of idiots is still consensus" | see atomic note; Li Xiaolai's leaked-tape realpolitik of value |
 | 信仰不能当饭吃 | xìnyǎng bùnéng dāng fàn chī | "faith can't be eaten as rice" | rebuttal to 信仰-holders; conviction doesn't pay rent |
 | 会买的是徒弟，会卖的是师傅 | — | "buying makes you an apprentice, selling makes you a master" | A-share wisdom; full version adds 会空仓的是祖师爷 "staying in cash makes you the grandmaster" |

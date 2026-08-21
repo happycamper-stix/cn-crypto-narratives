@@ -41,12 +41,15 @@ luck/affection to a Chinese audience — not a technical parameter.
   "to be fair"; 3Q = "thank you") — the number is read for its sound in either
   language. Details in [[pinyin-initialisms]].
 - **Trauma-date family extended**: alongside 94/312/519, communities also date
-  events like 1124 and FTX's 11月 collapse; any four-digit month-day string in a
-  CN crypto thread is a candidate event reference before it's a price level.
+  events like 924 (Sept 24 2021, the ten-agency 银发〔2021〕237号 notice declaring
+  all crypto transactions illegal — "924通知") and FTX's 11月 collapse (Nov 8–11
+  2022, no canonical digit string) (?); any month-day digit string in a CN crypto
+  thread is a candidate event reference before it's a price level.
 - Numbered dates double as censorship-safe references to banned topics — the
   filter-evasion angle is covered in [[censorship-evasion-coinage]].
 
 ## Related links
+- [[units-magnitude-conventions]] — magnitude grammar (万/亿/U/刀) this note doesn't cover
 - [[homophone-wordplay]]
 - [[food-metaphors]]
 - [[pinyin-initialisms]]

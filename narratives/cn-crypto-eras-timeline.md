@@ -50,7 +50,9 @@ BTC dropped ~30% in a day — the date joined 94 as numeric shorthand for
 "CN-policy nuke." Sept 24, 2021 (**924**) notice made all crypto trading
 "illegal financial activity" and expelled miners; hashrate and founders migrated
 (Singapore, Dubai). Result: "Chinese crypto" became a diaspora phenomenon —
-mainland users behind VPNs, projects incorporated offshore.
+mainland users behind VPNs, projects incorporated offshore. The 2021–22
+GameFi/X-to-earn interlude (Axie 阿蟹, StepN 跑鞋, 打金工作室 gone on-chain)
+is covered in [[gamefi-dajin-slang]].
 
 ## 2023 — 铭文 mania
 Bitcoin inscriptions/BRC-20 was the first post-924 narrative visibly *driven* by

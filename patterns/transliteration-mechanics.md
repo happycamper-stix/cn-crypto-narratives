@@ -25,10 +25,14 @@ Coca-Cola 可口可乐 and, in crypto, 币安.
 - **Sound + meaning (音意兼译)** — the prestige strategy:
   - **币安 (Bì'ān, Binance)** — sounds like "Binance", reads as "coin-safety".
     A trust claim smuggled into the phonetics.
-  - **以太坊 (Yǐtàifāng, Ethereum)** — 以太 from the physics "ether" (via 以太网
-    Ethernet), plus 坊 "workshop/quarter" chosen by the whitepaper's translator
-    over a pure transliteration; the name argues Ethereum is a place where you
-    build. See [[classical-literary-register]].
+  - **以太坊 (Yǐtàifáng, Ethereum)** — 以太 is the established physics rendering
+    of "ether" (the same 以太 as in 以太网, Ethernet), plus 坊 "workshop" chosen
+    by the whitepaper's Chinese translators 咕噜 and 巨蟹, who by their own
+    account rejected 以太工厂 ("ether factory") for the -eum suffix (per 界面新闻,
+    《以太坊简史》); the name argues Ethereum is a place where you build. NB 坊
+    has two readings: fáng = workshop (作坊) — the coiners' intended morpheme —
+    vs fāng = quarter/lane (街坊); both circulate in speech (Wiktionary records
+    Mainland fáng, Taiwan fāng). See [[classical-literary-register]].
   - **瑞波 (Ruìbō, Ripple)** — "auspicious wave": sound-alike plus luck character
     瑞, a classic lucky-character insertion.
   - **莱特币 (Láitè-bì, Litecoin)** — 莱特 is neutral-phonetic, but folk

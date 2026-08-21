@@ -27,5 +27,6 @@ A textbook case of [[homophone-wordplay]]: untranslatable — the English reader
 
 ## Related links
 - [[homophone-wordplay]]
+- [[kinship-family-metaphors]] — the full household schema this pun seeds
 - [[coin-nicknames]]
 - [[da-bing]]

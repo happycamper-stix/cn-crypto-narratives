@@ -24,8 +24,9 @@ systematically: reduplication makes a coin sound harmless, lovable, and holdable
   name. Naming the *nickname* became the asset. See [[launchpad-naming-meta]].
 - **哈基米 (hājīmǐ)** — from a hummed tune in *Uma Musume* (2021) that Chinese
   net culture reattached to cat videos; pure sound-symbolism with no meaning,
-  which made it a perfect 2025 BNB-chain memecoin (~$40M+ peak, later bought by
-  the BNB Chain Foundation). The pattern: nonsense syllables + cute animal = coin.
+  which made it a perfect 2025 BNB-chain memecoin (~$80M peak mcap, Oct 2025;
+  the BNB Chain Foundation later made a small $50K incentive-program purchase
+  of it, Jan 2026). The pattern: nonsense syllables + cute animal = coin.
 - **冲冲冲 (chōng chōng chōng)** — verb tripling: "charge!" energized into chant.
   Tripling turns a trading action into crowd noise; likewise 涨涨涨
   ("up up up"), 拉拉拉 (pump pump pump). See [[martial-military-metaphors]].

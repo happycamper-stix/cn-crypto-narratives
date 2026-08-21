@@ -11,8 +11,9 @@ type: permanent
 
 ## Context
 Verbs and phrases of the trade. Much of it inherited from A-share stock slang and
-HK gambling films, then intensified by crypto. Terms deserving their own atomic
-notes are wikilinked.
+HK gambling films, then intensified by crypto — the pipeline itself is anatomized
+in [[a-share-inheritance]] (and color words in [[red-green-inversion]]). Terms
+deserving their own atomic notes are wikilinked.
 
 ## Terms
 
@@ -40,7 +41,7 @@ notes are wikilinked.
 | 心态崩了 | xīntài bēng le | mentality collapsed | tilted, emotionally rekt | gaming slang |
 | 空军 / 多军 | kōngjūn / duōjūn | air force / bull army | shorts / longs | 空 (empty) = short, hence "air force" |
 | 插针 | chāzhēn | insert a needle | scam wick / stop hunt | candle wick as needle; exchanges accused of 插针 |
-| 爆仓 | bàocāng | position explodes | liquidated | 合约一天，人间一年 "one day of futures = a year of life" |
+| 爆仓 | bàocāng | position explodes | liquidated | 币圈一天，人间一年 "one day in crypto = a year in the mortal world" |
 | 搬砖 | bānzhuān | move bricks | cross-exchange arbitrage | menial-labor metaphor |
 | 老鼠仓 | lǎoshǔcāng | rat warehouse | insider front-run position | fund-scandal slang |
 | 对敲 | duìqiāo | mutual knocking | wash trading | exchange fake-volume slang |
@@ -57,7 +58,7 @@ notes are wikilinked.
 | 接飞刀 | jiē fēidāo | catch the flying knife | buy a crashing coin | calque of "catching a falling knife" |
 | 横盘 | héngpán | horizontal plate | sideways chop | 横有多长，竖有多高 "the longer it ranges, the higher it goes" |
 | 阴跌 | yīndiē | yin-decline | slow grinding bleed | worse than a crash — it never lets you capitulate cleanly |
-| 瀑布 | pùbù | waterfall | cascade dump | the red candle chart looks like a waterfall; 又见瀑布 |
+| 瀑布 | pùbù | waterfall | cascade dump | the plunging candle chart looks like a waterfall; 又见瀑布 |
 | 天地针 | tiāndìzhēn | heaven-and-earth needle | full-range scam wick | extreme 插针: wicks both ways, liquidates longs AND shorts |
 | 开多 / 开空 | kāiduō / kāikōng | open long / open empty | go long / short (perps) | 合约 (contract) = futures/perps culture; 扛单 = refusing to close a losing leveraged position |
 | 打板 | dǎbǎn | hit the limit-board | chase a breakout candle | from A-share limit-up (涨停板) chasing; no limit-up in crypto but the verb migrated |
@@ -66,9 +67,10 @@ notes are wikilinked.
 | [[dong-ka\|冻卡]] | dòngkǎ | frozen card | bank card frozen after OTC sale | see atomic note; the defining CN off-ramp fear |
 | 一夜暴富 | yīyè bàofù | rich overnight | the dream itself | standard toast/self-mockery: 祝你一夜暴富; opposite 一夜归零 |
 | 磨损 | mósǔn | wear and tear | fees/slippage bleed from grinding activity | airdrop-farmer accounting term: gas + spreads as "abrasion" |
-| 今晚吃肉还是吃面 | — | meat or noodles tonight? | did the trade win or lose | futures-chat meme: profit = feast on meat, rekt = cheap noodles; 关灯吃面 "eat noodles with the lights off" = quiet post-loss despair (from A-share forums) |
+| 今晚吃肉还是吃面 | — | meat or noodles tonight? | did the trade win or lose | trader-chat meme (A-share and futures alike): profit = feast on meat, rekt = cheap noodles; 关灯吃面 "eat noodles with the lights off" = quiet post-loss despair (from A-share forums) |
 
 ## Related links
+- [[he-yue-perps-slang]] — the leveraged-contract register in depth (全仓/逐仓, 强平, 穿仓/分摊, 定点爆破, 维权)
 - [[shang-an]]
 - [[dong-ka]]
 - [[food-metaphors]]

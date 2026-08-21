@@ -29,7 +29,7 @@ circle, the "serious" tech side) and 矿圈 (mining circle).
 | V神 | V-shén | V God | Vitalik | deification suffix 神, coined early by CN community |
 | 孙割 | Sūn-gē | "Sun the Cutter" | Justin Sun | brutal pun: honorific 孙哥 "Brother Sun" → 孙割 "Sun who cuts (leeks)" — one homophone character flips respect into accusation |
 | 一姐 | yījiě | First Sister | He Yi (Binance) | pun on her name 一; CZ counterpart |
-| 麻吉大哥 | Májí dàgē | Machi Big Brother | Jason Huang (黄立成) | 麻吉 = Taiwanese "buddy" (from "match"); famous public 归零 episodes |
+| 麻吉大哥 | Májí dàgē | Machi Big Brother | Jeffrey Huang (黄立成) | 麻吉 = Taiwanese "buddy" (from "match"); famous public 归零 episodes |
 | 币安 | Bì'ān | coin-safe | Binance | the brand itself is a pun (币 + 安全 safety) |
 | 韭菜盒子 | jiǔcài hézi | leek pastry | a container of doomed retail (portfolio or victim group chat) | extends the leek meme via the real snack |
 | [[dai-dan-lao-shi\|带单老师]] | dàidān lǎoshī | order-leading teacher | scam trading guru | see atomic note; operates 喊单群 signal groups |
@@ -55,6 +55,7 @@ circle, the "serious" tech side) and 矿圈 (mining circle).
 | 野鸡交易所 | yějī jiāoyìsuǒ | "wild chicken exchange" | sketchy no-name exchange — 野鸡 = unlicensed/fly-by-night (as in 野鸡大学 diploma mills); where 插针 and exit scams live |
 
 ## Related links
+- [[kinship-family-metaphors]] — the rank-address system behind 一姐/孙割/老师/大佬
 - [[dai-dan-lao-shi]]
 - [[ke-xue-jia]]
 - [[nv-wu]]

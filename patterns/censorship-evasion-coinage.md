@@ -10,9 +10,12 @@ type: permanent
 # Censorship-Evasion Coinage (隐语 / 黑话)
 
 ## Context
-Two regulatory shocks shaped the lexicon: 九四 (Sept 4, 2017 — PBoC bans ICOs and
-domestic exchanges) and the May–Sept 2021 crackdown (mining ban, all crypto
-transactions declared illegal). On WeChat/Weibo, writing 比特币 or 卖币 in the
+Two regulatory shocks shaped the lexicon: 九四 (Sept 4, 2017 — seven regulators,
+PBoC among them, declare ICOs illegal fundraising; domestic exchanges were ordered
+shut in the following weeks — BTCChina announced closure Sept 14, Huobi/OKCoin
+wound down CNY trading through October) and the May–Sept 2021 crackdown (mining
+ban, all crypto transactions declared illegal). On WeChat/Weibo, writing 比特币
+or 卖币 in the
 wrong context risks group bans and keyword flags. The community's answer was a
 full replacement vocabulary — the reason so much CN crypto slang is *food*: bread,
 chives, candy are unfilterable.
