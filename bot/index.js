@@ -49,7 +49,10 @@ const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 // Process updates concurrently: grammY's default is sequential, so one slow
 // LLM call would block every other message (bot looks dead until it finishes).
 // Handlers catch their own errors; this floating-promise guard is the backstop.
+// Also log every incoming update — silent failures must be visible in the log.
 bot.use((ctx, next) => {
+  const t = ctx.message?.text ?? ctx.message?.caption ?? Object.keys(ctx.update).filter((k) => k !== "update_id").join(",");
+  console.log(`[update] chat=${ctx.chat?.id} (${ctx.chat?.type}) text="${String(t).slice(0, 80)}"`);
   next().catch((e) => console.error("handler error:", e));
 });
 
@@ -73,6 +76,19 @@ async function replyChunked(ctx, text) {
           ? undefined
           : { message_id: ctx.message.message_id },
     });
+  }
+}
+
+// Telegram's typing indicator expires after ~5s; keep it alive through long
+// LLM generations so slow models don't look like silence.
+async function withTyping(ctx, fn) {
+  const tick = () => ctx.replyWithChatAction("typing").catch(() => {});
+  tick();
+  const timer = setInterval(tick, 5000);
+  try {
+    return await fn();
+  } finally {
+    clearInterval(timer);
   }
 }
 
@@ -145,8 +161,9 @@ async function runDeepDecode(ctx, target) {
     }
     const matches = matchTerms(lexicon, text);
     const retrieved = retrieve(notes, text);
-    await ctx.replyWithChatAction("typing");
-    const out = await deepDecode(notes, { text, matches, retrieved });
+    console.log(`[deep] ${matches.length} terms matched; calling LLM`);
+    const out = await withTyping(ctx, () => deepDecode(notes, { text, matches, retrieved }));
+    console.log(`[deep] LLM done (${out.length} chars)`);
     pushHistory(ctx.chat.id, "user", `[deep-decoded] ${text.slice(0, 400)}`);
     pushHistory(ctx.chat.id, "assistant", out);
     await replyChunked(ctx, out);
@@ -191,9 +208,12 @@ async function runAnalysis(ctx, input) {
       await ctx.replyWithChatAction("typing");
       await backtestAll(priceData, postDateMs);
     }
-    await ctx.replyWithChatAction("typing");
     const authorHistory = authorStats(post.author?.screenName);
-    const text = await analyzePost(notes, { post, matches, kolRow, priceData, authorHistory });
+    console.log(`[analyze] @${post.author?.screenName ?? "?"}, ${matches.length} terms, ${priceData.length} tokens; calling LLM`);
+    const text = await withTyping(ctx, () =>
+      analyzePost(notes, { post, matches, kolRow, priceData, authorHistory }),
+    );
+    console.log(`[analyze] LLM done (${text.length} chars)`);
     pushHistory(ctx.chat.id, "user", `[analyzed post] ${post.text.slice(0, 500)}`);
     pushHistory(ctx.chat.id, "assistant", text);
     if (post.author?.screenName) {
@@ -225,6 +245,7 @@ bot.command("analyze", async (ctx) => {
 // Contract-address breakdown: paste a CA (or /ca <address>) → identity decode,
 // narrative placement, structure read, flags.
 async function runCaBreakdown(ctx, address) {
+  console.log(`[ca] breakdown requested: ${address}`);
   await ctx.replyWithChatAction("typing");
   try {
     const { pairs, error } = await lookupByCA(address);
@@ -241,8 +262,11 @@ async function runCaBreakdown(ctx, address) {
       `${nameText} 命名 板块 龙头 launchpad naming meme 轮动`,
     );
     const momentum = top.pairAddress ? await momentumSnapshot(top) : null;
-    await ctx.replyWithChatAction("typing");
-    const out = await caBreakdown(notes, { address, pairs, momentum, matches, retrieved });
+    console.log(`[ca] ${pairs.length} pairs, top ${top.symbol} (${top.chain}); calling LLM`);
+    const out = await withTyping(ctx, () =>
+      caBreakdown(notes, { address, pairs, momentum, matches, retrieved }),
+    );
+    console.log(`[ca] LLM done (${out.length} chars)`);
     pushHistory(ctx.chat.id, "user", `[CA breakdown] ${top.name} (${top.symbol}) ${address}`);
     pushHistory(ctx.chat.id, "assistant", out);
     await replyChunked(ctx, out);

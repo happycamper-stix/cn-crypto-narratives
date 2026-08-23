@@ -2,7 +2,7 @@
 // lexicon and answers with per-message retrieved notes injected into the turn.
 import path from "node:path";
 import { CORE_FILES, retrieve } from "./knowledge.js";
-import { complete } from "./llm.js";
+import { complete, provider } from "./llm.js";
 
 const PERSONA = `You are the CN Crypto Narratives bot — a bilingual decoder of Chinese crypto lingo, coin names, tickers, and narratives, speaking to English readers on Telegram.
 
@@ -28,7 +28,14 @@ let systemBlocks = null;
 
 export function buildSystem(vaultDir, notes) {
   const coreSet = new Map(notes.map((n) => [n.rel, n.content]));
-  const coreText = CORE_FILES.filter((f) => coreSet.has(f))
+  // Anthropic path: full core lexicon in the system prompt, prompt-cached so
+  // it's nearly free per message. OpenRouter path (no caching, slow free
+  // models): README index only — per-message matched terms + retrieved notes
+  // carry the specific knowledge, and a ~25KB system prompt would be re-read
+  // at full latency/cost on every message.
+  const files = provider === "openrouter" ? ["README.md"] : CORE_FILES;
+  const coreText = files
+    .filter((f) => coreSet.has(f))
     .map((f) => `<note path="${f}">\n${coreSet.get(f)}\n</note>`)
     .join("\n\n");
   systemBlocks = [
