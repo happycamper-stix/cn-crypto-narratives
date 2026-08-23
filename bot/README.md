@@ -27,10 +27,26 @@ grounded in this vault's notes.
 
 ## Commands
 
+- **Drop an X/Twitter link** (or `/analyze <link|text>`, or reply `/analyze` to a
+  forwarded post) — full pipeline: fetches the post, translates it, matches it
+  against every vault term, checks the author against the KOL directory's
+  reputational flags, pulls live DEX data for mentioned tickers/names, compares
+  the thesis against actual price action, and scores it SIGNAL / MIXED / SLOP
+  (0–10) using [references/signal-slop-rubric.md](../references/signal-slop-rubric.md)
 - `/decode <name|ticker|phrase>` — full naming-mechanics breakdown (e.g. `/decode 币安人生`)
 - `/translate <text>` (or reply to a message with `/translate`) — translate + decode
-- plain messages — chat about a coin/narrative; per-chat memory (last 12 exchanges)
+- `/price <ticker or 中文 name>` — quick DexScreener lookup (price, 1h/24h, liquidity, mcap, pair age)
+- plain messages — chat about a coin/narrative; the bot's stance is *why CN money
+  runs one coin over another* (板块/龙头 rotation, Binance adjacency, naming
+  mechanics, 改变命运 psychology); per-chat memory (last 12 exchanges)
 - `/clear` — forget the conversation · `/reload` — re-read the vault after edits/`git pull`
+
+## Analysis stack (no paid APIs)
+
+- X posts: fxtwitter/vxtwitter public mirrors (public posts only)
+- Prices: DexScreener free search API (works with Chinese token names)
+- Term matching: ~500-term lexicon auto-built from the vault's glossary/pattern
+  tables; ~87 KOL handles indexed from the CT directory
 
 ## How it works
 
