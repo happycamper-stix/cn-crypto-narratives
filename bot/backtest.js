@@ -142,6 +142,39 @@ export async function backtestPair({ chainId, pairAddress }, postDateMs) {
   }
 }
 
+// Momentum snapshot for a pair (used by /pvp): recent price changes + volume
+// trend from hourly candles, sampled with the same no-look-ahead rules.
+export async function momentumSnapshot({ chainId, pairAddress }) {
+  const network = toNetwork(chainId);
+  const nowTs = Math.floor(Date.now() / 1000);
+  const dur = 3600;
+  try {
+    const candles = await fetchOhlcv(network, pairAddress, "hour", {
+      beforeTs: nowTs,
+      limit: 200, // ~8 days
+    });
+    if (!candles.length) return { error: "no OHLCV data" };
+    const latest = candles[candles.length - 1][4];
+    const changes = {};
+    for (const [label, hours] of [["24h", 24], ["3d", 72], ["7d", 168]]) {
+      const v = pct(priceAt(candles, nowTs - hours * dur, dur), latest);
+      if (v != null) changes[label] = v;
+    }
+    const vol = (from, to) =>
+      candles.filter((c) => c[0] >= from && c[0] < to).reduce((s, c) => s + (c[5] ?? 0), 0);
+    const vol24 = vol(nowTs - 24 * dur, nowTs);
+    const prev24 = vol(nowTs - 48 * dur, nowTs - 24 * dur);
+    return {
+      changes,
+      volume_24h_usd: Math.round(vol24),
+      volume_trend_pct: pct(prev24, vol24),
+      candles_available: candles.length,
+    };
+  } catch (e) {
+    return { error: String(e.message ?? e) };
+  }
+}
+
 // Backtest the most liquid pair of each priced candidate (bounded, sequential —
 // GeckoTerminal free tier is ~30 calls/min).
 export async function backtestAll(priceData, postDateMs, cap = 2) {

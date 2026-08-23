@@ -10,7 +10,10 @@ import { buildSystem, answer, analyzePost } from "./claude.js";
 import { buildLexicon, matchTerms, buildKolIndex } from "./lexicon.js";
 import { fetchPost, extractXUrl } from "./xpost.js";
 import { extractTickerCandidates, lookupAll, lookupToken } from "./prices.js";
-import { backtestAll } from "./backtest.js";
+import { backtestAll, momentumSnapshot } from "./backtest.js";
+import { recordAnalysis, authorStats, topAccounts, parseVerdict } from "./store.js";
+import { retrieve } from "./knowledge.js";
+import { pvpCompare } from "./claude.js";
 
 const VAULT_DIR =
   process.env.VAULT_DIR || path.join(os.homedir(), "cn-crypto-narratives");
@@ -99,6 +102,8 @@ bot.command("start", (ctx) =>
     "I decode Chinese crypto lingo and narratives into English.\n\n" +
       "- Drop an X/Twitter link and I'll fetch it, translate it, match it against my slang database, price-check the tickers, and score it SIGNAL vs SLOP\n" +
       "- /analyze <link or pasted text> — same pipeline on anything\n" +
+      "- /pvp <coin A> vs <coin B> — head-to-head narrative battle: each side's stance, who has the rotation, why\n" +
+      "- /accounts — measured leaderboard: which analyzed accounts actually call early vs dump on you\n" +
       "- /decode <name or ticker> — full naming-mechanics breakdown\n" +
       "- /price <ticker or 中文 name> — quick DEX lookup\n" +
       "- Or just chat about a coin, term, or narrative\n" +
@@ -153,9 +158,18 @@ async function runAnalysis(ctx, input) {
       await backtestAll(priceData, postDateMs);
     }
     await ctx.replyWithChatAction("typing");
-    const text = await analyzePost(notes, { post, matches, kolRow, priceData });
+    const authorHistory = authorStats(post.author?.screenName);
+    const text = await analyzePost(notes, { post, matches, kolRow, priceData, authorHistory });
     pushHistory(ctx.chat.id, "user", `[analyzed post] ${post.text.slice(0, 500)}`);
     pushHistory(ctx.chat.id, "assistant", text);
+    if (post.author?.screenName) {
+      recordAnalysis({
+        author: post.author.screenName,
+        url: post.url,
+        tickers: priceData.filter((e) => e.pairs?.length).map((e) => e.query),
+        ...parseVerdict(text),
+      });
+    }
     await replyChunked(ctx, text);
   } catch (err) {
     console.error(err);
@@ -172,6 +186,51 @@ bot.command("analyze", async (ctx) => {
       "Usage: /analyze <X post link or pasted text> — or reply to a forwarded post with /analyze.",
     );
   await runAnalysis(ctx, target);
+});
+
+// /pvp <coinA> vs <coinB> — head-to-head narrative battle: each side's stance,
+// who has the rotation, and why.
+bot.command("pvp", async (ctx) => {
+  const arg = (ctx.match ?? "").trim();
+  const sides = arg.split(/\s+vs\.?\s+|\s+对\s+/i).map((s) => s.trim()).filter(Boolean);
+  if (sides.length !== 2)
+    return ctx.reply("Usage: /pvp <coin A> vs <coin B> — e.g. /pvp 币安人生 vs 我踏马来了");
+  await ctx.replyWithChatAction("typing");
+  try {
+    const [ra, rb] = await lookupAll(sides);
+    for (const [label, r] of [[sides[0], ra], [sides[1], rb]]) {
+      if (!r.pairs?.length)
+        return ctx.reply(`No liquid pairs found for "${label}" — check the name/ticker.`);
+    }
+    const [ma, mb] = [await momentumSnapshot(ra.pairs[0]), await momentumSnapshot(rb.pairs[0])];
+    const retrieved = retrieve(notes, `${sides[0]} ${sides[1]} PVP 对打 轮动 板块 龙头 吸血`);
+    await ctx.replyWithChatAction("typing");
+    const text = await pvpCompare(notes, {
+      a: { name: sides[0], dex: ra.pairs[0], momentum: ma },
+      b: { name: sides[1], dex: rb.pairs[0], momentum: mb },
+      retrieved,
+    });
+    pushHistory(ctx.chat.id, "user", `[pvp] ${sides[0]} vs ${sides[1]}`);
+    pushHistory(ctx.chat.id, "assistant", text);
+    await replyChunked(ctx, text);
+  } catch (err) {
+    console.error(err);
+    await ctx.reply("PvP analysis failed — try again in a moment.");
+  }
+});
+
+// /accounts — measured leaderboard of analyzed authors (needs history to build).
+bot.command("accounts", (ctx) => {
+  const rows = topAccounts();
+  if (!rows.length)
+    return ctx.reply(
+      "No track record yet — analyze some posts first. Every /analyze builds each account's measured history (avg signal score + how their calls timed against price).",
+    );
+  const lines = rows.map((s, i) => {
+    const t = Object.entries(s.timing_outcomes).map(([k, v]) => `${k}×${v}`).join(", ");
+    return `${i + 1}. @${s.handle} — avg ${s.avg_signal_score ?? "?"}/10 over ${s.posts_analyzed} posts${t ? ` | ${t}` : ""}`;
+  });
+  return ctx.reply("Measured account leaderboard:\n" + lines.join("\n"));
 });
 
 // /backtest <X link> [ticker] — measurement-focused: skips the full decode and

@@ -33,6 +33,15 @@ grounded in this vault's notes.
   reputational flags, pulls live DEX data for mentioned tickers/names, compares
   the thesis against actual price action, and scores it SIGNAL / MIXED / SLOP
   (0–10) using [references/signal-slop-rubric.md](../references/signal-slop-rubric.md)
+- `/pvp <coin A> vs <coin B>` — head-to-head narrative battle (PVP盘 read):
+  each side's stance in CN eyes (naming mechanics, 板块/龙头 position, Binance
+  adjacency), live momentum + volume comparison, who currently has the rotation
+  and whether it's 吸血 (vampiring the other), and what event would flip it
+- `/accounts` — measured leaderboard of every author the bot has analyzed:
+  avg signal score and how their calls actually timed against price
+  (EARLY CALL vs FRONT-RAN counts). Every `/analyze` feeds it; author track
+  records are automatically injected into future analyses of the same account,
+  so credibility is accumulated measurement, not vibes
 - `/decode <name|ticker|phrase>` — full naming-mechanics breakdown (e.g. `/decode 币安人生`)
 - `/translate <text>` (or reply to a message with `/translate`) — translate + decode
 - `/price <ticker or 中文 name>` — quick DexScreener lookup (price, 1h/24h, liquidity, mcap, pair age)

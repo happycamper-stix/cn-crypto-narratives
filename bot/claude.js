@@ -49,7 +49,50 @@ export function buildSystem(vaultDir, notes) {
 // Full X-post analysis: vault-term matching + author dossier + live price data
 // → thesis decode + signal/slop verdict. postData/priceData are pre-fetched by
 // the caller; matched terms and the rubric ride in the user turn.
-export async function analyzePost(notes, { post, matches, kolRow, priceData }) {
+// Head-to-head narrative battle analysis (PvP盘): two coins fighting for the
+// same rotation. Lays out each side's stance and calls which is running.
+export async function pvpCompare(notes, { a, b, retrieved }) {
+  const parts = [
+    `Two coins are PvPing (PVP盘 — fighting for the same rotation/attention). Compare them as a Chinese narrative decoder and produce, in plain text for Telegram:`,
+    `1. THE BATTLE — what these two are actually fighting over (same 板块? same meta? same exchange gravity?).`,
+    `2. STANCE A (${a.name}) — its narrative case in CN eyes: naming mechanics, 板块/龙头 position, Binance/KOL adjacency, 公平发射 story, destiny psychology. What its holders SAY and what the name signals.`,
+    `3. STANCE B (${b.name}) — same axes.`,
+    `4. WHO'S RUNNING — read the momentum + volume data: which one has the rotation now, is it 吸血 (vampiring liquidity from the other), and what narrative advantage explains it. Quote the numbers.`,
+    `5. WHAT FLIPS IT — the event that would rotate money the other way (一姐 reply, listing, 龙头 exhaustion, new 板块).`,
+    `Never give buy/sell advice — this is narrative analysis, not a recommendation.`,
+    "",
+    `<coin-a name="${a.name}">`,
+    JSON.stringify({ dex: a.dex, momentum: a.momentum }, null, 1),
+    "</coin-a>",
+    `<coin-b name="${b.name}">`,
+    JSON.stringify({ dex: b.dex, momentum: b.momentum }, null, 1),
+    "</coin-b>",
+  ];
+  if (retrieved.length)
+    parts.push(
+      "",
+      "<vault-notes>",
+      ...retrieved.map((h) => `<note path="${h.rel}">\n${h.content}\n</note>`),
+      "</vault-notes>",
+    );
+
+  const response = await client.beta.messages.create({
+    model: MODEL,
+    max_tokens: 8000,
+    betas: ["server-side-fallback-2026-07-01"],
+    fallbacks: "default",
+    system: systemBlocks,
+    messages: [{ role: "user", content: parts.join("\n") }],
+  });
+  if (response.stop_reason === "refusal") return "I can't analyze that matchup.";
+  return response.content
+    .filter((t) => t.type === "text")
+    .map((t) => t.text)
+    .join("\n")
+    .trim();
+}
+
+export async function analyzePost(notes, { post, matches, kolRow, priceData, authorHistory }) {
   const rubric = notes.find((n) => n.rel === "references/signal-slop-rubric.md");
   const parts = [
     "Analyze this X post from Chinese crypto Twitter. Produce, in plain text for Telegram:",
@@ -62,7 +105,9 @@ export async function analyzePost(notes, { post, matches, kolRow, priceData }) {
     "   - EXIT-LIQUIDITY PATTERN: pump within hours of the post then bleed (peak_after early, now_vs_post deeply negative).",
     "   - NO EDGE: noise either side.",
     "   Quote the actual numbers (e.g. '+340% into the post, -62% since'). Note fresh pairs, thin liquidity, and any coverage caveats in the data.",
-    "5. VERDICT — SIGNAL / MIXED / SLOP with a 0-10 score and the specific rubric markers that drove it.",
+    "5. VERDICT — SIGNAL / MIXED / SLOP with a 0-10 score and the specific rubric markers that drove it. Always end with a line in exactly this shape: 'VERDICT: <SIGNAL|MIXED|SLOP> <n>/10 | TIMING: <FRONT-RAN|EARLY CALL|EXIT-LIQUIDITY|NO EDGE|N/A>'.",
+    "If the post pits two coins against each other (or two are priced below), treat it as a PvP盘 read: give each side's narrative stance and which one currently has the rotation and why.",
+    "Weight the author: a measured track record (below) of EARLY CALLs raises credibility; FRONT-RAN/EXIT-LIQUIDITY history or directory flags mean read the post as sentiment/exit-marketing, not information. Slop from many accounts converging on one theme is itself a rotation signal — say so when you see it.",
     "Never give buy/sell advice; the verdict is about information quality, not the token.",
     "",
     `<post url="${post.url ?? ""}" author="@${post.author?.screenName ?? "?"}" followers="${post.author?.followers ?? "?"}" likes="${post.stats?.likes ?? "?"}" retweets="${post.stats?.retweets ?? "?"}" views="${post.stats?.views ?? "?"}" date="${post.date ?? "?"}">`,
@@ -70,6 +115,13 @@ export async function analyzePost(notes, { post, matches, kolRow, priceData }) {
     "</post>",
   ];
   if (kolRow) parts.push("", `<author-dossier source="cn-ct-kol-directory">`, kolRow, "</author-dossier>");
+  if (authorHistory)
+    parts.push(
+      "",
+      `<author-track-record source="this bot's measured history of @${authorHistory.handle}'s analyzed posts">`,
+      JSON.stringify(authorHistory, null, 1),
+      "</author-track-record>",
+    );
   if (matches.length)
     parts.push(
       "",

@@ -54,6 +54,7 @@ cultural context), not the literal translation.
 - [[official-state-register]] — 官方话语: how regulators name crypto, and how to read the state's language
 - [[nft-shuzi-cangpin-slang]] — NFT时代 & 数字藏品: the 2021–22 register split — one technology, two vocabularies
 - [[gamefi-dajin-slang]] — GameFi/打金: the MMO gold-farming industry that walked into crypto with its whole vocabulary
+- [[pvp-slang]] — PVP盘/对打/吸血/龙一龙二: the zero-sum register of coins fighting for the same rotation
 
 ### Atomic terms
 - [[jiu-cai]] — 韭菜 jiǔcài, lit. "leeks": retail investors as an endlessly re-growing harvestable class
