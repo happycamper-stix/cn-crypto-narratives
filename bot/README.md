@@ -43,7 +43,17 @@ grounded in this vault's notes.
   records are automatically injected into future analyses of the same account,
   so credibility is accumulated measurement, not vibes
 - `/decode <name|ticker|phrase>` — full naming-mechanics breakdown (e.g. `/decode 币安人生`)
-- `/translate <text>` (or reply to a message with `/translate`) — translate + decode
+- `/deep` / `/translate <text or X link>` (or reply to a message, or just
+  **paste raw Chinese text** — it auto-triggers) — the layered decode engine,
+  built on the premise that CN→EN translation loses the meaning:
+  - LITERAL — the naive translation an English reader would get (the baseline)
+  - NATURAL — what it actually says, tone preserved
+  - LOSS LEDGER — every phrase where the literal loses meaning: homophones,
+    number codes, metaphors, censorship euphemisms, film/A-share references
+  - REGISTER — the vocabulary fingerprint: which community/era the word-set
+    places the author in (合约 gambler, 撸毛 studio, A-share veteran…)
+  - SUBTEXT — what a native reader infers but the text never states
+  - NARRATIVE — which meta it plugs into and where that meta is in its lifecycle
 - `/price <ticker or 中文 name>` — quick DexScreener lookup (price, 1h/24h, liquidity, mcap, pair age)
 - `/backtest <X link> [ticker]` — pure numbers, no narrative: fetches OHLCV
   around the post's actual timestamp (GeckoTerminal, free) and reports price

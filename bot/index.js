@@ -6,7 +6,7 @@ import { Bot } from "grammy";
 import os from "node:os";
 import path from "node:path";
 import { loadVault } from "./knowledge.js";
-import { buildSystem, answer, analyzePost } from "./claude.js";
+import { buildSystem, answer, analyzePost, deepDecode } from "./claude.js";
 import { buildLexicon, matchTerms, buildKolIndex } from "./lexicon.js";
 import { fetchPost, extractXUrl } from "./xpost.js";
 import { extractTickerCandidates, lookupAll, lookupToken } from "./prices.js";
@@ -101,6 +101,7 @@ bot.command("start", (ctx) =>
   ctx.reply(
     "I decode Chinese crypto lingo and narratives into English.\n\n" +
       "- Drop an X/Twitter link and I'll fetch it, translate it, match it against my slang database, price-check the tickers, and score it SIGNAL vs SLOP\n" +
+      "- Paste raw Chinese text and I'll deep-decode it in layers: literal vs natural translation, a loss ledger of every meaning translation strips, the author's register fingerprint, and the subtext a native reader infers (/deep or /translate does the same on demand)\n" +
       "- /analyze <link or pasted text> — same pipeline on anything\n" +
       "- /pvp <coin A> vs <coin B> — head-to-head narrative battle: each side's stance, who has the rotation, why\n" +
       "- /accounts — measured leaderboard: which analyzed accounts actually call early vs dump on you\n" +
@@ -121,17 +122,40 @@ bot.command("decode", async (ctx) => {
   );
 });
 
-bot.command("translate", async (ctx) => {
-  const quoted = ctx.message.reply_to_message?.text;
-  const arg = (ctx.match ?? "").trim();
-  const target = arg || quoted;
-  if (!target)
-    return ctx.reply("Reply to a message with /translate, or use /translate <text>.");
-  await handle(
-    ctx,
-    `Translate this to natural English, then decode any slang/wordplay the literal translation loses:\n\n${target}`,
-  );
-});
+// /translate and /deep: the layered-decode engine. If given an X link, decode
+// the post's text; otherwise decode the given/quoted text directly.
+async function runDeepDecode(ctx, target) {
+  await ctx.replyWithChatAction("typing");
+  try {
+    let text = target;
+    if (extractXUrl(target)) {
+      const post = await fetchPost(target);
+      if (post?.error) return ctx.reply(post.error);
+      text = post.text;
+    }
+    const matches = matchTerms(lexicon, text);
+    const retrieved = retrieve(notes, text);
+    await ctx.replyWithChatAction("typing");
+    const out = await deepDecode(notes, { text, matches, retrieved });
+    pushHistory(ctx.chat.id, "user", `[deep-decoded] ${text.slice(0, 400)}`);
+    pushHistory(ctx.chat.id, "assistant", out);
+    await replyChunked(ctx, out);
+  } catch (err) {
+    console.error(err);
+    await ctx.reply("Decode failed — try again in a moment.");
+  }
+}
+
+for (const cmd of ["translate", "deep"]) {
+  bot.command(cmd, async (ctx) => {
+    const quoted = ctx.message.reply_to_message?.text;
+    const arg = (ctx.match ?? "").trim();
+    const target = arg || quoted;
+    if (!target)
+      return ctx.reply(`Reply to a message with /${cmd}, or use /${cmd} <text or X link>.`);
+    await runDeepDecode(ctx, target);
+  });
+}
 
 // Full analysis pipeline: fetch post (or use pasted text) → match vault terms
 // → author dossier → DEX price data → Claude verdict.
@@ -330,6 +354,11 @@ bot.on("message:text", async (ctx) => {
   if (!text) return;
   // An X/Twitter link (bare, or with a short comment) triggers full analysis.
   if (extractXUrl(text) && text.length < 400) return runAnalysis(ctx, text);
+  // Raw pasted Chinese content (not a question to the bot) triggers the
+  // layered deep decode — pasting CT text is the core workflow.
+  const cjkCount = (text.match(/[一-鿿]/g) ?? []).length;
+  if (cjkCount >= 8 && cjkCount / text.length > 0.35 && !/[?？]\s*$/.test(text))
+    return runDeepDecode(ctx, text);
   // If they replied to someone else's message while mentioning the bot,
   // include the quoted text as the thing to discuss.
   const quoted =

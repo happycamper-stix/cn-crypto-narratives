@@ -49,6 +49,57 @@ export function buildSystem(vaultDir, notes) {
 // Full X-post analysis: vault-term matching + author dossier + live price data
 // → thesis decode + signal/slop verdict. postData/priceData are pre-fetched by
 // the caller; matched terms and the rubric ride in the user turn.
+// Deep decode: the layered-translation engine. Chinese→English translation
+// strips homophones, register, and subtext — this recovers each stripped layer
+// explicitly instead of flattening them into one "translation".
+export async function deepDecode(notes, { text, matches, retrieved }) {
+  const parts = [
+    "Deep-decode this Chinese crypto text for an English reader. Translation flattens it — your job is to recover every layer the flattening destroys. Produce, in plain text for Telegram:",
+    "",
+    "LITERAL — the flat translation an English reader (or Google Translate) would get. Keep it deliberately naive; this is the baseline that shows what gets lost.",
+    "NATURAL — what it actually says, in fluent English, tone preserved (degen text should read degen, not formal).",
+    "LOSS LEDGER — the core layer. For each term/phrase where the literal loses meaning: the phrase, characters (pinyin, \"literal\") = what a native reader actually receives — the homophone, number code, kinship/food metaphor, censorship euphemism, film/gaming reference, or A-share inheritance behind it, and which vault pattern generates it. Skip phrases that translate cleanly; this ledger is only the losses.",
+    "REGISTER — vocabulary choice is a fingerprint. Which community/era does this word-set place the author in (合约 gambler, 撸毛 studio, A-share veteran, launchpad degen, 带单 seller, old 韭菜)? Name the tell-words.",
+    "SUBTEXT — what a native reader infers but the text never states: irony inversions (价值投资 as cope?), position signaling (holding? exiting? recruiting?), in-group nods, what the author conspicuously does NOT say.",
+    "NARRATIVE — which larger meta/narrative this text plugs into, and what its existence tells you about where that narrative is in its lifecycle.",
+    "",
+    "Rules: if a layer is genuinely empty (e.g. no subtext), say so in one short line rather than inventing depth. Keep the whole thing tight — depth over length. Unverified vault content marked (?) keeps its caveat.",
+    "",
+    "<text-to-decode>",
+    text,
+    "</text-to-decode>",
+  ];
+  if (matches.length)
+    parts.push(
+      "",
+      "<matched-vault-terms>",
+      ...matches.map((m) => `- ${m.term} — ${m.gloss} [${m.source}]`),
+      "</matched-vault-terms>",
+    );
+  if (retrieved.length)
+    parts.push(
+      "",
+      "<vault-notes>",
+      ...retrieved.map((h) => `<note path="${h.rel}">\n${h.content}\n</note>`),
+      "</vault-notes>",
+    );
+
+  const response = await client.beta.messages.create({
+    model: MODEL,
+    max_tokens: 8000,
+    betas: ["server-side-fallback-2026-07-01"],
+    fallbacks: "default",
+    system: systemBlocks,
+    messages: [{ role: "user", content: parts.join("\n") }],
+  });
+  if (response.stop_reason === "refusal") return "I can't decode that one.";
+  return response.content
+    .filter((b) => b.type === "text")
+    .map((b) => b.text)
+    .join("\n")
+    .trim();
+}
+
 // Head-to-head narrative battle analysis (PvP盘): two coins fighting for the
 // same rotation. Lays out each side's stance and calls which is running.
 export async function pvpCompare(notes, { a, b, retrieved }) {
