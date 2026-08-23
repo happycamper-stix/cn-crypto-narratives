@@ -1,14 +1,8 @@
 // Claude API wrapper: builds the cached system prompt from the vault's core
 // lexicon and answers with per-message retrieved notes injected into the turn.
-import Anthropic from "@anthropic-ai/sdk";
 import path from "node:path";
 import { CORE_FILES, retrieve } from "./knowledge.js";
-
-const MODEL = process.env.CLAUDE_MODEL || "claude-opus-5";
-
-// Zero-arg client: resolves ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN, or an
-// `ant auth login` profile from the environment.
-const client = new Anthropic();
+import { complete } from "./llm.js";
 
 const PERSONA = `You are the CN Crypto Narratives bot — a bilingual decoder of Chinese crypto lingo, coin names, tickers, and narratives, speaking to English readers on Telegram.
 
@@ -84,20 +78,11 @@ export async function deepDecode(notes, { text, matches, retrieved }) {
       "</vault-notes>",
     );
 
-  const response = await client.beta.messages.create({
-    model: MODEL,
-    max_tokens: 8000,
-    betas: ["server-side-fallback-2026-07-01"],
-    fallbacks: "default",
-    system: systemBlocks,
+  const { text: out, refused } = await complete({
+    systemBlocks,
     messages: [{ role: "user", content: parts.join("\n") }],
   });
-  if (response.stop_reason === "refusal") return "I can't decode that one.";
-  return response.content
-    .filter((b) => b.type === "text")
-    .map((b) => b.text)
-    .join("\n")
-    .trim();
+  return refused ? "I can't decode that one." : out;
 }
 
 // Head-to-head narrative battle analysis (PvP盘): two coins fighting for the
@@ -127,20 +112,11 @@ export async function pvpCompare(notes, { a, b, retrieved }) {
       "</vault-notes>",
     );
 
-  const response = await client.beta.messages.create({
-    model: MODEL,
-    max_tokens: 8000,
-    betas: ["server-side-fallback-2026-07-01"],
-    fallbacks: "default",
-    system: systemBlocks,
+  const { text, refused } = await complete({
+    systemBlocks,
     messages: [{ role: "user", content: parts.join("\n") }],
   });
-  if (response.stop_reason === "refusal") return "I can't analyze that matchup.";
-  return response.content
-    .filter((t) => t.type === "text")
-    .map((t) => t.text)
-    .join("\n")
-    .trim();
+  return refused ? "I can't analyze that matchup." : text;
 }
 
 export async function analyzePost(notes, { post, matches, kolRow, priceData, authorHistory }) {
@@ -184,23 +160,11 @@ export async function analyzePost(notes, { post, matches, kolRow, priceData, aut
     parts.push("", "<dex-data source=\"dexscreener\">", JSON.stringify(priceData, null, 1), "</dex-data>");
   if (rubric) parts.push("", "<rubric>", rubric.content, "</rubric>");
 
-  const response = await client.beta.messages.create({
-    model: MODEL,
-    max_tokens: 8000,
-    betas: ["server-side-fallback-2026-07-01"],
-    fallbacks: "default",
-    system: systemBlocks,
+  const { text, refused } = await complete({
+    systemBlocks,
     messages: [{ role: "user", content: parts.join("\n") }],
   });
-
-  if (response.stop_reason === "refusal") {
-    return "I can't analyze that one.";
-  }
-  return response.content
-    .filter((b) => b.type === "text")
-    .map((b) => b.text)
-    .join("\n")
-    .trim();
+  return refused ? "I can't analyze that one." : text;
 }
 
 export async function answer(notes, history, userText) {
@@ -216,27 +180,12 @@ export async function answer(notes, history, userText) {
     { role: "user", content: contextBlock + userText },
   ];
 
-  const response = await client.beta.messages.create({
-    model: MODEL,
-    max_tokens: 8000,
-    betas: ["server-side-fallback-2026-07-01"],
-    fallbacks: "default",
-    system: systemBlocks,
-    messages,
-  });
-
-  if (response.stop_reason === "refusal") {
+  const { text, refused } = await complete({ systemBlocks, messages });
+  if (refused) {
     return {
       text: "I can't help with that one — try rephrasing, or ask about the lingo/narrative side.",
       retrieved: hits.map((h) => h.rel),
     };
   }
-
-  const text = response.content
-    .filter((b) => b.type === "text")
-    .map((b) => b.text)
-    .join("\n")
-    .trim();
-
   return { text: text || "(empty response)", retrieved: hits.map((h) => h.rel) };
 }

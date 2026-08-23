@@ -27,9 +27,11 @@ let notes = loadVault(VAULT_DIR);
 let lexicon = buildLexicon(notes);
 let kolIndex = buildKolIndex(notes);
 buildSystem(VAULT_DIR, notes);
+const { describeProvider } = await import("./llm.js");
 console.log(
   `Loaded ${notes.length} vault notes, ${lexicon.length} lexicon terms, ${kolIndex.size} KOL handles from ${VAULT_DIR}`,
 );
+console.log(`LLM provider: ${describeProvider()}`);
 
 // Per-chat rolling history (in-memory; cleared on restart or /clear).
 const histories = new Map();
