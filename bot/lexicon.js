@@ -52,16 +52,25 @@ export function matchTerms(lexicon, text, cap = 30) {
     if (text.includes(e.term)) hits.push(e);
     if (hits.length >= cap) break;
   }
-  // Longer terms first (more specific), and drop terms fully contained in a
-  // longer matched term (割韭菜 beats 韭菜 for the same span — keep both only
-  // if 韭菜 also appears alone).
+  // Longer terms first (more specific). A shorter term is shadowed only if
+  // EVERY occurrence span of it lies inside an occurrence span of some kept
+  // longer term (割韭菜 shadows 韭菜 for that span, but a standalone 韭菜
+  // elsewhere in the text keeps the entry).
   hits.sort((a, b) => b.term.length - a.term.length);
+  const spansOf = (term) => {
+    const spans = [];
+    for (let i = text.indexOf(term); i !== -1; i = text.indexOf(term, i + 1))
+      spans.push([i, i + term.length]);
+    return spans;
+  };
   const kept = [];
   for (const h of hits) {
-    const shadowed = kept.some((k) => k.term.includes(h.term)) &&
-      text.split(h.term).length - 1 <= kept.filter((k) => k.term.includes(h.term))
-        .reduce((s, k) => s + text.split(k.term).length - 1, 0);
-    if (!shadowed) kept.push(h);
+    const supers = kept.filter((k) => k.term.includes(h.term));
+    const superSpans = supers.flatMap((k) => spansOf(k.term));
+    const uncovered = spansOf(h.term).some(
+      ([s, e]) => !superSpans.some(([ks, ke]) => ks <= s && e <= ke),
+    );
+    if (!supers.length || uncovered) kept.push(h);
   }
   return kept;
 }

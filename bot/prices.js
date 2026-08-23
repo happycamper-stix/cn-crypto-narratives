@@ -3,7 +3,9 @@
 // returns the top pairs by liquidity with price + momentum data.
 
 const CJK_RUN = /[一-鿿]{2,8}/g;
-const CASHTAG = /\$[A-Za-z][A-Za-z0-9]{1,14}/g;
+// Admits $B and digit tickers like $4 (CZ-adjacency meme) while excluding fiat
+// amounts ($100, $1.5k) via the lookahead; DexScreener no-pairs is the final filter.
+const CASHTAG = /\$([A-Za-z][A-Za-z0-9]{0,14}|\d{1,2})(?![\w.,])/g;
 
 // Candidate queries from a post: $cashtags plus CJK runs that are NOT vault
 // slang (those runs are likely coin names, e.g. 币安人生, 我踏马来了).
@@ -40,6 +42,8 @@ export async function lookupToken(query) {
         symbol: p.baseToken?.symbol,
         name: p.baseToken?.name,
         chain: p.chainId,
+        chainId: p.chainId,
+        pairAddress: p.pairAddress,
         dex: p.dexId,
         priceUsd: p.priceUsd,
         change: p.priceChange, // { m5, h1, h6, h24 } in %

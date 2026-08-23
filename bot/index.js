@@ -10,6 +10,7 @@ import { buildSystem, answer, analyzePost } from "./claude.js";
 import { buildLexicon, matchTerms, buildKolIndex } from "./lexicon.js";
 import { fetchPost, extractXUrl } from "./xpost.js";
 import { extractTickerCandidates, lookupAll, lookupToken } from "./prices.js";
+import { backtestAll } from "./backtest.js";
 
 const VAULT_DIR =
   process.env.VAULT_DIR || path.join(os.homedir(), "cn-crypto-narratives");
@@ -145,6 +146,12 @@ async function runAnalysis(ctx, input) {
       : undefined;
     const candidates = extractTickerCandidates(post.text, matches);
     const priceData = candidates.length ? await lookupAll(candidates) : [];
+    // If the post has a timestamp, measure price action before/after it.
+    const postDateMs = post.date ? new Date(post.date).getTime() : NaN;
+    if (priceData.length && !Number.isNaN(postDateMs)) {
+      await ctx.replyWithChatAction("typing");
+      await backtestAll(priceData, postDateMs);
+    }
     await ctx.replyWithChatAction("typing");
     const text = await analyzePost(notes, { post, matches, kolRow, priceData });
     pushHistory(ctx.chat.id, "user", `[analyzed post] ${post.text.slice(0, 500)}`);
@@ -166,6 +173,66 @@ bot.command("analyze", async (ctx) => {
     );
   await runAnalysis(ctx, target);
 });
+
+// /backtest <X link> [ticker] — measurement-focused: skips the full decode and
+// reports the post-vs-price numbers for the post's tickers (or the given one).
+bot.command("backtest", async (ctx) => {
+  const arg = (ctx.match ?? "").trim();
+  const quoted = ctx.message.reply_to_message?.text;
+  const target = arg || quoted;
+  if (!target || !extractXUrl(target))
+    return ctx.reply("Usage: /backtest <X post link> [ticker] — measures price action around the post's timestamp.");
+  await ctx.replyWithChatAction("typing");
+  try {
+    const post = await fetchPost(target);
+    if (post?.error) return ctx.reply(post.error);
+    const postDateMs = post.date ? new Date(post.date).getTime() : NaN;
+    if (Number.isNaN(postDateMs)) return ctx.reply("Couldn't read the post's timestamp.");
+    // Ticker override only from the explicit command argument (never quoted
+    // text), and only when it's a single ticker-shaped token — commentary or
+    // forwarded prose falls through to extraction.
+    const rawOverride = arg.replace(/https?:\/\/\S+/g, "").trim();
+    const override = /^\$?[A-Za-z0-9]{1,15}$|^[一-鿿]{2,8}$/.test(rawOverride)
+      ? rawOverride.replace(/^\$/, "")
+      : "";
+    const matches = matchTerms(lexicon, post.text);
+    const candidates = override
+      ? [override]
+      : extractTickerCandidates(post.text, matches);
+    if (!candidates.length)
+      return ctx.reply("No tickers/coin names found in that post — add one: /backtest <link> <ticker>.");
+    const priceData = await lookupAll(candidates);
+    await ctx.replyWithChatAction("typing");
+    await backtestAll(priceData, postDateMs);
+    const lines = [`Post by @${post.author?.screenName} at ${new Date(postDateMs).toISOString().slice(0, 16)}Z`];
+    for (const entry of priceData) {
+      if (!entry.pairs?.length) {
+        lines.push(`\n${entry.query}: no liquid pairs found`);
+        continue;
+      }
+      const p = entry.pairs[0];
+      const b = entry.backtest;
+      lines.push(`\n${p.symbol} (${p.chain}, pair since ${p.pairCreatedAt ?? "?"})`);
+      if (!b || b.error || b.note) {
+        lines.push(`  backtest: ${b?.error ?? b?.note ?? "not run"}`);
+        continue;
+      }
+      lines.push(
+        `  at post: $${b.priceAtPost}`,
+        `  into post: 24h ${fmt(b.before["24h_move_into_post"])} | 6h ${fmt(b.before["6h_move_into_post"])}`,
+        `  after: ${Object.entries(b.after).map(([k, v]) => `${k} ${fmt(v)}`).join(" | ") || "(too recent)"}`,
+        `  peak after ${fmt(b.peak_after_pct)} | trough ${fmt(b.trough_after_pct)} | now vs post ${fmt(b.now_vs_post_pct)}`,
+      );
+      if (b.coverage_note) lines.push(`  note: ${b.coverage_note}`);
+    }
+    await replyChunked(ctx, lines.join("\n"));
+  } catch (err) {
+    console.error(err);
+    await ctx.reply("Backtest failed — try again in a moment.");
+  }
+});
+
+const fmt = (v) => (v == null ? "n/a" : `${v > 0 ? "+" : ""}${v}%`);
 
 bot.command("price", async (ctx) => {
   const arg = (ctx.match ?? "").trim();

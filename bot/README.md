@@ -36,6 +36,11 @@ grounded in this vault's notes.
 - `/decode <name|ticker|phrase>` — full naming-mechanics breakdown (e.g. `/decode 币安人生`)
 - `/translate <text>` (or reply to a message with `/translate`) — translate + decode
 - `/price <ticker or 中文 name>` — quick DexScreener lookup (price, 1h/24h, liquidity, mcap, pair age)
+- `/backtest <X link> [ticker]` — pure numbers, no narrative: fetches OHLCV
+  around the post's actual timestamp (GeckoTerminal, free) and reports price
+  into the post (24h/6h), after it (1h/6h/24h/3d/7d), peak/trough since, and
+  now-vs-post. `/analyze` runs the same measurement automatically and feeds it
+  to the verdict (FRONT-RAN / EARLY CALL / EXIT-LIQUIDITY / NO EDGE)
 - plain messages — chat about a coin/narrative; the bot's stance is *why CN money
   runs one coin over another* (板块/龙头 rotation, Binance adjacency, naming
   mechanics, 改变命运 psychology); per-chat memory (last 12 exchanges)
@@ -45,6 +50,12 @@ grounded in this vault's notes.
 
 - X posts: fxtwitter/vxtwitter public mirrors (public posts only)
 - Prices: DexScreener free search API (works with Chinese token names)
+- Backtests: GeckoTerminal free OHLCV API. Candle tier auto-scales to post age
+  (15m ≤48h, hourly ≤40d, daily beyond). Measurement guards: no look-ahead (the
+  baseline never samples a close from the candle containing the post),
+  sub-candle windows reported as unavailable rather than 0.0%, staleness-bounded
+  sampling so dead/sparse pools can't mislabel windows, and peak/trough include
+  the post's own candle so same-hour pump-and-dumps stay visible
 - Term matching: ~500-term lexicon auto-built from the vault's glossary/pattern
   tables; ~87 KOL handles indexed from the CT directory
 
