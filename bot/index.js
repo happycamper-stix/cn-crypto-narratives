@@ -6,10 +6,10 @@ import { Bot } from "grammy";
 import os from "node:os";
 import path from "node:path";
 import { loadVault } from "./knowledge.js";
-import { buildSystem, answer, analyzePost, deepDecode } from "./claude.js";
+import { buildSystem, answer, analyzePost, deepDecode, caBreakdown } from "./claude.js";
 import { buildLexicon, matchTerms, buildKolIndex } from "./lexicon.js";
 import { fetchPost, extractXUrl } from "./xpost.js";
-import { extractTickerCandidates, lookupAll, lookupToken } from "./prices.js";
+import { extractTickerCandidates, lookupAll, lookupToken, extractCA, lookupByCA } from "./prices.js";
 import { backtestAll, momentumSnapshot } from "./backtest.js";
 import { recordAnalysis, authorStats, topAccounts, parseVerdict } from "./store.js";
 import { retrieve } from "./knowledge.js";
@@ -102,6 +102,7 @@ async function handle(ctx, userText) {
 bot.command("start", (ctx) =>
   ctx.reply(
     "I decode Chinese crypto lingo and narratives into English.\n\n" +
+      "- Paste a contract address (EVM or Solana) and I'll break the token down: name decode, narrative placement, structure, flags\n" +
       "- Drop an X/Twitter link and I'll fetch it, translate it, match it against my slang database, price-check the tickers, and score it SIGNAL vs SLOP\n" +
       "- Paste raw Chinese text and I'll deep-decode it in layers: literal vs natural translation, a loss ledger of every meaning translation strips, the author's register fingerprint, and the subtext a native reader infers (/deep or /translate does the same on demand)\n" +
       "- /analyze <link or pasted text> — same pipeline on anything\n" +
@@ -212,6 +213,43 @@ bot.command("analyze", async (ctx) => {
       "Usage: /analyze <X post link or pasted text> — or reply to a forwarded post with /analyze.",
     );
   await runAnalysis(ctx, target);
+});
+
+// Contract-address breakdown: paste a CA (or /ca <address>) → identity decode,
+// narrative placement, structure read, flags.
+async function runCaBreakdown(ctx, address) {
+  await ctx.replyWithChatAction("typing");
+  try {
+    const { pairs, error } = await lookupByCA(address);
+    if (error) return ctx.reply(`Lookup failed: ${error}`);
+    if (!pairs?.length)
+      return ctx.reply(
+        "No DEX pairs found for that address — token may be unlaunched, delisted, or on an unindexed chain.",
+      );
+    const top = pairs[0];
+    const nameText = `${top.name ?? ""} ${top.symbol ?? ""}`;
+    const matches = matchTerms(lexicon, nameText);
+    const retrieved = retrieve(
+      notes,
+      `${nameText} 命名 板块 龙头 launchpad naming meme 轮动`,
+    );
+    const momentum = top.pairAddress ? await momentumSnapshot(top) : null;
+    await ctx.replyWithChatAction("typing");
+    const out = await caBreakdown(notes, { address, pairs, momentum, matches, retrieved });
+    pushHistory(ctx.chat.id, "user", `[CA breakdown] ${top.name} (${top.symbol}) ${address}`);
+    pushHistory(ctx.chat.id, "assistant", out);
+    await replyChunked(ctx, out);
+  } catch (err) {
+    console.error(err);
+    await ctx.reply("Breakdown failed — try again in a moment.");
+  }
+}
+
+bot.command("ca", async (ctx) => {
+  const arg = (ctx.match ?? "").trim();
+  const ca = extractCA(arg || ctx.message.reply_to_message?.text || "");
+  if (!ca) return ctx.reply("Usage: /ca <contract address> — EVM (0x…) or Solana.");
+  await runCaBreakdown(ctx, ca.address);
 });
 
 // /pvp <coinA> vs <coinB> — head-to-head narrative battle: each side's stance,
@@ -356,6 +394,9 @@ bot.on("message:text", async (ctx) => {
   if (!text) return;
   // An X/Twitter link (bare, or with a short comment) triggers full analysis.
   if (extractXUrl(text) && text.length < 400) return runAnalysis(ctx, text);
+  // A pasted contract address triggers the CA breakdown.
+  const ca = extractCA(text);
+  if (ca && text.length < 200) return runCaBreakdown(ctx, ca.address);
   // Raw pasted Chinese content (not a question to the bot) triggers the
   // layered deep decode — pasting CT text is the core workflow.
   const cjkCount = (text.match(/[一-鿿]/g) ?? []).length;

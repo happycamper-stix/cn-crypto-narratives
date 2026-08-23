@@ -42,6 +42,7 @@ grounded in this vault's notes.
   (EARLY CALL vs FRONT-RAN counts). Every `/analyze` feeds it; author track
   records are automatically injected into future analyses of the same account,
   so credibility is accumulated measurement, not vibes
+- Paste a **contract address** (EVM `0x…` or Solana) — or `/ca <address>` — full token breakdown: name decode (Chinese-name mechanics), narrative/板块 placement, structure read (liquidity, mcap, pair age, momentum shape), and flags (incl. an explicit note that contract-level risks — honeypot/貔貅盘, mint authority, LP lock — are NOT checked)
 - `/decode <name|ticker|phrase>` — full naming-mechanics breakdown (e.g. `/decode 币安人生`)
 - `/deep` / `/translate <text or X link>` (or reply to a message, or just
   **paste raw Chinese text** — it auto-triggers) — the layered decode engine,

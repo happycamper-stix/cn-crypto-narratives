@@ -85,6 +85,45 @@ export async function deepDecode(notes, { text, matches, retrieved }) {
   return refused ? "I can't decode that one." : out;
 }
 
+// Contract-address breakdown: paste a CA, get the full read — identity decode,
+// narrative placement, structure, flags.
+export async function caBreakdown(notes, { address, pairs, momentum, matches, retrieved }) {
+  const top = pairs[0];
+  const parts = [
+    `Break down this token (looked up by contract address) as a Chinese narrative decoder. Plain text for Telegram:`,
+    `1. IDENTITY — decode the name/ticker "${top.name}" ($${top.symbol}): if it's Chinese (or pinyin/romanized), run the full naming mechanics — homophones, number slang, blessing formula, kinship/food register, CZ/Binance adjacency — what a Chinese reader sees that an English reader doesn't. If the name is English/neutral, say what register it's playing in.`,
+    `2. NARRATIVE — which meta/板块 this plugs into, whether it reads as 龙头 or follower/copycat (卡位 clone?), and where that meta is in its lifecycle right now.`,
+    `3. STRUCTURE — read the market data: liquidity depth, mcap-vs-liquidity ratio, pair age, volume trend, 24h/6h/1h momentum shape (volcanic-decay stage?), multi-chain splits (which pool is canonical).`,
+    `4. FLAGS — thin/fresh/unlocked-looking structure, PvP context with a rival, anything the data can't show (we have NOT checked the contract itself: honeypot/貔貅盘 risk, mint authority, LP lock are unverified — say so explicitly).`,
+    `5. BOTTOM LINE — one short paragraph: what this token IS in CN narrative terms.`,
+    `No buy/sell advice, no price targets.`,
+    "",
+    `<token address="${address}">`,
+    JSON.stringify({ pairs, momentum }, null, 1),
+    "</token>",
+  ];
+  if (matches.length)
+    parts.push(
+      "",
+      "<matched-vault-terms>",
+      ...matches.map((m) => `- ${m.term} — ${m.gloss} [${m.source}]`),
+      "</matched-vault-terms>",
+    );
+  if (retrieved.length)
+    parts.push(
+      "",
+      "<vault-notes>",
+      ...retrieved.map((h) => `<note path="${h.rel}">\n${h.content}\n</note>`),
+      "</vault-notes>",
+    );
+
+  const { text: out, refused } = await complete({
+    systemBlocks,
+    messages: [{ role: "user", content: parts.join("\n") }],
+  });
+  return refused ? "I can't break that one down." : out;
+}
+
 // Head-to-head narrative battle analysis (PvP盘): two coins fighting for the
 // same rotation. Lays out each side's stance and calls which is running.
 export async function pvpCompare(notes, { a, b, retrieved }) {
