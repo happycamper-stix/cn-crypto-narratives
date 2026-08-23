@@ -67,7 +67,8 @@ export async function complete({ systemBlocks, messages, maxTokens = 8000 }) {
         ...messages.map((m) => ({ role: m.role, content: m.content })),
       ],
     }),
-    signal: AbortSignal.timeout(120_000),
+    // Free/stealth models can be very slow on large prompts — allow 5 minutes.
+    signal: AbortSignal.timeout(300_000),
   });
   if (!res.ok) {
     const body = await res.text().catch(() => "");

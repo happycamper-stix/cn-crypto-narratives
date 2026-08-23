@@ -46,6 +46,13 @@ function pushHistory(chatId, role, content) {
 
 const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 
+// Process updates concurrently: grammY's default is sequential, so one slow
+// LLM call would block every other message (bot looks dead until it finishes).
+// Handlers catch their own errors; this floating-promise guard is the backstop.
+bot.use((ctx, next) => {
+  next().catch((e) => console.error("handler error:", e));
+});
+
 // Telegram caps messages at 4096 chars — split on line boundaries.
 async function replyChunked(ctx, text) {
   const chunks = [];
