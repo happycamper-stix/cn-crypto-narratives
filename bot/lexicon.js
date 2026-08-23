@@ -26,12 +26,14 @@ function termsFromTables(rel, content) {
   return entries;
 }
 
-// Atomic notes: title line like "# 割韭菜 (gē jiǔcài) — "Cutting Leeks""
+// Atomic/learned notes: take the first Chinese run in the H1, whatever the
+// surrounding format ("# 割韭菜 (gē jiǔcài) — …" or "# 偷家 — stealing home base").
 function termsFromTitles(rel, content) {
-  const m = content.match(/^# ([^\n(]*[一-鿿][^\n(]*)/m);
+  const m = content.match(/^# ([^\n]*)/m);
   if (!m) return [];
-  const term = m[1].trim();
-  if (term.length < 2 || term.length > 14) return [];
+  const cjk = m[1].match(/[一-鿿]{2,12}/);
+  if (!cjk) return [];
+  const term = cjk[0];
   const firstPara = content.split(/\n\n/).find((p) => p.startsWith("**")) ?? "";
   return [{ term, gloss: firstPara.slice(0, 200), source: rel }];
 }

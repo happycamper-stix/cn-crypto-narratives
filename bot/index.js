@@ -3,6 +3,7 @@
 // lingo, coin names, tickers, and narratives — grounded in the Obsidian vault.
 import "dotenv/config";
 import { Bot } from "grammy";
+import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { loadVault } from "./knowledge.js";
@@ -12,6 +13,7 @@ import { fetchPost, extractXUrl } from "./xpost.js";
 import { extractTickerCandidates, lookupAll, lookupToken, extractCA, lookupByCA } from "./prices.js";
 import { backtestAll, momentumSnapshot } from "./backtest.js";
 import { recordAnalysis, authorStats, topAccounts, parseVerdict } from "./store.js";
+import { maybeLearn } from "./learner.js";
 import { retrieve } from "./knowledge.js";
 import { pvpCompare } from "./claude.js";
 
@@ -23,10 +25,15 @@ if (!process.env.TELEGRAM_BOT_TOKEN) {
   process.exit(1);
 }
 
-let notes = loadVault(VAULT_DIR);
-let lexicon = buildLexicon(notes);
-let kolIndex = buildKolIndex(notes);
-buildSystem(VAULT_DIR, notes);
+let notes, lexicon, kolIndex;
+function reloadVault() {
+  notes = loadVault(VAULT_DIR);
+  lexicon = buildLexicon(notes);
+  kolIndex = buildKolIndex(notes);
+  buildSystem(VAULT_DIR, notes);
+  return notes.length;
+}
+reloadVault();
 const { describeProvider } = await import("./llm.js");
 console.log(
   `Loaded ${notes.length} vault notes, ${lexicon.length} lexicon terms, ${kolIndex.size} KOL handles from ${VAULT_DIR}`,
@@ -79,6 +86,22 @@ async function replyChunked(ctx, text) {
   }
 }
 
+// Fire-and-forget learning check: private chats only (group members must not
+// be able to teach the bot). On a save, the vault reloads in place so the new
+// knowledge is live for the very next message, and the user gets a small nod.
+function learnFrom(ctx, userText, botText) {
+  if (ctx.chat.type !== "private") return;
+  maybeLearn({ vaultDir: VAULT_DIR, notes, lexicon, userText, botText })
+    .then((file) => {
+      if (!file) return;
+      const name = file.split("/").pop();
+      console.log(`[learn] saved ${name}`);
+      reloadVault();
+      return ctx.reply(`📝 Added to my vault: ${name.replace(/\.md$/, "")} (unverified — /learned to review, /forget to remove)`);
+    })
+    .catch((e) => console.error("[learn] failed:", e.message));
+}
+
 // Telegram's typing indicator expires after ~5s; keep it alive through long
 // LLM generations so slow models don't look like silence.
 async function withTyping(ctx, fn) {
@@ -116,6 +139,7 @@ async function handle(ctx, userText) {
     pushHistory(chatId, "assistant", text);
     if (retrieved.length) console.log(`[${chatId}] retrieved: ${retrieved.join(", ")}`);
     await replyChunked(ctx, text);
+    learnFrom(ctx, userText, text);
   } catch (err) {
     console.error(err);
     await ctx.reply("Something went wrong talking to the model — try again in a moment.");
@@ -167,6 +191,7 @@ async function runDeepDecode(ctx, target) {
     pushHistory(ctx.chat.id, "user", `[deep-decoded] ${text.slice(0, 400)}`);
     pushHistory(ctx.chat.id, "assistant", out);
     await replyChunked(ctx, out);
+    learnFrom(ctx, text, out);
   } catch (err) {
     console.error(err);
     await ctx.reply("Decode failed — try again in a moment.");
@@ -270,6 +295,7 @@ async function runCaBreakdown(ctx, address) {
     pushHistory(ctx.chat.id, "user", `[CA breakdown] ${top.name} (${top.symbol}) ${address}`);
     pushHistory(ctx.chat.id, "assistant", out);
     await replyChunked(ctx, out);
+    learnFrom(ctx, `Token breakdown for ${top.name} ($${top.symbol}), CA ${address}`, out);
   } catch (err) {
     console.error(err);
     await ctx.reply("Breakdown failed — try again in a moment.");
@@ -410,13 +436,37 @@ bot.command("clear", (ctx) => {
 });
 
 bot.command("reload", (ctx) => {
-  notes = loadVault(VAULT_DIR);
-  lexicon = buildLexicon(notes);
-  kolIndex = buildKolIndex(notes);
-  buildSystem(VAULT_DIR, notes);
+  const n = reloadVault();
   return ctx.reply(
-    `Reloaded ${notes.length} vault notes (${lexicon.length} lexicon terms, ${kolIndex.size} KOL handles).`,
+    `Reloaded ${n} vault notes (${lexicon.length} lexicon terms, ${kolIndex.size} KOL handles).`,
   );
+});
+
+// Review and manage what the bot has taught itself.
+bot.command("learned", (ctx) => {
+  const dir = path.join(VAULT_DIR, "learned");
+  let files = [];
+  try {
+    files = fs.readdirSync(dir).filter((f) => f.endsWith(".md")).sort().reverse().slice(0, 15);
+  } catch {}
+  if (!files.length) return ctx.reply("Nothing self-learned yet. When a chat surfaces a new term or fact, I'll save it and tell you.");
+  return ctx.reply(
+    `Self-learned notes (unverified until promoted):\n` +
+      files.map((f) => `- ${f.replace(/\.md$/, "")}`).join("\n") +
+      `\n\n/forget <name> removes one.`,
+  );
+});
+
+bot.command("forget", (ctx) => {
+  const arg = (ctx.match ?? "").trim().replace(/\.md$/, "");
+  if (!arg) return ctx.reply("Usage: /forget <learned note name> (see /learned)");
+  // Only learned/ notes can be deleted — the curated vault is untouchable.
+  const safe = path.basename(arg);
+  const file = path.join(VAULT_DIR, "learned", `${safe}.md`);
+  if (!fs.existsSync(file)) return ctx.reply(`No learned note named "${safe}".`);
+  fs.unlinkSync(file);
+  reloadVault();
+  return ctx.reply(`Forgot ${safe}.`);
 });
 
 bot.on("message:text", async (ctx) => {
